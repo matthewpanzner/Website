@@ -15,14 +15,14 @@ define("DB_PASSWORD", ""); //will use a script to fetch at some point
 //****************************
 //  Paths
 //****************************
-
-define("ROOT", "/home/cabox/workspace/root/");
-define("CLASS_DIR", ROOT . "../scripts/classes/");
-define("TEMPLATE_DIR", ROOT . "../scripts/templates/");
-define("CSS_DIR", ROOT . "../css/");
-define("JS_DIR", ROOT . "../js/");
-define("RESOURCE_DIR", ROOT .  "../resources/");
-define("LOG_DIR", ROOT . "../logs/");
+defined("ROOT")
+  or define("ROOT", realpath(dirname(__FILE__) . '../root'));
+defined("CLASS_DIR")
+  or define("CLASS_DIR", realpath(dirname(__FILE__) . "/classes"));
+defined("TEMPLATE_DIR")
+  or define("TEMPLATE_DIR", realpath(dirname(__FILE__) . "/templates"));
+defined("LOG_DIR")
+  or define("LOG_DIR", ROOT . "../logs/");
 
 //*****************************************************************
 //
