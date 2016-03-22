@@ -4,12 +4,14 @@
      It should be closed after use is done.
 Author: Matthew Panzner
 */
+  require_once("../../utils/config.php");
+
   class DBConnection{
     private static $link;
     
-    public static function createConnection(){
+    public static function createConnection($dbName){
   
-      static::$link = mysqli_connect("localhost", "root", "", "Test" );
+      static::$link = mysqli_connect(DB_DNS, DB_USERNAME, DB_PASSWORD, $dbName);
       
       if(!static::$link){
         echo "Error: Unable to connect to database" . PHP_EOL;
