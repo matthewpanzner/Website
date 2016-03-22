@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+  <query>
+    <name>selectAllQuery</name>
+    <value>SELECT * FROM ?</value>
+  </query>
+  <query>
+    <name>registerUserQuery</name>
+    <value>INSERT INTO Users (Username, Password) VALUES ('?','?')</value>
+  </query>
+  <query>
+    <name>selectUserQuery</name>
+    <value>SELECT * FROM Users WHERE username = '?' AND password = '?'</value>
+  </query>
+</queries>
