@@ -22,7 +22,9 @@ defined("CLASS_DIR")
 defined("TEMPLATE_DIR")
   or define("TEMPLATE_DIR", realpath(dirname(__FILE__) . "/templates"));
 defined("LOG_DIR")
-  or define("LOG_DIR", ROOT . "../logs/");
+  or define("LOG_DIR", ROOT . "../logs");
+defined("RESOURCE_DIR")
+  or define("RESOURCE_DIR", ROOT . "../resources");
 
 //*****************************************************************
 //
