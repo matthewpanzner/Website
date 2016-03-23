@@ -1,11 +1,16 @@
 <?php 
+$test = "IT WORKED";
+if(isset($_GET['action']))
+  echo ${$_GET['action']};
+else echo 'no';
+
 include "../include/config.php";
 include TEMPLATE_DIR . "/frontend/header.php";
 include TEMPLATE_DIR . "/frontend/leftPanel.php";
 ?>
     <section>
       <p>
-        Content
+        <a href="index.php?action=test">Test</a>
       </p>
     </section>
 <?php
