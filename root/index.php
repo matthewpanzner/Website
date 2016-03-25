@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 include "../include/config.php";
 include TEMPLATE_DIR . "/frontend/header.php";
 include TEMPLATE_DIR . "/frontend/leftPanel.php";
@@ -12,15 +13,15 @@ $mName = $names->M;
 $vName = $names->V;
 $cName = $names->C;
 $test = new $mName();
-$m = $test;
+$m = &$test;
 $v = new $vName($m);
 $c = new $cName($m);
-echo $m->num . "\n";
 
-$c->change(30);
-echo $m->num . "\n";
-echo $c->M->num . "\n";
-echo $v->M->num;
+
+$_SESSION['model'] = $m;
+
+$test = null;
+include('home.php');
 ?>
 
 

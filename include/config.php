@@ -18,13 +18,15 @@ define("DB_PASSWORD", ""); //will use a script to fetch at some point
 defined("ROOT")
   or define("ROOT", realpath(dirname(__FILE__) . '../root'));
 defined("CLASS_DIR")
-  or define("CLASS_DIR", realpath(dirname(__FILE__) . "/classes"));
+  or define("CLASS_DIR", realpath(dirname(__FILE__));
 defined("TEMPLATE_DIR")
   or define("TEMPLATE_DIR", realpath(dirname(__FILE__) . "/templates"));
 defined("LOG_DIR")
   or define("LOG_DIR", ROOT . "../logs");
 defined("RESOURCE_DIR")
   or define("RESOURCE_DIR", ROOT . "../resources");
+defined("CORE_DIR")
+  or define("CORE_DIR", CLASS_DIR . "/core");
 
 //*****************************************************************
 //
