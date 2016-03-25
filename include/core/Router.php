@@ -6,7 +6,6 @@ class Router{
   
   public function __construct(){
     $this->route['/'] = new Route('Model', 'Controller', 'View');
-    $this->route['/error']
   }
   
   public function getRoute($route){

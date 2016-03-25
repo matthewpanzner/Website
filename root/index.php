@@ -1,8 +1,10 @@
 <?php
 session_start();
-include "../include/config.php";
-include TEMPLATE_DIR . "/frontend/header.php";
-include TEMPLATE_DIR . "/frontend/leftPanel.php";
+require_once "../include/config.php";
+require_once CLASS_DIR . "/model/ErrorModel.php";
+require_once CLASS_DIR . "/controller/ErrorController.php";
+require_once CLASS_DIR . "/core/View.php";
+require_once CLASS_DIR . "/core/Router.php";
 
 class M {public $num; public function __construct(){$this->num = 4;} public function set($val){$this->num = $val;}}
 class V {public $M;  public function __construct($m){$this->M = $m;}}
@@ -13,19 +15,9 @@ $mName = $names->M;
 $vName = $names->V;
 $cName = $names->C;
 $test = new $mName();
-$m = &$test;
-$v = new $vName($m);
-$c = new $cName($m);
 
+$m = new ErrorModel("IAMERROR");
+$c = new ErrorController($m);
+$v = new View($m, $c->onUnauthorized());
 
-$_SESSION['model'] = $m;
-
-$test = null;
-include('home.php');
-?>
-
-
-
-<?php
-include TEMPLATE_DIR . "/frontend/footer.php";
 ?>

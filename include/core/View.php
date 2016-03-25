@@ -1,6 +1,5 @@
 <?php
-require_once("../../config.php");
-require("Model.php");
+require_once("Model.php");
 
 class View{
   private $model;

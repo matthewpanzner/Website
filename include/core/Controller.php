@@ -1,11 +1,10 @@
 <?php
-require_once("../../config.php");
 require_once("Model.php");
 
 class Controller{
-  private $model;
+  protected $model;
   
-  public function __contruct($model){
+  public function __construct($model){
     $this->model = $model;
   }
 }?>
