@@ -4,8 +4,6 @@
      It should be closed after use is done.
 Author: Matthew Panzner
 */
-  require_once("../../utils/config.php");
-
   class DBConnection{
     private static $link;
     

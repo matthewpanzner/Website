@@ -9,5 +9,5 @@ if(isset($_GET['controller'])){
 }else if(isset($_GET['route'])){
   $view = new View(null, $_GET['route'] . ".php");
 }else{
-  $view = new View(null, "home.php");
+  $view = new View(null, "mooseadmin.php");
 }?>

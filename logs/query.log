@@ -1,0 +1,64 @@
+About to execute: SELECT * FROM Users WHERE username = '' AND password = ''
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'test' AND password = 'test'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'test' AND password = 'test'
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password, Email, JoinDate) VALUES ('test','test','','')
+About to execute: SELECT * FROM Users WHERE username = 'test' AND password = 'test'
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password) VALUES ('test','test')
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'Test' AND password = 'test'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'test 2' AND password = 'test'
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password) VALUES ('test 2','test')
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = '' AND password = ''
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password) VALUES ('','')
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = '' AND password = ''
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password) VALUES ('admin','admin')
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'adin'
+Executed successfully
+About to execute: INSERT INTO Users (Username, Password) VALUES ('admin','adin')
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'da'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'admin' AND password = 'admin'
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'ADMIN' AND password = 'ADMIN'
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'aDmin' AND password = 'admin'
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'Testew`' AND password = ''
+Executed successfully, rows: 0
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
+Executed successfully, rows: 0
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
+Executed successfully, rows: 0
+About to execute: INSERT INTO Users (Username, Password) VALUES ('root','')
+Executed successfully
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'rooT' AND password = ''
+Executed successfully, rows: 1

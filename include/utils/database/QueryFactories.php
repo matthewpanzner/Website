@@ -16,7 +16,7 @@
  Author: Matthew Panzner
 */
 require_once 'SQLQuery.php';
-require_once '../data_structures/Map.php';
+require_once CLASS_DIR . '/utils/data_structures/Map.php';
 
 //This class' function is to replace "?" in SQL Queries from the XML based on args
 //  to make a valid SQL statement to execute.

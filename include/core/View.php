@@ -7,7 +7,11 @@ class View{
   
   public function __construct($model, $path){
     $this->model = $model;
-    include(CLASS_DIR . "/View/" . $path);
+   
+    include(TEMPLATE_DIR . "/frontend/header.php");
+    include(TEMPLATE_DIR . "/frontend/leftPanel.php");
+    include(CLASS_DIR . "/view/" . $path);
+    include(TEMPLATE_DIR . "/frontend/footer.php");
   }
  
 }?>

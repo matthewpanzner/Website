@@ -1,1 +1,0 @@
-<?php $model->getMsg(); ?>

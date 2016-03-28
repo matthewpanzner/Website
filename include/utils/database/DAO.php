@@ -4,9 +4,8 @@
       All functions take an argument list (for the ?'s) and a base query which will
       be manipulated by the DAO to a valid expression. 
 */
-require_once "../../config.php";
-require_once CLASS_DIR . 'utils/database/DBConnection.php';
-require_once CLASS_DIR . 'utils/database/QueryFactories.php';
+require_once CLASS_DIR . '/utils/database/DBConnection.php';
+require_once CLASS_DIR . '/utils/database/QueryFactories.php';
 
 class DAO{
   private $queryMap;
@@ -15,23 +14,23 @@ class DAO{
   }
   
   public function select($queryName, $args){
-    $link = DBConnection::createConnection();
+    $link = DBConnection::createConnection("Test");
     $query = (string)QueryFactory::create($this->queryMap->get($queryName), $args)->getQuery();
     
-    logMessage(LOG_DIR . "/querylog.log", "About to execute: " . $query);
+    logMessage("/query.log", "About to execute: " . $query);
     $result = mysqli_query($link, $query) or die(mysql_error());
-    logMessage(LOG_DIR . "/querylog.log", "Executed successfully");
+    logMessage("/query.log", "Executed successfully, rows: " . $result->num_rows);
     
     DBConnection::closeConnection();
     return $result;
   }  
   public function update($queryName, $args){
-    $link = DBConnection::createConnection();
+    $link = DBConnection::createConnection("Test");
     $query = (string)QueryFactory::create($this->queryMap->get($queryName), $args)->getQuery();
     
-    logMessage(LOG_DIR . "/querylog.log", "About to execute: " . $query);
+    logMessage("/query.log", "About to execute: " . $query);
     $result = mysqli_query($link, $query) or die(mysql_error());
-    logMessage(LOG_DIR . "/querylog.log", "Executed successfully");
+    logMessage("/query.log", "Executed successfully");
     
     DBConnection::closeConnection();
   }

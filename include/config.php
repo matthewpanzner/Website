@@ -8,7 +8,7 @@ ini_set( "display_errors", true );
 //
 //***************************************************
 
-define("DB_DSN", "localhost");
+define("DB_DNS", "localhost");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", ""); //will use a script to fetch at some point
 

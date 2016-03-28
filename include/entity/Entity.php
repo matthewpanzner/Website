@@ -1,5 +1,4 @@
 <?php
-require_once("../../config.php");
 class Entity{
   protected $data = array();
   
@@ -21,5 +20,4 @@ class Entity{
   public function __unset($name){
     unset($this->data[$name]);
   }
-}
-?>
+}?>
