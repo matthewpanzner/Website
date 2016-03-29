@@ -38,13 +38,13 @@ if(isset($_SESSION['logged_in'])){
 <?php else: ?>
           <li><a href="index.php?controller=LoginController&action=onLogout">Logout</a></li>
 <?php if(isset($role) && $role==="admin"): ?>
-          <li><a href="index.php?route=admin/article-form">Add Article</a></li>
+          <li><a href="index.php?controller=ArticleFormController&action=onLoad">Add Article</a></li>
           <li><a href="index.php?route=admin/article-category-form">Add Article Category</li>
 <?php endif;?>
 <?php endif;?>
           <li><a href="index.php">Home</a></li>
           <li><a href="index.php?route=about">About</a></li>
-          <li><a href="index.php?controller=ArticleController&action=onGetCategories">Article Categories</a></li>
+          <li><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Article Categories</a></li>
           <li><a href="index.php?route=contact">Contact</a></li>
         </ul>
       </nav>

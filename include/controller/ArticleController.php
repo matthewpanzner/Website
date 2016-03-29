@@ -10,6 +10,7 @@ class ArticleController extends Controller{
       
     
     if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+      logMessage("/error.log", var_dump($_POST));
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
     }
@@ -44,11 +45,5 @@ class ArticleController extends Controller{
     $service = new ArticleService();
     $this->model['articles'] = $service->getArticlesByCategory($_GET['c']);
     return new View($this->model, "articles.php");
-  }
-  
-  public function onGetCategories(){
-    $service = new ArticleService();
-    $this->model['categories'] = $service->getCategories();
-    return new View($this->model, "article-categories.php");
   }
 }?>
