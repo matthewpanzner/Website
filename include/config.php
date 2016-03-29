@@ -47,9 +47,24 @@ function logMessage($file, $message){
   if(!file_exists(LOG_DIR . $file))
     fopen(LOG_DIR . $file, 'w+') or die("Unable to open " . $file);
   
-  file_put_contents(LOG_DIR . $file, $message . "\n", FILE_APPEND | LOCK_EX);
+  $date = date_create();
+  file_put_contents(LOG_DIR . $file, $message . " /////" . date_format($date, 'U = Y-m-d H:i:s') . "\n", FILE_APPEND | LOCK_EX);
+  $date = null;
 }
 
+function formateHtml($html, $indent_val){
+  $fhtml = "";
+
+  $lines = explode("\n",$html);
+  for($i = 0; $i < sizeof($lines); $i++){
+    for($j = 0; $j < $indent_val; $j++){
+      $lines[$i] = " " . $lines[$i];
+    }
+    $fhtml .= $lines[$i] . "\n";
+  }
+  
+  return $fhtml;
+}
 set_exception_handler( 'handleException' );
 
 ?>

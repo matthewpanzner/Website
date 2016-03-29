@@ -3,6 +3,7 @@ require_once CLASS_DIR . "/model/ErrorModel.php";
 require_once CLASS_DIR . "/controller/ErrorController.php";
 require_once CLASS_DIR . "/controller/UserController.php";
 require_once CLASS_DIR . "/controller/LoginController.php";
+require_once CLASS_DIR . "/controller/ArticleController.php";
 require_once CLASS_DIR . "/core/View.php";
 
 class FrontController{

@@ -62,3 +62,185 @@ About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
 Executed successfully, rows: 1
 About to execute: SELECT * FROM Users WHERE username = 'rooT' AND password = ''
 Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = ''
+Executed successfully, rows: 1
+About to execute: SELECT * FROM Articles WHERE title = 'test'
+Executed successfully, rows: 0
+About to execute: INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('0', 'test', 'test', '', '')
+About to execute: SELECT * FROM Articles WHERE title = 'test'
+Executed successfully, rows: 0
+About to execute: INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('test', 'test', 'test', '', '')
+About to execute: SELECT * FROM Articles WHERE title = 'test'
+Executed successfully, rows: 0
+About to execute: INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('test', 'test', 'test', 'test', '1')
+Executed successfully
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'
+About to execute: SELECT * FROM 'Articles'1459190134 = 2016-03-28 14:35:34
+About to execute: SELECT * FROM 'Articles' /////1459190220 = 2016-03-28 14:37:00
+About to execute: SELECT * FROM Articles /////1459190300 = 2016-03-28 14:38:20
+Executed successfully, rows: 3 /////1459190300 = 2016-03-28 14:38:20
+About to execute: SELECT * FROM Articles /////1459190303 = 2016-03-28 14:38:23
+Executed successfully, rows: 3 /////1459190303 = 2016-03-28 14:38:23
+About to execute: SELECT * FROM Articles /////1459190332 = 2016-03-28 14:38:52
+Executed successfully, rows: 3 /////1459190332 = 2016-03-28 14:38:52
+About to execute: SELECT * FROM Articles /////1459190343 = 2016-03-28 14:39:03
+Executed successfully, rows: 3 /////1459190343 = 2016-03-28 14:39:03
+About to execute: SELECT * FROM Articles /////1459190359 = 2016-03-28 14:39:19
+Executed successfully, rows: 3 /////1459190359 = 2016-03-28 14:39:19
+About to execute: SELECT * FROM Articles /////1459190399 = 2016-03-28 14:39:59
+Executed successfully, rows: 3 /////1459190399 = 2016-03-28 14:39:59
+About to execute: SELECT * FROM Articles /////1459190494 = 2016-03-28 14:41:34
+Executed successfully, rows: 3 /////1459190494 = 2016-03-28 14:41:34
+About to execute: SELECT * FROM Articles /////1459190627 = 2016-03-28 14:43:47
+Executed successfully, rows: 3 /////1459190627 = 2016-03-28 14:43:47
+About to execute: SELECT * FROM Articles /////1459190641 = 2016-03-28 14:44:01
+Executed successfully, rows: 3 /////1459190641 = 2016-03-28 14:44:01
+About to execute: SELECT * FROM Articles /////1459190651 = 2016-03-28 14:44:11
+Executed successfully, rows: 3 /////1459190651 = 2016-03-28 14:44:11
+About to execute: SELECT * FROM Articles /////1459190737 = 2016-03-28 14:45:37
+Executed successfully, rows: 3 /////1459190737 = 2016-03-28 14:45:37
+About to execute: SELECT * FROM Articles /////1459190889 = 2016-03-28 14:48:09
+Executed successfully, rows: 3 /////1459190889 = 2016-03-28 14:48:09
+About to execute: SELECT * FROM Articles /////1459191130 = 2016-03-28 14:52:10
+Executed successfully, rows: 3 /////1459191130 = 2016-03-28 14:52:10
+About to execute: SELECT * FROM Articles /////1459191142 = 2016-03-28 14:52:22
+Executed successfully, rows: 3 /////1459191142 = 2016-03-28 14:52:22
+About to execute: SELECT * FROM Articles /////1459191149 = 2016-03-28 14:52:29
+Executed successfully, rows: 3 /////1459191149 = 2016-03-28 14:52:29
+About to execute: SELECT * FROM Articles /////1459191159 = 2016-03-28 14:52:39
+Executed successfully, rows: 3 /////1459191159 = 2016-03-28 14:52:39
+About to execute: SELECT * FROM Articles /////1459191167 = 2016-03-28 14:52:47
+Executed successfully, rows: 3 /////1459191167 = 2016-03-28 14:52:47
+About to execute: SELECT * FROM Articles /////1459191173 = 2016-03-28 14:52:53
+Executed successfully, rows: 3 /////1459191173 = 2016-03-28 14:52:53
+About to execute: SELECT * FROM Articles /////1459191192 = 2016-03-28 14:53:12
+Executed successfully, rows: 3 /////1459191192 = 2016-03-28 14:53:12
+About to execute: SELECT * FROM Articles /////1459191499 = 2016-03-28 14:58:19
+Executed successfully, rows: 3 /////1459191499 = 2016-03-28 14:58:19
+About to execute: SELECT * FROM Articles /////1459191517 = 2016-03-28 14:58:37
+Executed successfully, rows: 3 /////1459191517 = 2016-03-28 14:58:37
+About to execute: SELECT * FROM Articles /////1459191534 = 2016-03-28 14:58:54
+Executed successfully, rows: 3 /////1459191534 = 2016-03-28 14:58:54
+About to execute: SELECT * FROM Articles /////1459191545 = 2016-03-28 14:59:05
+Executed successfully, rows: 3 /////1459191545 = 2016-03-28 14:59:05
+About to execute: SELECT * FROM Articles /////1459191555 = 2016-03-28 14:59:15
+Executed successfully, rows: 3 /////1459191555 = 2016-03-28 14:59:15
+About to execute: SELECT * FROM Articles /////1459191596 = 2016-03-28 14:59:56
+Executed successfully, rows: 3 /////1459191596 = 2016-03-28 14:59:56
+About to execute: SELECT * FROM Articles /////1459191600 = 2016-03-28 15:00:00
+Executed successfully, rows: 3 /////1459191600 = 2016-03-28 15:00:00
+About to execute: SELECT * FROM Articles /////1459191603 = 2016-03-28 15:00:03
+Executed successfully, rows: 3 /////1459191603 = 2016-03-28 15:00:03
+About to execute: SELECT * FROM Articles /////1459191625 = 2016-03-28 15:00:25
+Executed successfully, rows: 3 /////1459191625 = 2016-03-28 15:00:25
+About to execute: SELECT * FROM Articles /////1459191693 = 2016-03-28 15:01:33
+Executed successfully, rows: 3 /////1459191693 = 2016-03-28 15:01:33
+About to execute: SELECT * FROM Articles /////1459191755 = 2016-03-28 15:02:35
+Executed successfully, rows: 3 /////1459191755 = 2016-03-28 15:02:35
+About to execute: SELECT * FROM Articles /////1459191764 = 2016-03-28 15:02:44
+Executed successfully, rows: 3 /////1459191764 = 2016-03-28 15:02:44
+About to execute: SELECT * FROM Articles /////1459192093 = 2016-03-28 15:08:13
+Executed successfully, rows: 3 /////1459192093 = 2016-03-28 15:08:13
+About to execute: SELECT * FROM Articles /////1459192352 = 2016-03-28 15:12:32
+Executed successfully, rows: 3 /////1459192352 = 2016-03-28 15:12:32
+About to execute: SELECT * FROM Articles /////1459192566 = 2016-03-28 15:16:06
+Executed successfully, rows: 3 /////1459192566 = 2016-03-28 15:16:06
+About to execute: SELECT * FROM Articles /////1459192726 = 2016-03-28 15:18:46
+Executed successfully, rows: 3 /////1459192726 = 2016-03-28 15:18:46
+About to execute: SELECT * FROM Articles /////1459192736 = 2016-03-28 15:18:56
+Executed successfully, rows: 3 /////1459192736 = 2016-03-28 15:18:56
+About to execute: SELECT * FROM Articles /////1459192799 = 2016-03-28 15:19:59
+Executed successfully, rows: 3 /////1459192799 = 2016-03-28 15:19:59
+About to execute: SELECT * FROM Articles /////1459192822 = 2016-03-28 15:20:22
+Executed successfully, rows: 3 /////1459192822 = 2016-03-28 15:20:22
+About to execute: SELECT * FROM Articles /////1459192950 = 2016-03-28 15:22:30
+Executed successfully, rows: 3 /////1459192950 = 2016-03-28 15:22:30
+About to execute: SELECT * FROM Articles /////1459193174 = 2016-03-28 15:26:14
+Executed successfully, rows: 3 /////1459193174 = 2016-03-28 15:26:14
+About to execute: SELECT * FROM Articles /////1459193203 = 2016-03-28 15:26:43
+Executed successfully, rows: 3 /////1459193203 = 2016-03-28 15:26:43
+About to execute: SELECT * FROM Articles /////1459193210 = 2016-03-28 15:26:50
+Executed successfully, rows: 3 /////1459193210 = 2016-03-28 15:26:50
+About to execute: SELECT * FROM Articles /////1459193211 = 2016-03-28 15:26:51
+Executed successfully, rows: 3 /////1459193211 = 2016-03-28 15:26:51
+About to execute: SELECT * FROM Articles /////1459193244 = 2016-03-28 15:27:24
+Executed successfully, rows: 3 /////1459193244 = 2016-03-28 15:27:24
+About to execute: SELECT * FROM Articles /////1459193268 = 2016-03-28 15:27:48
+Executed successfully, rows: 3 /////1459193268 = 2016-03-28 15:27:48
+About to execute: SELECT * FROM Articles /////1459193328 = 2016-03-28 15:28:48
+Executed successfully, rows: 3 /////1459193328 = 2016-03-28 15:28:48
+About to execute: SELECT * FROM Articles /////1459193331 = 2016-03-28 15:28:51
+Executed successfully, rows: 3 /////1459193331 = 2016-03-28 15:28:51
+About to execute: SELECT * FROM Articles /////1459193336 = 2016-03-28 15:28:56
+Executed successfully, rows: 3 /////1459193336 = 2016-03-28 15:28:56
+About to execute: SELECT * FROM Articles /////1459193535 = 2016-03-28 15:32:15
+Executed successfully, rows: 3 /////1459193535 = 2016-03-28 15:32:15
+About to execute: SELECT * FROM Articles /////1459194079 = 2016-03-28 15:41:19
+Executed successfully, rows: 3 /////1459194079 = 2016-03-28 15:41:19
+About to execute: SELECT * FROM Articles /////1459195000 = 2016-03-28 15:56:40
+Executed successfully, rows: 3 /////1459195000 = 2016-03-28 15:56:40
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = '' /////1459195007 = 2016-03-28 15:56:47
+Executed successfully, rows: 1 /////1459195007 = 2016-03-28 15:56:47
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = '' /////1459195629 = 2016-03-28 16:07:09
+Executed successfully, rows: 1 /////1459195629 = 2016-03-28 16:07:09
+About to execute: SELECT * FROM Articles WHERE title = 'First Article' /////1459196001 = 2016-03-28 16:13:21
+Executed successfully, rows: 0 /////1459196001 = 2016-03-28 16:13:21
+About to execute: INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-03-28', 'First Article', 'This is my first article', 'Not much to put in the content section.  This is mostly a test of a basic article written in a form and posted to the database.', '1') /////1459196001 = 2016-03-28 16:13:21
+Executed successfully /////1459196001 = 2016-03-28 16:13:21
+About to execute: SELECT * FROM Articles WHERE title = 'Test2' /////1459196013 = 2016-03-28 16:13:33
+Executed successfully, rows: 0 /////1459196013 = 2016-03-28 16:13:33
+About to execute: INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-03-28', 'Test2', 'Test2', 'Test2', '2') /////1459196013 = 2016-03-28 16:13:33
+About to execute: SELECT * FROM Articles /////1459196102 = 2016-03-28 16:15:02
+Executed successfully, rows: 3 /////1459196102 = 2016-03-28 16:15:02
+About to execute: SELECT * FROM Articles /////1459196267 = 2016-03-28 16:17:47
+Executed successfully, rows: 3 /////1459196267 = 2016-03-28 16:17:47
+About to execute: SELECT * FROM Articles /////1459196273 = 2016-03-28 16:17:53
+Executed successfully, rows: 3 /////1459196273 = 2016-03-28 16:17:53
+About to execute: SELECT * FROM Articles /////1459196288 = 2016-03-28 16:18:08
+Executed successfully, rows: 3 /////1459196288 = 2016-03-28 16:18:08
+About to execute: SELECT * FROM Articles /////1459196370 = 2016-03-28 16:19:30
+Executed successfully, rows: 3 /////1459196370 = 2016-03-28 16:19:30
+About to execute: SELECT * FROM Articles /////1459196423 = 2016-03-28 16:20:23
+Executed successfully, rows: 3 /////1459196423 = 2016-03-28 16:20:23
+About to execute: SELECT * FROM Articles /////1459196458 = 2016-03-28 16:20:58
+Executed successfully, rows: 3 /////1459196458 = 2016-03-28 16:20:58
+About to execute: SELECT * FROM Articles /////1459196467 = 2016-03-28 16:21:07
+Executed successfully, rows: 3 /////1459196467 = 2016-03-28 16:21:07
+About to execute: SELECT * FROM Articles /////1459196659 = 2016-03-28 16:24:19
+Executed successfully, rows: 3 /////1459196659 = 2016-03-28 16:24:19
+About to execute: SELECT * FROM Articles /////1459196683 = 2016-03-28 16:24:43
+Executed successfully, rows: 3 /////1459196683 = 2016-03-28 16:24:43
+About to execute: SELECT * FROM Articles /////1459196692 = 2016-03-28 16:24:52
+Executed successfully, rows: 3 /////1459196692 = 2016-03-28 16:24:52
+About to execute: SELECT * FROM Articles /////1459196824 = 2016-03-28 16:27:04
+Executed successfully, rows: 3 /////1459196824 = 2016-03-28 16:27:04
+About to execute: SELECT * FROM Articles /////1459196837 = 2016-03-28 16:27:17
+Executed successfully, rows: 3 /////1459196837 = 2016-03-28 16:27:17
+About to execute: SELECT * FROM Articles /////1459196843 = 2016-03-28 16:27:23
+Executed successfully, rows: 3 /////1459196843 = 2016-03-28 16:27:23
+About to execute: SELECT * FROM Articles /////1459196921 = 2016-03-28 16:28:41
+Executed successfully, rows: 3 /////1459196921 = 2016-03-28 16:28:41
+About to execute: SELECT * FROM Articles /////1459196941 = 2016-03-28 16:29:01
+Executed successfully, rows: 3 /////1459196941 = 2016-03-28 16:29:01
+About to execute: SELECT * FROM Articles /////1459196956 = 2016-03-28 16:29:16
+Executed successfully, rows: 3 /////1459196956 = 2016-03-28 16:29:16
+About to execute: SELECT * FROM Articles /////1459196960 = 2016-03-28 16:29:20
+Executed successfully, rows: 3 /////1459196960 = 2016-03-28 16:29:20
+About to execute: SELECT * FROM Articles /////1459198221 = 2016-03-28 16:50:21
+Executed successfully, rows: 3 /////1459198221 = 2016-03-28 16:50:21

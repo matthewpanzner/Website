@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once "../include/config.php";
-require_once "FrontController.php";
+require_once CORE_DIR . "/FrontController.php";
 
 if(isset($_GET['controller'])){
   if(isset($_GET['action']))

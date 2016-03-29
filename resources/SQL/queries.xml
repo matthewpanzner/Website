@@ -12,4 +12,17 @@
     <name>selectUserQuery</name>
     <value>SELECT * FROM Users WHERE username = '?' AND password = '?'</value>
   </query>
+  
+  <query>
+    <name>addArticleQuery</name>
+    <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
+  </query>
+  <query>
+    <name>selectArticleByTitleQuery</name>
+    <value>SELECT * FROM Articles WHERE title = '?'</value>
+  </query>
+  <query>
+    <name>addArticleCategoryQuery</name>
+    <value>INSERT INTO ArticleCategories (name, summary) VALUES ('?', '?')</value>
+  </query>
 </queries>

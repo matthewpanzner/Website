@@ -9,7 +9,7 @@ class UserServiceImpl{
     $this->dao = new DAO();    
   }
   
-  public function isRegistered($user){
+  private function isRegistered($user){
     $args[0] = $user->username;
 		$args[1] = $user->password;
     
