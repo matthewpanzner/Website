@@ -44,7 +44,7 @@ if(isset($_SESSION['logged_in'])){
 <?php endif;?>
           <li><a href="index.php">Home</a></li>
           <li><a href="index.php?route=about">About</a></li>
-          <li><a href="index.php?controller=ArticleController&action=onGetArticles">Articles</a></li>
+          <li><a href="index.php?controller=ArticleController&action=onGetCategories">Article Categories</a></li>
           <li><a href="index.php?route=contact">Contact</a></li>
         </ul>
       </nav>

@@ -15,7 +15,7 @@ class ArticleService{
     
     if(mysqli_num_rows($this->dao->select("selectArticleByTitleQuery", $args)) > 0)
       return true;
-      return false;
+    return false;
   }
   
 /*<query>
@@ -39,6 +39,38 @@ class ArticleService{
   
   public function getArticles(){
     $args[0] = "Articles";
+    return $this->dao->select("selectAllQuery", $args);
+  }
+  
+  
+  //*****************************************************
+  //  Category branch of it --- looking for better solution
+  //
+  public function getArticlesByCategory($category){
+    $args[0] = $category;
+    return $this->dao->select("selectArticleByCategoryQuery", $args);
+  }
+  
+  private function categoryAlreadyExists($category){
+    $args[0] = "name";
+    
+    if(mysqli_num_rows($this->dao->select("selectArticleCategoryByNameQuery", $args)) > 0)
+      return true;
+    return false;
+  }
+  public function addCategory($data){
+    $categroy = new ArticleCategory($data);
+    $args[0] = $categroy ->name;
+    $args[1] = $categroy ->summary;
+    
+    if($this->alreadyExists($category))
+      return false;
+    
+    $this->dao->insert("addArticleCategoryQuery", $args);
+    return true;
+  }
+  public function getCategories(){
+    $args[0] = "ArticleCategory";
     return $this->dao->select("selectAllQuery", $args);
   }
 }?>

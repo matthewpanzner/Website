@@ -26,11 +26,15 @@
     <value>SELECT * FROM Articles WHERE title = '?' AND category = '?'</value>
   </query>
   <query>
-    <name>selectArticleByCategory</name>
-    <value>SELECT title, summary, content, publicationDate FROM Articles, ArticleCategory WHERE Articles.category = '?'</value>
+    <name>selectArticleByCategoryQuery</name>
+    <value>SELECT title, summary, content, publicationDate FROM Articles WHERE category = '?'</value>
   </query>
   <query>
     <name>addArticleCategoryQuery</name>
-    <value>INSERT INTO ArticleCategories (name, summary) VALUES ('?', '?')</value>
+    <value>INSERT INTO ArticleCategory (name, summary) VALUES ('?', '?')</value>
+  </query>
+  <query>
+    <name>selectArticleCategoryByNameQuery</name>
+    <value>SELECT * FROM ArticleCategory WHERE name = '?'</value>
   </query>
 </queries>
