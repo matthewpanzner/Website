@@ -11,6 +11,7 @@ class ArticleService{
   
   private function alreadyExists($article){
     $args[0] = $article->title;
+    $args[1] = $article->category;
     
     if(mysqli_num_rows($this->dao->select("selectArticleByTitleQuery", $args)) > 0)
       return true;

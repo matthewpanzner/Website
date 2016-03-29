@@ -9,5 +9,6 @@ class User extends Entity{
     $this->data['username'] = (isset($data['username'])) ? $data['username'] : "";
 	  $this->data['password'] = (isset($data['password'])) ? $data['password'] : "";
     $this->data['joinDate'] = (isset($data['joinDate'])) ? $data['joinDate'] : "";
+		$this->data['role'] = (isset($data['role'])) ? $data['role'] : "";
   }
 }?>

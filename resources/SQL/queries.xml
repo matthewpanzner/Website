@@ -12,6 +12,10 @@
     <name>selectUserQuery</name>
     <value>SELECT * FROM Users WHERE username = '?' AND password = '?'</value>
   </query>
+  <query>
+    <name>selectRoleQuery</name>
+    <value>SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = '?'</value>
+  </query>
   
   <query>
     <name>addArticleQuery</name>
@@ -19,7 +23,11 @@
   </query>
   <query>
     <name>selectArticleByTitleQuery</name>
-    <value>SELECT * FROM Articles WHERE title = '?'</value>
+    <value>SELECT * FROM Articles WHERE title = '?' AND category = '?'</value>
+  </query>
+  <query>
+    <name>selectArticleByCategory</name>
+    <value>SELECT title, summary, content, publicationDate FROM Articles, ArticleCategory WHERE Articles.category = '?'</value>
   </query>
   <query>
     <name>addArticleCategoryQuery</name>
