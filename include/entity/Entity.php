@@ -9,7 +9,7 @@ class Entity{
     if(array_key_exists($name, $this->data))
       return $this->data[$name];
     else{
-      logMessage("/error.log", "The variable " . $name . " is not set in " . $trace[0]['file'] . " on line " . $trace[0]['line']);
+      logMessage("/error.log", "The variable " . $name . " is not set in " . debug_backtrace()[0]['file'] . " on line " . debug_backtrace()[0]['line']);
       return null;
     }
   }

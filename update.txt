@@ -7,3 +7,5 @@ it stays this way for convenience.
 ----For the most part they are now decoupled.  But refereces to each other through service is known.  This is for the form data in service.
       Added ArticleFormController to handle the issue of sending model to view.  When updating to an actual framework, rather than my own,
       practice framework, these controllers will need tweaking for the adjustment to be less coupled.
+      
+----Fixed trace

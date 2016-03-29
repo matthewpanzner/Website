@@ -29,7 +29,7 @@ class ArticleController extends Controller{
       return new View(null, "home.php");
     }
     else{
-      $this->model['error'] = new ErrorModel("Could not register user!");
+      $this->model['error'] = new ErrorModel("Could not add article!");
       return new View($this->model, "error.php");
     }
   }
