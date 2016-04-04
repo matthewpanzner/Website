@@ -51,5 +51,4 @@ if(isset($_SESSION['logged_in'])){
         </ul>
       </nav>
     </header>
-    <section class="container"
- 
+    <section class="container">

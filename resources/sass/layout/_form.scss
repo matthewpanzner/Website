@@ -1,0 +1,17 @@
+.article-form{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  padding-left: 50px;
+}
+
+.article-form input{
+  padding: 3px;
+}
+
+input[type="text"],
+textarea,
+select{
+  margin: 0 0 10px 0;
+}
