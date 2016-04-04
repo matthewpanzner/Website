@@ -26,12 +26,12 @@ if(isset($_SESSION['logged_in'])){
 <html lang="en">
   <head>
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
-        <ul>
+        <ul class="acc-nav">
 <?php if(!isset($_SESSION['logged_in'])):?>
           <li><a href="index.php?route=login">Login</a></li>
           <li><a href="index.php?route=registration">Register</a></li>
@@ -42,6 +42,8 @@ if(isset($_SESSION['logged_in'])){
           <li><a href="index.php?route=admin/article-category-form">Add Article Category</li>
 <?php endif;?>
 <?php endif;?>
+        </ul>
+        <ul class="main-nav">
           <li><a href="index.php">Home</a></li>
           <li><a href="index.php?route=about">About</a></li>
           <li><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Article Categories</a></li>
@@ -49,4 +51,5 @@ if(isset($_SESSION['logged_in'])){
         </ul>
       </nav>
     </header>
+    <section class="container"
  

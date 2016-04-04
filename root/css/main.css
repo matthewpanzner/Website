@@ -19,49 +19,66 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
+
 body {
-  line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
+
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
-ul {
-  list-style-type: none;
-}
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
+  border-spacing: 0; }
 
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
+ul, ol {
+  list-style: none; }
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+
+.main-nav,
+.acc-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end; }
+
+.main-nav {
+  padding: 10px;
+  background-color: blue; }
+
+.main-nav a {
+  color: white; }
+
+.main-nav a,
+.acc-nav a {
+  text-decoration: none;
+  padding: 10px; }
+
+@media all and (max-width: 800px) {
+  .main-nav {
+    justify-content: space-around; } }
+@media all and (max-width: 400px) {
+  .main-nav {
+    flex-flow: column wrap; }
+
+  .main-nav a {
+    text-align: center;
+    padding: 8px; } }
+
+/*# sourceMappingURL=main.css.map */

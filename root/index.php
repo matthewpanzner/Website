@@ -1,4 +1,5 @@
 <?php
+//header('location: test.html');
 session_start();
 require_once "../include/config.php";
 require_once CORE_DIR . "/FrontController.php";

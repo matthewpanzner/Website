@@ -1,9 +1,5 @@
-    <footer>
-      <ul>
-        <li>ONE</li>
-        <li>TWO</li>
-        <li>THREE</li>
-      </ul>
+    </section>
+    <footer class="container">
     </footer>
   </body>
 </html>

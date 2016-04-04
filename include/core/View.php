@@ -9,7 +9,6 @@ class View{
     $this->model = $model;
    
     include(TEMPLATE_DIR . "/frontend/header.php");
-    include(TEMPLATE_DIR . "/frontend/leftPanel.php");
     include(CLASS_DIR . "/view/" . $path);
     include(TEMPLATE_DIR . "/frontend/footer.php");
   }

@@ -44,24 +44,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-ul {
-  list-style-type: none;
-}
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
+ul, ol{
+  list-style: none;
 }
