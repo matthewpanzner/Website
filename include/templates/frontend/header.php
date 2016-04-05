@@ -26,11 +26,12 @@ if(isset($_SESSION['logged_in'])){
 <html lang="en">
   <head>
     <title>Home</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <header class="container">
-      <nav>
+    <header>
+      <nav class="container">
         <ul class="acc-nav">
 <?php if(!isset($_SESSION['logged_in'])):?>
           <li><a href="index.php?route=login">Login</a></li>
@@ -39,15 +40,16 @@ if(isset($_SESSION['logged_in'])){
           <li><a href="index.php?controller=LoginController&action=onLogout">Logout</a></li>
 <?php if(isset($role) && $role==="admin"): ?>
           <li><a href="index.php?controller=ArticleFormController&action=onLoad">Add Article</a></li>
-          <li><a href="index.php?route=admin/article-category-form">Add Article Category</li>
+          <li><a href="index.php?route=admin/article-category-form">Add Article Category</a></li>
 <?php endif;?>
 <?php endif;?>
         </ul>
         <ul class="main-nav">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="index.php?route=about">About</a></li>
-          <li><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Article Categories</a></li>
-          <li><a href="index.php?route=contact">Contact</a></li>
+          <li class="main-nav__item"><a href="index.php">Home</a></li>
+          <li class="main-nav__item"><a href="index.php?route=about">About</a></li>
+          <li class="main-nav__item"><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Articles</a></li>
+          <li class="main-nav__item"><a href="index.php?route=contact">Contact</a></li>
+          <li class="main-nav__item"><a href="#">正解</a></li>
         </ul>
       </nav>
     </header>

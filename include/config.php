@@ -52,7 +52,7 @@ function logMessage($file, $message){
   $date = null;
 }
 
-function formateHtml($html, $indent_val){
+function formatHtml($html, $indent_val){
   $fhtml = "";
 
   $lines = explode("\n",$html);

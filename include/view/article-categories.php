@@ -16,4 +16,4 @@ if(mysqli_num_rows($this->model['categories'])){
   }
 }
 $html .= "</table>";
-echo formateHtml($html, 4);?>
+echo formatHtml($html, 4);?>

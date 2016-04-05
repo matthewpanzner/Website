@@ -2,8 +2,8 @@ body {
   margin-left: 50px;
   margin-right: 50px; }
 
-.main-nav ul {
-  list-style: none;
+.main-nav{
+  list-style: none; width: 100%;
   margin: 0;
   background: deepskyblue;
   display: flex;
@@ -20,16 +20,16 @@ body {
   background: #00b7f5; }
 
 @media all and (max-width: 800px) {
-  .main-nav ul {
+  .main-nav{
     justify-content: space-around; } }
 @media all and (max-width: 425px) {
   body {
     margin-right: 0px;
     margin-left: 0px; }
 
-  .main-nav ul {
+  .main-nav{
     flex-flow: column wrap;
-    padding: 0px; }
+  }
 
   .main-nav a {
     text-align: center;
@@ -37,7 +37,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-  .main-nav ul li:last-of-type a {
+  .main-nav li:last-of-type a {
     border-bottom: none; } }
 
 /*# sourceMappingURL=test.css.map */
