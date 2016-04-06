@@ -1,84 +1,93 @@
-/********************
-*** CSS Reset
-*********************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
-  line-height: 1; }
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #E3E3E3;
+  margin: 0;
+  margin-top: 50px; }
+  body ul {
+    margin: 0; }
 
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-ul, ol {
-  list-style: none; }
-
+@media all and (max-width: 768px) {
+  body {
+    margin-top: 0px; } }
 .container {
-  width: 1080px;
-  margin: 0 auto;
-  padding-bottom: 20px; }
+  margin: 16px 64px; }
 
-.main-nav,
-.acc-nav {
+.flex-container {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start; }
+
+@media all and (max-width: 768px) {
+  .flex-container,
+  .container {
+    margin: 0px; } }
+.content-flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 30px 12%;
+  border: solid 2px black;
+  border-radius: 2px;
+  background-color: white; }
+
+.content {
+  display: block;
+  margin: 2% 3%; }
+
+@media all and (max-width: 768px) {
+  .content-flex-container {
+    margin: 1%;
+    padding: 0px; } }
+.base-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  padding-top: 32px;
+  padding-left: 128px; }
+
+.base-form input {
+  padding: 3px; }
+
+input[type="text"],
+textarea,
+select {
+  margin: 0 0 10px 0; }
+
+.main-nav, .acc-nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end; }
+  justify-content: center;
+  align-self: flex-end;
+  list-style: none; }
 
 .main-nav {
-  padding: 10px;
-  background-color: blue; }
-
-.main-nav a {
-  color: white; }
-
-.main-nav a,
-.acc-nav a {
-  text-decoration: none;
-  padding: 10px; }
-
-@media all and (max-width: 800px) {
-  .main-nav {
-    justify-content: space-around; } }
-@media all and (max-width: 400px) {
-  .main-nav {
-    flex-flow: column wrap; }
-
+  width: 100%;
+  background: #434343;
+  position: fixed;
+  overflow: hidden;
+  top: 0px; }
   .main-nav a {
-    text-align: center;
-    padding: 8px; } }
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+    color: white; }
+  .main-nav a:hover {
+    background: #00b7f5; }
+
+.acc-nav a {
+  padding-right: 8px; }
+
+@media all and (max-width: 768px) {
+  .main-nav {
+    position: static;
+    flex-flow: column nowrap; }
+    .main-nav a {
+      text-align: center;
+      padding: 4px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .main-nav li:last-of-type a {
+      border-bottom: none; } }
 
 /*# sourceMappingURL=main.css.map */

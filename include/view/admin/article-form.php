@@ -1,8 +1,8 @@
 <?php if(!isset($role) || $role !== "admin") header("Location: index.php");?>
-      <form action="index.php?controller=ArticleController&action=onAdd" method="post">
-        <input type="text" name="title" placeholder="title" required/>
-        <input type="text" name="summary" placeholder="summary" required/>
-        <input type="text" name="content" placeholder="content" required/>
+      <form class="base-form" action="index.php?controller=ArticleController&action=onAdd" method="post">
+        <input type="text" name="title" placeholder="title" required autofocus/>
+        <textarea rows="5" cols="30" name="summary" placeholder="summary" required></textarea>
+        <textarea rows="20" cols="64" type="text" name="content" placeholder="content" required></textarea>
         <input type="text" name="publication-date" value=<?php echo date("Y-m-d")?> readonly required/>
 <?php
 $html = "    <select name='category'>\n";
@@ -12,6 +12,6 @@ if(mysqli_num_rows($this->model['categories'])){
   }
 }
 $html .= "    </select>";
-echo formateHtml($html, 4);?>
+echo formatHtml($html, 4);?>
         <input type="submit"/>       
       </form>

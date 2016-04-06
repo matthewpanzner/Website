@@ -1,0 +1,17 @@
+$mobile-width: 768px;
+
+body{
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #E3E3E3;
+  margin: 0;
+  margin-top: 50px;
+  ul{
+    margin: 0;
+  }
+}
+
+@media all and (max-width: $mobile-width){
+  body{
+    margin-top: 0px;
+  }
+}
