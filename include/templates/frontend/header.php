@@ -22,28 +22,17 @@ if(isset($_SESSION['logged_in'])){
   }
 }?>
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Home</title>
-    <meta charset="UTF-8">
+    <meta type="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <header>
-      <nav class="container">
-        <ul class="acc-nav">
-<?php if(!isset($_SESSION['logged_in'])):?>
-          <li><a href="index.php?route=login">Login</a></li>
-          <li><a href="index.php?route=registration">Register</a></li>
-<?php else: ?>
-          <li><a href="index.php?controller=LoginController&action=onLogout">Logout</a></li>
-<?php if(isset($role) && $role==="admin"): ?>
-          <li><a href="index.php?controller=ArticleFormController&action=onLoad">Add Article</a></li>
-          <li><a href="index.php?route=admin/article-category-form">Add Article Category</a></li>
-<?php endif;?>
-<?php endif;?>
-        </ul>
+      <nav class="flex-container">
         <ul class="main-nav">
           <li class="main-nav__item"><a href="index.php">Home</a></li>
           <li class="main-nav__item"><a href="index.php?route=about">About</a></li>

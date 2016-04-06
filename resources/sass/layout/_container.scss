@@ -1,13 +1,16 @@
-.container {
+.container{
+  margin: 16px 64px;
+}
+.flex-container {
   align-items: flex-start;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  margin: 8px 32px;
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: $mobile-width){
+  .flex-container,
   .container{
-   // margin: 0px;
+    margin: 0px;
   }
 }

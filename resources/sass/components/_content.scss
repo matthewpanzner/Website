@@ -1,0 +1,21 @@
+.content-flex-container{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 30px 12%;
+  
+  border: solid 2px black;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.content{
+  display: block;
+  margin: 2% 3%;
+}
+
+@media all and (max-width: $mobile-width){
+  .content-flex-container{
+    margin: 1%;
+    padding: 0px;
+  }
+}
