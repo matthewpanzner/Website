@@ -2087,3 +2087,9 @@ About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = Pri
 Executed successfully, rows: 1 /////1459975914 = 2016-04-06 16:51:54
 About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1459975943 = 2016-04-06 16:52:23
 Executed successfully, rows: 1 /////1459975943 = 2016-04-06 16:52:23
+About to execute: SELECT * FROM ArticleCategory /////1459979423 = 2016-04-06 17:50:23
+Executed successfully, rows: 5 /////1459979423 = 2016-04-06 17:50:23
+About to execute: SELECT * FROM ArticleCategory /////1459979476 = 2016-04-06 17:51:16
+Executed successfully, rows: 5 /////1459979476 = 2016-04-06 17:51:16
+About to execute: SELECT title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1459979482 = 2016-04-06 17:51:22
+Executed successfully, rows: 1 /////1459979482 = 2016-04-06 17:51:22
