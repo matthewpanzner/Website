@@ -1,10 +1,8 @@
 .base-form{
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-flow: column wrap;
-  padding-top: 32px;
-  padding-left: 128px;
 }
 
 .base-form input{
