@@ -38,8 +38,8 @@ if(isset($_SESSION['logged_in'])){
           <li class="main-nav__item"><a href="index.php?route=about">About</a></li>
           <li class="main-nav__item"><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Articles</a></li>
           <li class="main-nav__item"><a href="index.php?route=contact">Contact</a></li>
-          <li class="main-nav__item"><a href="#">正解</a></li>
+          <li class="main-nav__item"><a href="index.php?route=test">正解</a></li>
         </ul>
       </nav>
     </header>
-    <section class="container">
+    <section class="main">

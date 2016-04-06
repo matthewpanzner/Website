@@ -1,5 +1,5 @@
     </section>
-    <footer class="container">
+    <footer class="primary-footer">
       <ul class="acc-nav">
 <?php if(!isset($_SESSION['logged_in'])):?>
         <li><a href="index.php?route=login">Login</a></li>

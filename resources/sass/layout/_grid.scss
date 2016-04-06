@@ -1,9 +1,56 @@
 .grid{
-  
+  display: flex;
+  flex-wrap: wrap;
 }
-.grid-row{
-  
+
+.grid_cell{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.griw-col{
-  
+
+.grid_cell--content{
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 5px;
+  width: 100%;
+}
+.grid_cell--content{
+  p{
+    flex: 1 0 auto;
+  }
+}
+
+.grid-1-3{
+  .grid_cell{
+    width: 33.33%;
+  }
+}
+
+.grid-1-2{
+  .grid_cell{
+    width: 50%;
+  }
+}
+
+.grid-1-4{
+  .grid_cell{
+    width: 25%;
+  }
+}
+.grid--center{
+  justify-content: center;
+}
+@media all and (max-width: $mobile-width){
+  .grid{
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+   .grid_cell{
+      width: 100%;
+    }
+  }
 }

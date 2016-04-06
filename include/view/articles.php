@@ -1,21 +1,20 @@
 <?php 
-$html = "<table>\n";
+$html = "<div class='container grid grid-1-3'>\n";
 if(mysqli_num_rows($this->model['articles'])){
-  $html .= "  <tr>\n";
-  $html .= "    <th>Title</th>\n";
-  $html .= "    <th>Summary</th>\n";
-  $html .= "  </tr>\n";
   while($row = mysqli_fetch_row($this->model['articles'])){
-    $html .= "  <tr>\n";
+    $html .= "    <div class='grid_cell'>\n";
+    $html .= "      <div class='grid_cell--content'>\n";
+    
     foreach($row as $key=>$value){
 
       if($key === 2)
-        $html .= "    <td>" . htmlspecialchars_decode($value) . " </td>\n";
+        $html .= "      <h1>" . htmlspecialchars_decode($value) . " </h1>\n";
       else
-        $html .= "    <td>" . $value . "</td>\n";
+        $html .= "      <p>" . $value . "</p>\n";
     }
-    $html .= "  </tr>\n";
+    $html .= "    </div>\n";
+    $html .= "  </div>\n";
   }
 }
-$html .= "</table>";
+$html .= "</div>";
 echo formatHtml($html, 4);?>
