@@ -39,6 +39,9 @@ body {
 .grid-1-4 .grid_cell {
   width: 25%; }
 
+.grid-2-3 > .grid_cell {
+  width: 66.66%; }
+
 .grid--center {
   justify-content: center; }
 
@@ -69,7 +72,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   margin: 30px 12%;
-  border: solid 2px black;
   border-radius: 2px;
   background-color: white; }
 

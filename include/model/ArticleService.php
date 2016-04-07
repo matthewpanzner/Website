@@ -53,9 +53,9 @@ class ArticleService{
     
     $data['id'] = $row[0];
     $data['publicationDate'] = $row[1];
-    $data['title'] = $row[2];
-    $data['summary'] = $row[3];
-    $data['content'] = $row[4];
+    $data['title'] = htmlspecialchars_decode($row[2]);
+    $data['summary'] = htmlspecialchars_decode($row[3]);
+    $data['content'] = htmlspecialchars_decode($row[4]);
     
     return new Article($data);
   }

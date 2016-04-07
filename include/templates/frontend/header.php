@@ -1,6 +1,6 @@
 <?php
 //Check role privilege and any weird bugs with session
-$role = null;
+$role = null; //this should probably be replaced with a check whenever used.
 if(isset($_SESSION['logged_in'])){
   if(isset($_SESSION['username'])){
     $args[0] = $_SESSION['username'];
