@@ -22,6 +22,8 @@ class ArticleService{
     <name>addArticleQuery</name>
     <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
   </query>*/
+  
+  //Add an article by the given data
   public function addArticle($data){
     $article = new Article($data);
     $args[0] = $article->publicationDate;
@@ -37,11 +39,26 @@ class ArticleService{
     return true;
   }
   
+  //Get all the articles 
   public function getArticles(){
     $args[0] = "Articles";
     return $this->dao->select("selectAllQuery", $args);
   }
   
+  //Get an article based on the id parameter
+  public function getArticle($id){
+    $args[0] = $id;
+    $res = $this->dao->select("selectArticleByIdQuery", $args);
+    $row = mysqli_fetch_row($res);
+    
+    $data['id'] = $row[0];
+    $data['publicationDate'] = $row[1];
+    $data['title'] = $row[2];
+    $data['summary'] = $row[3];
+    $data['content'] = $row[4];
+    
+    return new Article($data);
+  }
   
   //*****************************************************
   //  Category branch of it --- looking for better solution

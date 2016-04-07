@@ -1,4 +1,4 @@
- <section class="article"><secion class="content">     <p>
+ <section class="article"><section class="content">     <p>
         猫と遊ぶ
         
         <h1>HTML Ipsum Presents</h1>

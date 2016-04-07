@@ -1,1 +1,1 @@
-<?php echo $this->model['error']->getMsg();?>
+<?php echo "Error: " . $this->model['error']->getMsg();?>
