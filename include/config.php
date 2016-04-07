@@ -52,6 +52,16 @@ function logMessage($file, $message){
   $date = null;
 }
 
+defined("LOG_BACKUP_QUERIES")
+  or define("LOG_BACKUP_QUERIES", true);
+
+function logBackupQuery($message){
+  if(!file_exists(LOG_DIR . "/backup.sql"))
+    fopen(LOG_DIR . "/backup.sql", 'w+') or die("Unable to open " . "/backup.sql");
+  
+  file_put_contents(LOG_DIR . "/backup.sql", $message . ";\n", FILE_APPEND | LOCK_EX);
+}
+     
 function formatHtml($html, $indent_val){
   $fhtml = "";
 

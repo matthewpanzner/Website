@@ -14,7 +14,7 @@ class DAO{
   }
   
   public function select($queryName, $args){
-    $link = DBConnection::createConnection("Test");
+    $link = DBConnection::createConnection("Website");
     $query = (string)QueryFactory::create($this->queryMap->get($queryName), $args)->getQuery();
     
     logMessage("/query.log", "About to execute: " . $query);
@@ -25,12 +25,16 @@ class DAO{
     return $result;
   }  
   public function update($queryName, $args){
-    $link = DBConnection::createConnection("Test");
+    $link = DBConnection::createConnection("Website");
     $query = (string)QueryFactory::create($this->queryMap->get($queryName), $args)->getQuery();
     
     logMessage("/query.log", "About to execute: " . $query);
     $result = mysqli_query($link, $query) or die(mysql_error());
     logMessage("/query.log", "Executed successfully");
+    
+    if(LOG_BACKUP_QUERIES){
+      logBackupQuery($query);
+    }
     
     DBConnection::closeConnection();
   }
