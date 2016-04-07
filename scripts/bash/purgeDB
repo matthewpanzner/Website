@@ -1,0 +1,4 @@
+#!/bin/bash
+mysql -u root -p << EOF
+source ../SQL/Database/build.sql
+EOF

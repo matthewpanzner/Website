@@ -3080,3 +3080,11 @@ About to execute: SELECT articleId, title, summary, content, publicationDate FRO
 Executed successfully, rows: 5 /////1460051643 = 2016-04-07 13:54:03
 About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460051643 = 2016-04-07 13:54:03
 Executed successfully, rows: 1 /////1460051643 = 2016-04-07 13:54:03
+About to execute: SELECT * FROM ArticleCategory /////1460051732 = 2016-04-07 13:55:32
+Executed successfully, rows: 4 /////1460051732 = 2016-04-07 13:55:32
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460051732 = 2016-04-07 13:55:32
+Executed successfully, rows: 1 /////1460051732 = 2016-04-07 13:55:32
+About to execute: SELECT * FROM ArticleCategory /////1460051796 = 2016-04-07 13:56:36
+Executed successfully, rows: 0 /////1460051796 = 2016-04-07 13:56:36
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460051796 = 2016-04-07 13:56:36
+Executed successfully, rows: 0 /////1460051796 = 2016-04-07 13:56:36
