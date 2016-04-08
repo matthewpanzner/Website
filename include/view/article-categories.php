@@ -21,6 +21,9 @@ if(mysqli_num_rows($this->model['categories'])){
     $html .= "  </div>\n";
   }
 }
+else{
+  $html = "There are no articles!";
+}
 
 if($role == 'admin'){
   $html .= "    <div class='grid_cell'>\n";
