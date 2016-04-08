@@ -34,7 +34,6 @@ if(isset($_SESSION['logged_in'])){
     <header>
       <nav class="flex-container">
         <ul class="main-nav">
-          <li class="main-nav__item"><a href="index.php">Home</a></li>
           <li class="main-nav__item"><a href="index.php?route=about">About</a></li>
           <li class="main-nav__item"><a href="index.php?controller=ArticleCategoryController&action=onGetCategories">Articles</a></li>
           <li class="main-nav__item"><a href="index.php?route=contact">Contact</a></li>

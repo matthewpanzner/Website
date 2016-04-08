@@ -22,3 +22,7 @@ About to execute: SELECT * FROM ArticleCategory /////1460149166 = 2016-04-08 16:
 Executed successfully, rows: 2 /////1460149166 = 2016-04-08 16:59:26
 About to execute: SELECT * FROM ArticleCategory /////1460149169 = 2016-04-08 16:59:29
 Executed successfully, rows: 2 /////1460149169 = 2016-04-08 16:59:29
+About to execute: SELECT * FROM ArticleCategory /////1460149273 = 2016-04-08 17:01:13
+Executed successfully, rows: 2 /////1460149273 = 2016-04-08 17:01:13
+About to execute: SELECT * FROM ArticleCategory /////1460149312 = 2016-04-08 17:01:52
+Executed successfully, rows: 2 /////1460149312 = 2016-04-08 17:01:52
