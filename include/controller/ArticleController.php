@@ -59,10 +59,39 @@ class ArticleController extends Controller{
     }
   }
   
+  //********************************
+  //  Update Article
+  //
   public function onUpdate(){
-      if(!$this->authenticate("admin")){
+    
+    
+    if(!$this->authenticate("admin")){
         $this->model['error'] = new ErrorModel("Unauthorized Access");
         return new View($this->model, "error.php");
+    }
+    if(!isset($_GET['id'])){
+      $this->model['error'] = new ErrorModel("Unresolvsed URI");
+      return new View($this->model, "error.php");
+    }
+    if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+      logMessage("/error.log", var_dump($_POST));
+      $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
+      return new View($this->model, "error.php");
+    }
+    
+    $service = new ArticleService();
+    $article = $service->getArticle($_GET['id']);
+    $article->title = $_POST['title'];
+    $article->category = $_POST['category'];
+    $article->summary = $_POST['summary'];
+    $article->content = $_POST['content'];
+    
+    if($service->updateArticle($article)){
+      return new View(null, "home.php");
+    }
+    else{
+      $this->model['error'] = new ErrorModel("Error in updating!");
+      return new View($this->model, "error.php");
     }
   }
   

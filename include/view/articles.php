@@ -14,7 +14,8 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
     }
     
     if($role == 'admin'){
-      $html .= "        <a href='index.php?controller=ArticleController&action=onDelete&id=" . $row[0] . "'>delete</a>  <a href='#'>edit</a>\n";
+      $html .= "        <a href='index.php?controller=ArticleController&action=onDelete&id=" . $row[0] . "'>delete</a>\n";
+      $html .= "        <a href='index.php?controller=ArticleFormController&action=onLoad&id=" . $row[0] . "'>edit</a>\n";
     }
     
     $html .= "    </div>\n";
@@ -25,7 +26,7 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
 if($role == 'admin'){
   $html .= "    <div class='grid_cell'>\n";
   $html .= "      <div class='grid_cell--content'>\n";
-  $html .= "        <a href='#'>add</a>";
+  $html .= "        <a href='index.php?controller=ArticleFormController&action=onLoad&c=". $_GET['c'] . "'>add</a>";
   $html .= "      </div>";
   $html .= "    </div>";
 }

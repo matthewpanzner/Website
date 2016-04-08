@@ -18,6 +18,13 @@ class ArticleService{
     return false;
   }
   
+  private function alreadyExistsById($id){
+    $args[0] = $id;
+    
+    if(mysqli_num_rows($this->dao->select("selectArticleByIdQuery", $args)) > 0)
+      return true;
+    return false;
+  }
 /*<query>
     <name>addArticleQuery</name>
     <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
@@ -40,8 +47,7 @@ class ArticleService{
   }
   
   /*<value>UPDATE Articles SET publicationDate='?',title='?',summary='?',content='?',category='?' WHERE articleId='?'</value>*/
-  public function updateArticle($data){
-    $article = new Article($data);
+  public function updateArticle($article){
     $args[0] = $article->publicationDate;
     $args[1] = $article->title;
     $args[2] = $article->summary;
@@ -49,7 +55,7 @@ class ArticleService{
     $args[4] = $article->category;
     $args[5] = $article->id;
     
-    if(!$this->alreadyExists($article))
+    if(!$this->alreadyExistsById($article->id))
       return false;
     
     $this->dao->update("updateArticleQuery", $args);
@@ -78,6 +84,7 @@ class ArticleService{
     $data['title'] = htmlspecialchars_decode($row[2]);
     $data['summary'] = htmlspecialchars_decode($row[3]);
     $data['content'] = htmlspecialchars_decode($row[4]);
+    $data['category'] = $row[5];
     
     return new Article($data);
   }
