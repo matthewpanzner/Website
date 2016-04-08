@@ -1,20 +1,20 @@
 .article{
   display: flex;
   flex-flow: column nowrap;
-  margin: 30px 12%;
   
+  margin: 2%;
   border-radius: 2px;
   background-color: white;
 }
 
 .content{
   display: block;
-  margin: 2% 3%;
+  margin: 2% 5%;
 }
 
 @media all and (max-width: $mobile-width){
-  .content-flex-container{
-    margin: 1%;
+  .article{
+    margin: 0;
     padding: 0px;
   }
 }

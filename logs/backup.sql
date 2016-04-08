@@ -196,3 +196,45 @@ edited
 -Matthew Panzner 
 ',category='3' WHERE articleId='1';
 DELETE FROM Articles WHERE articleId='1' ;
+INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-08', 'One', 'one', 'one
+', '3');
+INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-08', 'two', 'two', 'two
+', '3');
+INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-08', 'three', 'three', 'three', '3');
+DELETE FROM Articles WHERE articleId='3' ;
+DELETE FROM Articles WHERE articleId='5' ;
+DELETE FROM Articles WHERE articleId='4' ;
+INSERT INTO ArticleCategory (name, summary) VALUES ('Dummy', 'dummy');
+DELETE FROM ArticleCategory WHERE id='4';
+INSERT INTO ArticleCategory (name, summary) VALUES ('dummy', 'dummy');
+INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-08', 'dummpost', '...', '..
+', '5');
+DELETE FROM ArticleCategory WHERE id='5';
+INSERT INTO ArticleCategory (name, summary) VALUES ('dummy', 'dummy');
+DELETE FROM ArticleCategory WHERE id='6';
+INSERT INTO ArticleCategory (name, summary) VALUES ('dummy', 'dummy');
+INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-08', 'dummy', 'dummy', 'dummy', '7');
+DELETE FROM Articles WHERE articleId='8' ;
+DELETE FROM ArticleCategory WHERE id='7';
+INSERT INTO ArticleCategory (name, summary) VALUES ('Test', 'test');
+DELETE FROM ArticleCategory WHERE id='8';
+INSERT INTO ArticleCategory (name, summary) VALUES ('test', 'test');
+DELETE FROM ArticleCategory WHERE id='9';
+INSERT INTO ArticleCategory (name, summary) VALUES ('test', 'test');
+DELETE FROM ArticleCategory WHERE id='10';
+INSERT INTO ArticleCategory (name, summary) VALUES ('Test', 'test');
+INSERT INTO ArticleCategory (name, summary) VALUES ('test2', 'test2');
+INSERT INTO ArticleCategory (name, summary) VALUES ('test3', 'test3');
+INSERT INTO ArticleCategory (name, summary) VALUES ('article4', '3');
+INSERT INTO ArticleCategory (name, summary) VALUES ('anoter', '..');
+DELETE FROM ArticleCategory WHERE id='15';
+DELETE FROM ArticleCategory WHERE id='13';
+DELETE FROM ArticleCategory WHERE id='13';
+DELETE FROM ArticleCategory WHERE id='11';
+DELETE FROM ArticleCategory WHERE id='12';
+DELETE FROM ArticleCategory WHERE id='14';
+INSERT INTO ArticleCategory (name, summary) VALUES ('dummy', 'dummy');
+DELETE FROM ArticleCategory WHERE id='16';
+INSERT INTO ArticleCategory (name, summary) VALUES ('d', 'k');
+DELETE FROM ArticleCategory WHERE id='17';
+DELETE FROM ArticleCategory WHERE id='1';

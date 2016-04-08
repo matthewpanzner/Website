@@ -38,7 +38,7 @@ class ArticleController extends Controller{
   }
   
   public function onDelete(){
-      if(!$this->authenticate("admin")){
+    if(!$this->authenticate("admin")){
         $this->model['error'] = new ErrorModel("Unauthorized Access");
         return new View($this->model, "error.php");
     }

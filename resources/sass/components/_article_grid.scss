@@ -1,0 +1,16 @@
+.article_cell{
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover{
+    color: #434343
+  }
+  #article-delete,
+  #article-edit{
+    color: blue;
+    text-decoration: underline;
+    align-self: flex-end;
+  }
+}

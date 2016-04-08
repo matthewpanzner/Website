@@ -49,7 +49,15 @@
     <value>INSERT INTO ArticleCategory (name, summary) VALUES ('?', '?')</value>
   </query>
   <query>
+    <name>deleteArticleCategoryQuery</name>
+    <value>DELETE FROM ArticleCategory WHERE id='?'</value>
+  </query>
+  <query>
     <name>selectArticleCategoryByNameQuery</name>
     <value>SELECT * FROM ArticleCategory WHERE name = '?'</value>
+  </query>
+  <query>
+    <name>countArticlesInCategoryQuery</name>
+    <value>SELECT COUNT(*) FROM Articles WHERE category='?'</value>
   </query>
 </queries>

@@ -17,7 +17,14 @@
   padding: 1em;
   margin: 5px;
   width: 100%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
+
+.grid_cell--content:hover{
+  z-index: 0;
+  background-color: ;
+}
+
 .grid_cell--content{
   p{
     flex: 1 0 auto;
@@ -49,6 +56,7 @@
 .grid--center{
   justify-content: center;
 }
+
 @media all and (max-width: $mobile-width){
   .grid{
     flex-flow: column nowrap;

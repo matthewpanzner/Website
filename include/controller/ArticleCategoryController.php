@@ -19,13 +19,40 @@ class ArticleCategoryController extends Controller{
       "name" => $_POST["title"],
       "summary" => $_POST["summary"]
     ];
-    echo $_POST["title"];
+    
     if($service->addCategory($data)){
       $this->model['msg'] = "Successfully added";
-      return new View(null, "home.php");
+      $this->model['reroute'] = true;
+      $category = $service->getCategory($data["name"]);
+      return new View($this->model, "index.php?controller=ArticleController&action=onGetArticlesByCategory&c=" . $category->id);
     }
     else{
       $this->model['error'] = new ErrorModel("Could not add category!");
+      return new View($this->model, "error.php");
+    }
+  }
+  
+  public function onDelete(){
+    if(!$this->authenticate("admin")){
+        $this->model['error'] = new ErrorModel("Unauthorized Access");
+        return new View($this->model, "error.php");
+    }
+    
+    $service = new ArticleCategoryService();
+    
+    if(!isset($_GET['id'])){
+      $this->model['error'] = new ErrorModel("Unresolvsed URI");
+      return new View($this->model, "error.php");
+    }  
+    
+    if($service->deleteCategory($_GET['id'])){
+      $this->model['msg'] = "Deletion was successful";
+      $this->model['reroute'] = true;
+      
+      return new View($this->model, "index.php?controller=ArticleCategoryController&action=onGetCategories");
+    }
+    else{
+      $this->model['error'] = new ErrorModel("Error in deleting!");
       return new View($this->model, "error.php");
     }
   }

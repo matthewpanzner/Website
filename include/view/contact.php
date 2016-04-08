@@ -1,7 +1,7 @@
       <!--This is practing the grid CSS that I made-->
       <section class="container">
         <!--Create a grid-->
-        <div class="grid grid-1-2 grid--center">
+        <div class="grid grid-1-1 grid--center">
           <!--Create a cell in that grid, this grid is one cell-->
           <div class="grid_cell">
             <!--Add content to the cell, the content will be another grid-->
