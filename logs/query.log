@@ -6531,3 +6531,5 @@ About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = Pri
 Executed successfully, rows: 1 /////1460144793 = 2016-04-08 15:46:33
 About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460144852 = 2016-04-08 15:47:32
 Executed successfully, rows: 1 /////1460144852 = 2016-04-08 15:47:32
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460144910 = 2016-04-08 15:48:30
+Executed successfully, rows: 1 /////1460144910 = 2016-04-08 15:48:30
