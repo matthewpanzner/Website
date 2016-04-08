@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo sass --watch ../../resources/sass/main.scss:../../root/css/main.css

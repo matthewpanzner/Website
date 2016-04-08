@@ -1,0 +1,38 @@
+#about-grid_cell--content{
+  font: 300 12px Consolas;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  border-radius: 0px;
+  box-shadow: none;
+  
+  #about--input, 
+  #about--input-label{
+    font: 300 12px Consolas;
+    margin: 0;
+    border-top: solid 2px grey;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+  }
+
+  p, label{
+    color:white;
+    margin: 0;
+  }
+  
+  input:focus{
+     outline: none;
+  }
+}
+
+#about-grid_cell{
+  .grid_cell--content{
+    flex-flow: row wrap;
+    
+    :nth-child(2){
+      flex: 1;
+    }
+  }
+}

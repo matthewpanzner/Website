@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo rm ../../logs/*
+sudo touch ../../logs/query.log
+sudo touch ../../logs/error.log
+sudo touch ../../logs/backup.sql
+sudo chown -R www-data ../../logs
+sudo chgrp -R www-data ../../logs
