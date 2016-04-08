@@ -2,6 +2,9 @@
 require_once(CLASS_DIR . "/model/ArticleService.php");
 
 class ArticleController extends Controller{
+  //*************************************************
+  // PRIMARY MANIPULATION FUNCTIONS
+  //*************************************************
   public function onAdd(){
     if(!$this->authenticate("admin")){
       $this->model['error'] = new ErrorModel("Unauthorized Access");
@@ -34,6 +37,38 @@ class ArticleController extends Controller{
     }
   }
   
+  public function onDelete(){
+      if(!$this->authenticate("admin")){
+        $this->model['error'] = new ErrorModel("Unauthorized Access");
+        return new View($this->model, "error.php");
+    }
+    
+    $service = new ArticleService();
+    
+    if(!isset($_GET['id'])){
+      $this->model['error'] = new ErrorModel("Unresolvsed URI");
+      return new View($this->model, "error.php");
+    }
+    
+    if($service->deleteArticle($_GET['id'])){
+      return new View(null, "home.php");
+    }
+    else{
+      $this->model['error'] = new ErrorModel("Error in deleting!");
+      return new View($this->model, "error.php");
+    }
+  }
+  
+  public function onUpdate(){
+      if(!$this->authenticate("admin")){
+        $this->model['error'] = new ErrorModel("Unauthorized Access");
+        return new View($this->model, "error.php");
+    }
+  }
+  
+  //***********************************************************
+  // PRIMARY GET FUNCTIONS
+  //***********************************************************
   public function onGetArticles(){
     $service = new ArticleService();
     $this->model['articles'] = $service->getArticles();

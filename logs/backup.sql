@@ -44,3 +44,5 @@ Hopefully I can get to these soon since I have a working model.&lt;/p&gt;
 INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-07', 'Test', '&lt;a href=&quot;#&quot;&gt;Works?&lt;/a&gt;', '...
 ', '3');
 INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('2016-04-07', '&lt;a href=&#039;#&#039;&gt;Test2&lt;/a&gt;', '...', '...', '1');
+INSERT INTO Users (Username, Password) VALUES ('user','');
+DELETE FROM Articles WHERE articleId='3' ;

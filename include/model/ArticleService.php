@@ -39,6 +39,28 @@ class ArticleService{
     return true;
   }
   
+  /*<value>UPDATE Articles SET publicationDate='?',title='?',summary='?',content='?',category='?' WHERE articleId='?'</value>*/
+  public function updateArticle($data){
+    $article = new Article($data);
+    $args[0] = $article->publicationDate;
+    $args[1] = $article->title;
+    $args[2] = $article->summary;
+    $args[3] = $article->content;
+    $args[4] = $article->category;
+    $args[5] = $article->id;
+    
+    if(!$this->alreadyExists($article))
+      return false;
+    
+    $this->dao->update("updateArticleQuery", $args);
+    return true;
+  }
+  public function deleteArticle($id){
+    $args[0] = $id;
+    $this->dao->delete("deleteArticleQuery", $args); // do check here later for how many rows effected
+    return true;
+  }
+  
   //Get all the articles 
   public function getArticles(){
     $args[0] = "Articles";

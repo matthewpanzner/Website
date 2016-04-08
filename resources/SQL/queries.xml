@@ -23,6 +23,14 @@
     <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
   </query>
   <query>
+    <name>updateArticleQuery</name>
+    <value>UPDATE Articles SET publicationDate='?',title='?',summary='?',content='?',category='?' WHERE articleId='?'</value>
+  </query>
+  <query>
+    <name>deleteArticleQuery</name>
+    <value>DELETE FROM Articles WHERE articleId='?' </value>
+  </query>
+  <query>
     <name>selectArticleByTitleQuery</name>
     <value>SELECT * FROM Articles WHERE title = '?' AND category = '?'</value>
   </query>
@@ -34,6 +42,8 @@
     <name>selectArticleByCategoryQuery</name>
     <value>SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '?'</value>
   </query>
+  
+  
   <query>
     <name>addArticleCategoryQuery</name>
     <value>INSERT INTO ArticleCategory (name, summary) VALUES ('?', '?')</value>

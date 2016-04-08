@@ -1,7 +1,6 @@
 <?php 
+$html = "<div class='container grid grid-1-2'>\n";
 if(mysqli_num_rows($this->model['categories'])){
-  
-  $html = "<div class='container grid grid-1-2'>\n";
   while($row = mysqli_fetch_row($this->model['categories'])){
     $html .= "    <div class='grid_cell'>\n";
     $html .= "      <div class='grid_cell--content'>\n";
@@ -20,18 +19,15 @@ if(mysqli_num_rows($this->model['categories'])){
     $html .= "     </div>\n";
     $html .= "  </div>\n";
   }
-  
-  if($role == 'admin'){
-    $html .= "    <div class='grid_cell'>\n";
-    $html .= "      <div class='grid_cell--content'>\n";
-    $html .= "        <a href='#'>add</a>";
-    $html .= "      </div>";
-    $html .= "    </div>";
-  }
-  
-  $html .= "</div>";
 }
-else
-  $html = "<div class='container'>There are no article categories!</div>";
 
+if($role == 'admin'){
+  $html .= "    <div class='grid_cell'>\n";
+  $html .= "      <div class='grid_cell--content'>\n";
+  $html .= "        <a href='#'>add</a>";
+  $html .= "      </div>";
+  $html .= "    </div>";
+}
+
+$html .= "</div>";
 echo formatHtml($html, 4);?>
