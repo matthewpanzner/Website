@@ -1,0 +1,24 @@
+About to execute: SELECT * FROM ArticleCategory /////1460148821 = 2016-04-08 16:53:41
+Executed successfully, rows: 2 /////1460148821 = 2016-04-08 16:53:41
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1460148823 = 2016-04-08 16:53:43
+Executed successfully, rows: 0 /////1460148823 = 2016-04-08 16:53:43
+About to execute: SELECT * FROM ArticleCategory /////1460148824 = 2016-04-08 16:53:44
+Executed successfully, rows: 2 /////1460148824 = 2016-04-08 16:53:44
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460148826 = 2016-04-08 16:53:46
+Executed successfully, rows: 1 /////1460148826 = 2016-04-08 16:53:46
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1460148827 = 2016-04-08 16:53:47
+Executed successfully, rows: 1 /////1460148827 = 2016-04-08 16:53:47
+About to execute: SELECT * FROM ArticleCategory /////1460148964 = 2016-04-08 16:56:04
+Executed successfully, rows: 2 /////1460148964 = 2016-04-08 16:56:04
+About to execute: SELECT * FROM ArticleCategory /////1460148967 = 2016-04-08 16:56:07
+Executed successfully, rows: 2 /////1460148967 = 2016-04-08 16:56:07
+About to execute: SELECT * FROM ArticleCategory /////1460148971 = 2016-04-08 16:56:11
+Executed successfully, rows: 2 /////1460148971 = 2016-04-08 16:56:11
+About to execute: SELECT * FROM ArticleCategory /////1460148975 = 2016-04-08 16:56:15
+Executed successfully, rows: 2 /////1460148975 = 2016-04-08 16:56:15
+About to execute: SELECT * FROM ArticleCategory /////1460148983 = 2016-04-08 16:56:23
+Executed successfully, rows: 2 /////1460148983 = 2016-04-08 16:56:23
+About to execute: SELECT * FROM ArticleCategory /////1460149166 = 2016-04-08 16:59:26
+Executed successfully, rows: 2 /////1460149166 = 2016-04-08 16:59:26
+About to execute: SELECT * FROM ArticleCategory /////1460149169 = 2016-04-08 16:59:29
+Executed successfully, rows: 2 /////1460149169 = 2016-04-08 16:59:29

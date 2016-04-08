@@ -9,3 +9,8 @@ it stays this way for convenience.
       practice framework, these controllers will need tweaking for the adjustment to be less coupled.
       
 ----Fixed trace
+
+4/8/2016
+
+I need to add a controller or a fix to make it so I can edit article-categories with ease.  I would also
+like to make a more robust directory system to store my files and articles.
