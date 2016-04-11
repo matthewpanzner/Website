@@ -103,7 +103,7 @@
 	<div class="grid_cell" id="about-grid_cell">
 		<div class="grid_cell--content" id="about-grid_cell--content">
 		  <label id="about--input-label">root@matthew> </label>
-			<input id="about--input" style="background-color:black" type="text"/>
+			<input id="about--input" style="background-color:black" type="text" autofocus/>
 		</div>
   </div>
 </div>
