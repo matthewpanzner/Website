@@ -29,6 +29,8 @@ if(isset($_SESSION['logged_in'])){
     <meta type="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/terminal.js"></script>
+    <script type="text/javascript" src="js/terminalCommands.js"></script>
   </head>
   <body>
     <header>
