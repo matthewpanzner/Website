@@ -9,6 +9,11 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  
+  ul{
+    margin: 0;
+    -webkit-padding-start: 0px !important; 
+  }
 }
 
 @media all and (max-width: $mobile-width){

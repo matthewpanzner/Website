@@ -10,7 +10,7 @@ $html = "    <select name='category' required readonly>\n";
 if(mysqli_num_rows($this->model['categories'])){
   while($row = mysqli_fetch_row($this->model['categories'])){
       $html .= "      <option value='" . $row[0] . "' ";
-      if($_GET['c'] === $row[0]) $html .= "selected ";
+      if(isset($_GET['c']) && $_GET['c'] === $row[0]) $html .= "selected ";
       $html .= ">" . $row[1] . "</option>\n";
   }
 }
