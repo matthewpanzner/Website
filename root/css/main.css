@@ -15,32 +15,11 @@ pre {
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */ }
 
-#about-grid_cell--content {
-  font: 300 12px Consolas;
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  border-radius: 0px;
-  box-shadow: none; }
-  #about-grid_cell--content #about--input,
-  #about-grid_cell--content #about--input-label {
-    font: 300 12px Consolas;
-    margin: 0;
-    border-top: solid 2px grey;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    color: white; }
-  #about-grid_cell--content p, #about-grid_cell--content label {
-    color: white;
-    margin: 0; }
-  #about-grid_cell--content input:focus {
-    outline: none; }
+.white {
+  color: white; }
 
-#about-grid_cell .grid_cell--content {
-  flex-flow: row wrap; }
-  #about-grid_cell .grid_cell--content :nth-child(2) {
-    flex: 1; }
+.green {
+  color: green; }
 
 .grid {
   display: flex;
@@ -181,6 +160,9 @@ select {
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+@media all and (max-width: 768px) {
+  .primary-footer ul {
+    margin: 0; } }
 .article_cell a {
   text-decoration: none;
   color: black; }
@@ -191,5 +173,39 @@ select {
   color: blue;
   text-decoration: underline;
   align-self: flex-end; }
+
+.about-grid--terminal {
+  margin: 0 10%; }
+
+.about-grid_cell--content {
+  font: 300 14px Consolas;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  border-radius: 0px;
+  box-shadow: none;
+  color: white; }
+  .about-grid_cell--content #about--input,
+  .about-grid_cell--content #about--input-label {
+    font: 300 14px Consolas;
+    margin: 0;
+    border-top: solid 2px grey;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    color: white; }
+  .about-grid_cell--content p, .about-grid_cell--content label {
+    margin: 0; }
+  .about-grid_cell--content input:focus {
+    outline: none; }
+
+.about-grid_cell .grid_cell--content {
+  flex-flow: row wrap; }
+  .about-grid_cell .grid_cell--content :nth-child(2) {
+    flex: 1; }
+
+@media all and (max-width: 768px) {
+  .about-grid--terminal {
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */

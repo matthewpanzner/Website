@@ -1,14 +1,18 @@
-#about-grid_cell--content{
-  font: 300 12px Consolas;
+.about-grid--terminal{
+  margin: 0 10%;
+}
+.about-grid_cell--content{
+  font: 300 14px Consolas;
   padding: 0;
   margin: 0;
   background-color: black;
   border-radius: 0px;
   box-shadow: none;
+  color: white;
   
   #about--input, 
   #about--input-label{
-    font: 300 12px Consolas;
+    font: 300 14px Consolas;
     margin: 0;
     border-top: solid 2px grey;
     border-bottom: none;
@@ -18,7 +22,6 @@
   }
 
   p, label{
-    color:white;
     margin: 0;
   }
   
@@ -27,12 +30,18 @@
   }
 }
 
-#about-grid_cell{
+.about-grid_cell{
   .grid_cell--content{
     flex-flow: row wrap;
     
     :nth-child(2){
       flex: 1;
     }
+  }
+}
+
+@media all and (max-width: $mobile-width){
+  .about-grid--terminal{
+    margin: 0;
   }
 }
