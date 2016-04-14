@@ -23,7 +23,7 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
   }
 }
 else
-  $html = "There are no articles!";
+  $html = "There are no articles!" . $html;
 
 if($role == 'admin'){
   $html .= "    <div class='grid_cell'>\n";
