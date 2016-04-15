@@ -3,7 +3,7 @@ $html = "  <div class='grid grid-1-3'>\n";
 if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in controller
   while($row = mysqli_fetch_row($this->model['articles'])){
     $html .= "    <div class='grid_cell'>\n";
-    $html .= "      <div class='grid_cell--content article_cell'>\n";
+    $html .= "      <div class='grid_cell--content article_cell grid-shadow'>\n";
     
     foreach($row as $key=>$value){
 
@@ -27,7 +27,7 @@ else
 
 if($role == 'admin'){
   $html .= "    <div class='grid_cell'>\n";
-  $html .= "      <div class='grid_cell--content'>\n";
+  $html .= "      <div class='grid_cell--content grid-shadow'>\n";
   $html .= "        <a href='index.php?controller=ArticleFormController&action=onLoad&c=". $_GET['c'] . "'>add</a>";
   $html .= "      </div>";
   $html .= "    </div>";

@@ -5,7 +5,7 @@
           <!--Create a cell in that grid, this grid is one cell-->
           <div class="grid_cell">
             <!--Add content to the cell, the content will be another grid-->
-            <div class="grid_cell--content">
+            <div class="grid_cell--content grid-shadow">
               <!--Add grid as content, this will have two cells-->
               <div class="grid grid-1-2">
                 <!--Add a cell to the grid inside a grid--> 
