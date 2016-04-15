@@ -22,8 +22,8 @@ function init(){
   insertLine("  ,,,,,,,                         ,,");
   insertLine("   ,,,,,,,                       ,,,                  Author: Matthew Panzner");
   insertLine("    ,,,,,,,                     ,,,,                  v0.2");
-  insertLine("     ,,,,,,,                   ,,,,,                  type 'info' for more information");
-  insertLine("      ,,,,,,,                 ,,,,,,");
+  insertLine("     ,,,,,,,                   ,,,,,");
+  insertLine("      ,,,,,,,                 ,,,,,,                  type 'info' for more information");
   insertLine("       .............................");
   insertLine("       ....       ...........       ");
   insertLine("       ...    =    .........     =  ");
@@ -40,8 +40,8 @@ function inputHandle($iStr){
     insertLine("Duration: Mixture of use in hobby and professional.  See resume ");
     insertLine("            for more in-depth professional experiences.");
     insertLine("");
-    insertLine(" +------------------+-------------+---------------------------+");
-    insertLine(" | Skill            | Duration    |  More-Info                |");
+    insertLine(" +------------------+-------------+---------------------------+     Contact:");
+    insertLine(" | Skill            | Duration    |  More-Info                |       panzner.matthew@gmail.com");
     insertLine(" +------------------+-------------+---------------------------+");
     insertLine(" | Mathematics      |  Too Long   |  B.S Degree               |");
     insertLine(" | Education        |  5 years    |  2010 - 2015 Proffesional |")
