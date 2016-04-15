@@ -17,6 +17,13 @@ function keyDownHandler(evt){
 }
 
 function init(){
+  insertLine(" ~~~This page is not mobile friendly yet~~~");
+  insertLine("");
+  insertLine("");
+  insertLine("");
+  insertLine("");
+  insertLine("");
+  insertLine("");
   insertLine(",,,,,,,                             ");
   insertLine(" ,,,,,,,                           ,");
   insertLine("  ,,,,,,,                         ,,");

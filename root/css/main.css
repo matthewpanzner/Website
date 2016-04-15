@@ -184,7 +184,8 @@ select {
   background-color: black;
   border-radius: 0px;
   box-shadow: none;
-  color: white; }
+  color: white;
+  overflow: hidden; }
   .about-grid_cell--content #about--input,
   .about-grid_cell--content #about--input-label {
     font: 300 14px Consolas;
