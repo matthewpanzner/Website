@@ -1,0 +1,32 @@
+article{
+  display: flex;
+  flex-flow: column nowrap;
+  
+  margin: 2%;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  ul, ol{
+    margin-left: $indent-margin;
+  }
+}
+
+h1 hr{
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 12px 0px;
+  width: 75%;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}
+
+
+@media all and (max-width: $mobile-width){
+  article{
+    margin: 0;
+    padding: 0px;
+  }
+}

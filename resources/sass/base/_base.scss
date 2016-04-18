@@ -1,0 +1,33 @@
+body{
+  font: 14px/22px Verdana, sans-serif;
+  background-color: #E3E3E3;
+  margin: 0;
+}
+
+pre {
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  font-family: monospace; 
+}
+p,blockquote,pre,code{
+  display: block;
+  margin-top: $paragraph-marginV;
+  margin-bottom: $paragraph-marginV;
+}
+blockquote{
+  margin-left: 40px;
+}
+dd{
+  margin-left: $indent-margin;
+}
+sup{
+  vertical-align: super;
+  font-size: smaller;
+}
+sub{
+  vertical-align: sub;
+  font-size: smaller;
+}
