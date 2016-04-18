@@ -1128,3 +1128,7 @@ About to execute: SELECT articleId, title, summary, content, publicationDate FRO
 Executed successfully, rows: 4 /////1460987922 = 2016-04-18 09:58:42
 About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460987922 = 2016-04-18 09:58:42
 Executed successfully, rows: 1 /////1460987922 = 2016-04-18 09:58:42
+About to execute: SELECT * FROM ArticleCategory /////1460988783 = 2016-04-18 10:13:03
+Executed successfully, rows: 2 /////1460988783 = 2016-04-18 10:13:03
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1460988783 = 2016-04-18 10:13:03
+Executed successfully, rows: 1 /////1460988783 = 2016-04-18 10:13:03
