@@ -1,9 +1,9 @@
-article{
+.article{
   display: flex;
   flex-flow: column nowrap;
-  
+
   margin: 2%;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -12,7 +12,17 @@ article{
   }
 }
 
-h1 hr{
+#article-title{
+  padding: 2% 5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ff6347;
+  h1{
+    color: white;
+  }
+}
+
+article hr{
   display: block;
   position: relative;
   padding: 0;

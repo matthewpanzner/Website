@@ -1668,3 +1668,251 @@ About to execute: SELECT * FROM ArticleCategory /////1460998378 = 2016-04-18 12:
 Executed successfully, rows: 2 /////1460998378 = 2016-04-18 12:52:58
 About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1460998380 = 2016-04-18 12:53:00
 Executed successfully, rows: 0 /////1460998380 = 2016-04-18 12:53:00
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1460998861 = 2016-04-18 13:01:01
+Executed successfully, rows: 0 /////1460998861 = 2016-04-18 13:01:01
+About to execute: SELECT * FROM ArticleCategory /////1460998862 = 2016-04-18 13:01:02
+Executed successfully, rows: 2 /////1460998862 = 2016-04-18 13:01:02
+About to execute: SELECT * FROM ArticleCategory /////1460998862 = 2016-04-18 13:01:02
+Executed successfully, rows: 2 /////1460998862 = 2016-04-18 13:01:02
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460998864 = 2016-04-18 13:01:04
+Executed successfully, rows: 4 /////1460998864 = 2016-04-18 13:01:04
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460998871 = 2016-04-18 13:01:11
+Executed successfully, rows: 4 /////1460998871 = 2016-04-18 13:01:11
+About to execute: SELECT * FROM ArticleCategory /////1460998886 = 2016-04-18 13:01:26
+Executed successfully, rows: 2 /////1460998886 = 2016-04-18 13:01:26
+About to execute: SELECT * FROM ArticleCategory /////1460998942 = 2016-04-18 13:02:22
+Executed successfully, rows: 2 /////1460998942 = 2016-04-18 13:02:22
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1460998943 = 2016-04-18 13:02:23
+Executed successfully, rows: 0 /////1460998943 = 2016-04-18 13:02:23
+About to execute: SELECT * FROM ArticleCategory /////1460998946 = 2016-04-18 13:02:26
+Executed successfully, rows: 2 /////1460998946 = 2016-04-18 13:02:26
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460998947 = 2016-04-18 13:02:27
+Executed successfully, rows: 4 /////1460998947 = 2016-04-18 13:02:27
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460998954 = 2016-04-18 13:02:34
+Executed successfully, rows: 4 /////1460998954 = 2016-04-18 13:02:34
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460998965 = 2016-04-18 13:02:45
+Executed successfully, rows: 4 /////1460998965 = 2016-04-18 13:02:45
+About to execute: SELECT * FROM ArticleCategory /////1460999129 = 2016-04-18 13:05:29
+Executed successfully, rows: 2 /////1460999129 = 2016-04-18 13:05:29
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460999131 = 2016-04-18 13:05:31
+Executed successfully, rows: 4 /////1460999131 = 2016-04-18 13:05:31
+About to execute: SELECT * FROM Articles WHERE articleId = '8' /////1460999133 = 2016-04-18 13:05:33
+Executed successfully, rows: 1 /////1460999133 = 2016-04-18 13:05:33
+About to execute: SELECT * FROM ArticleCategory /////1460999134 = 2016-04-18 13:05:34
+Executed successfully, rows: 2 /////1460999134 = 2016-04-18 13:05:34
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1460999138 = 2016-04-18 13:05:38
+Executed successfully, rows: 4 /////1460999138 = 2016-04-18 13:05:38
+About to execute: SELECT * FROM ArticleCategory /////1461000066 = 2016-04-18 13:21:06
+Executed successfully, rows: 2 /////1461000066 = 2016-04-18 13:21:06
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1461000067 = 2016-04-18 13:21:07
+Executed successfully, rows: 0 /////1461000067 = 2016-04-18 13:21:07
+About to execute: SELECT * FROM ArticleCategory /////1461000068 = 2016-04-18 13:21:08
+Executed successfully, rows: 2 /////1461000068 = 2016-04-18 13:21:08
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461000069 = 2016-04-18 13:21:09
+Executed successfully, rows: 4 /////1461000069 = 2016-04-18 13:21:09
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461000070 = 2016-04-18 13:21:10
+Executed successfully, rows: 1 /////1461000070 = 2016-04-18 13:21:10
+About to execute: SELECT * FROM ArticleCategory /////1461000114 = 2016-04-18 13:21:54
+Executed successfully, rows: 2 /////1461000114 = 2016-04-18 13:21:54
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461000115 = 2016-04-18 13:21:55
+Executed successfully, rows: 4 /////1461000115 = 2016-04-18 13:21:55
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000147 = 2016-04-18 13:22:27
+Executed successfully, rows: 1 /////1461000147 = 2016-04-18 13:22:27
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000202 = 2016-04-18 13:23:22
+Executed successfully, rows: 1 /////1461000202 = 2016-04-18 13:23:22
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000238 = 2016-04-18 13:23:58
+Executed successfully, rows: 1 /////1461000238 = 2016-04-18 13:23:58
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000239 = 2016-04-18 13:23:59
+Executed successfully, rows: 1 /////1461000239 = 2016-04-18 13:23:59
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000391 = 2016-04-18 13:26:31
+Executed successfully, rows: 1 /////1461000391 = 2016-04-18 13:26:31
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000415 = 2016-04-18 13:26:55
+Executed successfully, rows: 1 /////1461000415 = 2016-04-18 13:26:55
+About to execute: SELECT * FROM ArticleCategory /////1461000449 = 2016-04-18 13:27:29
+Executed successfully, rows: 2 /////1461000449 = 2016-04-18 13:27:29
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461000450 = 2016-04-18 13:27:30
+Executed successfully, rows: 4 /////1461000450 = 2016-04-18 13:27:30
+About to execute: SELECT * FROM ArticleCategory /////1461000452 = 2016-04-18 13:27:32
+Executed successfully, rows: 2 /////1461000452 = 2016-04-18 13:27:32
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000452 = 2016-04-18 13:27:32
+Executed successfully, rows: 1 /////1461000452 = 2016-04-18 13:27:32
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000473 = 2016-04-18 13:27:53
+Executed successfully, rows: 1 /////1461000473 = 2016-04-18 13:27:53
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000474 = 2016-04-18 13:27:54
+Executed successfully, rows: 1 /////1461000474 = 2016-04-18 13:27:54
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000503 = 2016-04-18 13:28:23
+Executed successfully, rows: 1 /////1461000503 = 2016-04-18 13:28:23
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000558 = 2016-04-18 13:29:18
+Executed successfully, rows: 1 /////1461000558 = 2016-04-18 13:29:18
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000586 = 2016-04-18 13:29:46
+Executed successfully, rows: 1 /////1461000586 = 2016-04-18 13:29:46
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000599 = 2016-04-18 13:29:59
+Executed successfully, rows: 1 /////1461000599 = 2016-04-18 13:29:59
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000618 = 2016-04-18 13:30:18
+Executed successfully, rows: 1 /////1461000618 = 2016-04-18 13:30:18
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000618 = 2016-04-18 13:30:18
+Executed successfully, rows: 1 /////1461000618 = 2016-04-18 13:30:18
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000670 = 2016-04-18 13:31:10
+Executed successfully, rows: 1 /////1461000670 = 2016-04-18 13:31:10
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000671 = 2016-04-18 13:31:11
+Executed successfully, rows: 1 /////1461000671 = 2016-04-18 13:31:11
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461000675 = 2016-04-18 13:31:15
+Executed successfully, rows: 1 /////1461000675 = 2016-04-18 13:31:15
+About to execute: SELECT * FROM ArticleCategory /////1461000684 = 2016-04-18 13:31:24
+Executed successfully, rows: 2 /////1461000684 = 2016-04-18 13:31:24
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461000685 = 2016-04-18 13:31:25
+Executed successfully, rows: 4 /////1461000685 = 2016-04-18 13:31:25
+About to execute: SELECT * FROM Articles WHERE articleId = '8' /////1461000687 = 2016-04-18 13:31:27
+Executed successfully, rows: 1 /////1461000687 = 2016-04-18 13:31:27
+About to execute: SELECT * FROM ArticleCategory /////1461000688 = 2016-04-18 13:31:28
+Executed successfully, rows: 2 /////1461000688 = 2016-04-18 13:31:28
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461000689 = 2016-04-18 13:31:29
+Executed successfully, rows: 4 /////1461000689 = 2016-04-18 13:31:29
+About to execute: SELECT * FROM Articles WHERE articleId = '9' /////1461000690 = 2016-04-18 13:31:30
+Executed successfully, rows: 1 /////1461000690 = 2016-04-18 13:31:30
+About to execute: SELECT * FROM ArticleCategory /////1461001197 = 2016-04-18 13:39:57
+Executed successfully, rows: 2 /////1461001197 = 2016-04-18 13:39:57
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461001198 = 2016-04-18 13:39:58
+Executed successfully, rows: 4 /////1461001198 = 2016-04-18 13:39:58
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461001200 = 2016-04-18 13:40:00
+Executed successfully, rows: 1 /////1461001200 = 2016-04-18 13:40:00
+About to execute: SELECT * FROM ArticleCategory /////1461001230 = 2016-04-18 13:40:30
+Executed successfully, rows: 2 /////1461001230 = 2016-04-18 13:40:30
+About to execute: SELECT * FROM ArticleCategory /////1461001909 = 2016-04-18 13:51:49
+Executed successfully, rows: 2 /////1461001909 = 2016-04-18 13:51:49
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461001910 = 2016-04-18 13:51:50
+Executed successfully, rows: 4 /////1461001910 = 2016-04-18 13:51:50
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461001912 = 2016-04-18 13:51:52
+Executed successfully, rows: 1 /////1461001912 = 2016-04-18 13:51:52
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461001915 = 2016-04-18 13:51:55
+Executed successfully, rows: 4 /////1461001915 = 2016-04-18 13:51:55
+About to execute: SELECT * FROM ArticleCategory /////1461003394 = 2016-04-18 14:16:34
+Executed successfully, rows: 2 /////1461003394 = 2016-04-18 14:16:34
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003396 = 2016-04-18 14:16:36
+Executed successfully, rows: 4 /////1461003396 = 2016-04-18 14:16:36
+About to execute: SELECT * FROM Articles WHERE articleId = '6' /////1461003400 = 2016-04-18 14:16:40
+Executed successfully, rows: 1 /////1461003400 = 2016-04-18 14:16:40
+About to execute: SELECT * FROM ArticleCategory /////1461003405 = 2016-04-18 14:16:45
+Executed successfully, rows: 2 /////1461003405 = 2016-04-18 14:16:45
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003407 = 2016-04-18 14:16:47
+Executed successfully, rows: 4 /////1461003407 = 2016-04-18 14:16:47
+About to execute: SELECT * FROM ArticleCategory /////1461003409 = 2016-04-18 14:16:49
+Executed successfully, rows: 2 /////1461003409 = 2016-04-18 14:16:49
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003414 = 2016-04-18 14:16:54
+Executed successfully, rows: 4 /////1461003414 = 2016-04-18 14:16:54
+About to execute: SELECT * FROM ArticleCategory /////1461003430 = 2016-04-18 14:17:10
+Executed successfully, rows: 2 /////1461003430 = 2016-04-18 14:17:10
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003453 = 2016-04-18 14:17:33
+Executed successfully, rows: 4 /////1461003453 = 2016-04-18 14:17:33
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461003454 = 2016-04-18 14:17:34
+Executed successfully, rows: 1 /////1461003454 = 2016-04-18 14:17:34
+About to execute: SELECT * FROM ArticleCategory /////1461003461 = 2016-04-18 14:17:41
+Executed successfully, rows: 2 /////1461003461 = 2016-04-18 14:17:41
+About to execute: SELECT * FROM ArticleCategory /////1461003469 = 2016-04-18 14:17:49
+Executed successfully, rows: 2 /////1461003469 = 2016-04-18 14:17:49
+About to execute: SELECT * FROM ArticleCategory /////1461003520 = 2016-04-18 14:18:40
+Executed successfully, rows: 2 /////1461003520 = 2016-04-18 14:18:40
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '2' /////1461003523 = 2016-04-18 14:18:43
+Executed successfully, rows: 0 /////1461003523 = 2016-04-18 14:18:43
+About to execute: SELECT * FROM ArticleCategory /////1461003525 = 2016-04-18 14:18:45
+Executed successfully, rows: 2 /////1461003525 = 2016-04-18 14:18:45
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003526 = 2016-04-18 14:18:46
+Executed successfully, rows: 4 /////1461003526 = 2016-04-18 14:18:46
+About to execute: SELECT * FROM Articles WHERE articleId = '9' /////1461003528 = 2016-04-18 14:18:48
+Executed successfully, rows: 1 /////1461003528 = 2016-04-18 14:18:48
+About to execute: SELECT * FROM ArticleCategory /////1461003537 = 2016-04-18 14:18:57
+Executed successfully, rows: 2 /////1461003537 = 2016-04-18 14:18:57
+About to execute: SELECT * FROM ArticleCategory /////1461003547 = 2016-04-18 14:19:07
+Executed successfully, rows: 2 /////1461003547 = 2016-04-18 14:19:07
+About to execute: SELECT * FROM ArticleCategory /////1461003554 = 2016-04-18 14:19:14
+Executed successfully, rows: 2 /////1461003554 = 2016-04-18 14:19:14
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003555 = 2016-04-18 14:19:15
+Executed successfully, rows: 4 /////1461003555 = 2016-04-18 14:19:15
+About to execute: SELECT * FROM Articles WHERE articleId = '8' /////1461003558 = 2016-04-18 14:19:18
+Executed successfully, rows: 1 /////1461003558 = 2016-04-18 14:19:18
+About to execute: SELECT * FROM ArticleCategory /////1461003594 = 2016-04-18 14:19:54
+Executed successfully, rows: 2 /////1461003594 = 2016-04-18 14:19:54
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003613 = 2016-04-18 14:20:13
+Executed successfully, rows: 4 /////1461003613 = 2016-04-18 14:20:13
+About to execute: SELECT * FROM ArticleCategory /////1461003619 = 2016-04-18 14:20:19
+Executed successfully, rows: 2 /////1461003619 = 2016-04-18 14:20:19
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461003647 = 2016-04-18 14:20:47
+Executed successfully, rows: 1 /////1461003647 = 2016-04-18 14:20:47
+About to execute: SELECT * FROM ArticleCategory /////1461003649 = 2016-04-18 14:20:49
+Executed successfully, rows: 2 /////1461003649 = 2016-04-18 14:20:49
+About to execute: SELECT * FROM ArticleCategory /////1461003654 = 2016-04-18 14:20:54
+Executed successfully, rows: 2 /////1461003654 = 2016-04-18 14:20:54
+About to execute: SELECT * FROM ArticleCategory /////1461003659 = 2016-04-18 14:20:59
+Executed successfully, rows: 2 /////1461003659 = 2016-04-18 14:20:59
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003660 = 2016-04-18 14:21:00
+Executed successfully, rows: 4 /////1461003660 = 2016-04-18 14:21:00
+About to execute: SELECT * FROM Articles WHERE articleId = '8' /////1461003661 = 2016-04-18 14:21:01
+Executed successfully, rows: 1 /////1461003661 = 2016-04-18 14:21:01
+About to execute: SELECT * FROM ArticleCategory /////1461003662 = 2016-04-18 14:21:02
+Executed successfully, rows: 2 /////1461003662 = 2016-04-18 14:21:02
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003663 = 2016-04-18 14:21:03
+Executed successfully, rows: 4 /////1461003663 = 2016-04-18 14:21:03
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461003664 = 2016-04-18 14:21:04
+Executed successfully, rows: 1 /////1461003664 = 2016-04-18 14:21:04
+About to execute: SELECT * FROM ArticleCategory /////1461003666 = 2016-04-18 14:21:06
+Executed successfully, rows: 2 /////1461003666 = 2016-04-18 14:21:06
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461003667 = 2016-04-18 14:21:07
+Executed successfully, rows: 4 /////1461003667 = 2016-04-18 14:21:07
+About to execute: SELECT * FROM Articles WHERE articleId = '9' /////1461003668 = 2016-04-18 14:21:08
+Executed successfully, rows: 1 /////1461003668 = 2016-04-18 14:21:08
+About to execute: SELECT * FROM ArticleCategory /////1461004167 = 2016-04-18 14:29:27
+Executed successfully, rows: 2 /////1461004167 = 2016-04-18 14:29:27
+About to execute: SELECT * FROM ArticleCategory /////1461007359 = 2016-04-18 15:22:39
+Executed successfully, rows: 2 /////1461007359 = 2016-04-18 15:22:39
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007360 = 2016-04-18 15:22:40
+Executed successfully, rows: 4 /////1461007360 = 2016-04-18 15:22:40
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461007361 = 2016-04-18 15:22:41
+Executed successfully, rows: 1 /////1461007361 = 2016-04-18 15:22:41
+About to execute: SELECT * FROM ArticleCategory /////1461007369 = 2016-04-18 15:22:49
+Executed successfully, rows: 2 /////1461007369 = 2016-04-18 15:22:49
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007371 = 2016-04-18 15:22:51
+Executed successfully, rows: 4 /////1461007371 = 2016-04-18 15:22:51
+About to execute: SELECT * FROM Articles WHERE articleId = '8' /////1461007378 = 2016-04-18 15:22:58
+Executed successfully, rows: 1 /////1461007378 = 2016-04-18 15:22:58
+About to execute: SELECT * FROM ArticleCategory /////1461007389 = 2016-04-18 15:23:09
+Executed successfully, rows: 2 /////1461007389 = 2016-04-18 15:23:09
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007390 = 2016-04-18 15:23:10
+Executed successfully, rows: 4 /////1461007390 = 2016-04-18 15:23:10
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461007394 = 2016-04-18 15:23:14
+Executed successfully, rows: 1 /////1461007394 = 2016-04-18 15:23:14
+About to execute: SELECT * FROM ArticleCategory /////1461007420 = 2016-04-18 15:23:40
+Executed successfully, rows: 2 /////1461007420 = 2016-04-18 15:23:40
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007424 = 2016-04-18 15:23:44
+Executed successfully, rows: 4 /////1461007424 = 2016-04-18 15:23:44
+About to execute: SELECT * FROM Articles WHERE articleId = '9' /////1461007431 = 2016-04-18 15:23:51
+Executed successfully, rows: 1 /////1461007431 = 2016-04-18 15:23:51
+About to execute: SELECT * FROM ArticleCategory /////1461007435 = 2016-04-18 15:23:55
+Executed successfully, rows: 2 /////1461007435 = 2016-04-18 15:23:55
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007436 = 2016-04-18 15:23:56
+Executed successfully, rows: 4 /////1461007436 = 2016-04-18 15:23:56
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461007438 = 2016-04-18 15:23:58
+Executed successfully, rows: 1 /////1461007438 = 2016-04-18 15:23:58
+About to execute: SELECT * FROM ArticleCategory /////1461007446 = 2016-04-18 15:24:06
+Executed successfully, rows: 2 /////1461007446 = 2016-04-18 15:24:06
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007447 = 2016-04-18 15:24:07
+Executed successfully, rows: 4 /////1461007447 = 2016-04-18 15:24:07
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461007462 = 2016-04-18 15:24:22
+Executed successfully, rows: 1 /////1461007462 = 2016-04-18 15:24:22
+About to execute: SELECT * FROM ArticleCategory /////1461007632 = 2016-04-18 15:27:12
+Executed successfully, rows: 2 /////1461007632 = 2016-04-18 15:27:12
+About to execute: SELECT * FROM ArticleCategory /////1461007634 = 2016-04-18 15:27:14
+Executed successfully, rows: 2 /////1461007634 = 2016-04-18 15:27:14
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461007635 = 2016-04-18 15:27:15
+Executed successfully, rows: 4 /////1461007635 = 2016-04-18 15:27:15
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461007636 = 2016-04-18 15:27:16
+Executed successfully, rows: 1 /////1461007636 = 2016-04-18 15:27:16
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461010283 = 2016-04-18 16:11:23
+Executed successfully, rows: 1 /////1461010283 = 2016-04-18 16:11:23
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461010291 = 2016-04-18 16:11:31
+Executed successfully, rows: 1 /////1461010291 = 2016-04-18 16:11:31
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461010310 = 2016-04-18 16:11:50
+Executed successfully, rows: 1 /////1461010310 = 2016-04-18 16:11:50
+About to execute: SELECT * FROM ArticleCategory /////1461010346 = 2016-04-18 16:12:26
+Executed successfully, rows: 2 /////1461010346 = 2016-04-18 16:12:26
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461010347 = 2016-04-18 16:12:27
+Executed successfully, rows: 4 /////1461010347 = 2016-04-18 16:12:27

@@ -264,7 +264,7 @@ select {
   padding: 0 1em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: lightgreen; }
+  background-color: #ff6347; }
   .article_cell-title h2 {
     color: white;
     margin-top: 12px;
@@ -281,20 +281,28 @@ select {
     vertical-align: bottom;
     padding-bottom: 1em;
     background-clip: content-box;
-    background-color: lightblue;
+    background-color: lightgreen;
     margin: 0 -1em; }
 
-article {
+.article {
   display: flex;
   flex-flow: column nowrap;
   margin: 2%;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  article ul, article ol {
+  .article ul, .article ol {
     margin-left: 20px; }
 
-h1 hr {
+#article-title {
+  padding: 2% 5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ff6347; }
+  #article-title h1 {
+    color: white; }
+
+article hr {
   display: block;
   position: relative;
   padding: 0;
