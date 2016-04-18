@@ -135,7 +135,6 @@ th {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 1em;
   margin: 5px;
   width: 100%; }
 
@@ -260,6 +259,23 @@ select {
   color: blue;
   text-decoration: underline;
   align-self: flex-end; }
+
+.article_cell-title {
+  padding: 0 1em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.article_cell-body {
+  position: relative;
+  padding: 0 1em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .article_cell-body .article-date {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 1em; }
 
 article {
   display: flex;
