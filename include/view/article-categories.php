@@ -8,7 +8,7 @@ if(mysqli_num_rows($this->model['categories'])){
     foreach($row as $key=>$value){
       if($key == 1){
         $html .= "      <div class='article_cell-title'>\n";
-        $html .= "        <a href='index.php?controller=ArticleController&action=onGetArticlesByCategory&c=" . $row[0] . "'><h1>" . $value . "</h1></a>\n";
+        $html .= "        <a href='index.php?controller=ArticleController&action=onGetArticlesByCategory&c=" . $row[0] . "'><h2>" . $value . "</h2></a>\n";
         $html .= "      </div>\n";
         $html .= "      <div class='article_cell-body'>\n";
       }

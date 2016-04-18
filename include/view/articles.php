@@ -9,7 +9,7 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
 
       if($key === 1){ //title
         $html .= "      <div class='article_cell-title'>\n";
-        $html .= "        <a href='index.php?controller=ArticleController&action=onGetArticle&id=" . $row[0] . "'><h1>" . htmlspecialchars_decode($value) . " </h1></a>\n";
+        $html .= "        <a href='index.php?controller=ArticleController&action=onGetArticle&id=" . $row[0] . "'><h2>" . htmlspecialchars_decode($value) . " </h2></a>\n";
         $html .= "      </div>\n";
         $html .="       <div class='article_cell-body'>\n";
       }
