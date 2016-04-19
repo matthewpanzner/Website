@@ -219,7 +219,8 @@ select {
   background: #434343;
   position: fixed;
   overflow: hidden;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
   .main-nav a {
     text-decoration: none;
     display: block;

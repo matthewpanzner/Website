@@ -1916,3 +1916,51 @@ About to execute: SELECT * FROM ArticleCategory /////1461010346 = 2016-04-18 16:
 Executed successfully, rows: 2 /////1461010346 = 2016-04-18 16:12:26
 About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461010347 = 2016-04-18 16:12:27
 Executed successfully, rows: 4 /////1461010347 = 2016-04-18 16:12:27
+About to execute: SELECT * FROM ArticleCategory /////1461013929 = 2016-04-18 17:12:09
+Executed successfully, rows: 2 /////1461013929 = 2016-04-18 17:12:09
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461013931 = 2016-04-18 17:12:11
+Executed successfully, rows: 4 /////1461013931 = 2016-04-18 17:12:11
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461013933 = 2016-04-18 17:12:13
+Executed successfully, rows: 1 /////1461013933 = 2016-04-18 17:12:13
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461014019 = 2016-04-18 17:13:39
+Executed successfully, rows: 1 /////1461014019 = 2016-04-18 17:13:39
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461014033 = 2016-04-18 17:13:53
+Executed successfully, rows: 1 /////1461014033 = 2016-04-18 17:13:53
+About to execute: SELECT * FROM Articles WHERE articleId = '7' /////1461014043 = 2016-04-18 17:14:03
+Executed successfully, rows: 1 /////1461014043 = 2016-04-18 17:14:03
+About to execute: SELECT * FROM ArticleCategory /////1461014055 = 2016-04-18 17:14:15
+Executed successfully, rows: 2 /////1461014055 = 2016-04-18 17:14:15
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461014057 = 2016-04-18 17:14:17
+Executed successfully, rows: 4 /////1461014057 = 2016-04-18 17:14:17
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = '' /////1461077610 = 2016-04-19 10:53:30
+Executed successfully, rows: 1 /////1461077610 = 2016-04-19 10:53:30
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461077610 = 2016-04-19 10:53:30
+Executed successfully, rows: 1 /////1461077610 = 2016-04-19 10:53:30
+About to execute: SELECT * FROM ArticleCategory /////1461077612 = 2016-04-19 10:53:32
+Executed successfully, rows: 2 /////1461077612 = 2016-04-19 10:53:32
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461077612 = 2016-04-19 10:53:32
+Executed successfully, rows: 1 /////1461077612 = 2016-04-19 10:53:32
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461077615 = 2016-04-19 10:53:35
+Executed successfully, rows: 4 /////1461077615 = 2016-04-19 10:53:35
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461077615 = 2016-04-19 10:53:35
+Executed successfully, rows: 1 /////1461077615 = 2016-04-19 10:53:35
+About to execute: SELECT * FROM ArticleCategory /////1461077616 = 2016-04-19 10:53:36
+Executed successfully, rows: 2 /////1461077616 = 2016-04-19 10:53:36
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461077616 = 2016-04-19 10:53:36
+Executed successfully, rows: 1 /////1461077616 = 2016-04-19 10:53:36
+About to execute: SELECT * FROM ArticleCategory /////1461081781 = 2016-04-19 12:03:01
+Executed successfully, rows: 2 /////1461081781 = 2016-04-19 12:03:01
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461081781 = 2016-04-19 12:03:01
+Executed successfully, rows: 1 /////1461081781 = 2016-04-19 12:03:01
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461081782 = 2016-04-19 12:03:02
+Executed successfully, rows: 1 /////1461081782 = 2016-04-19 12:03:02
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461081783 = 2016-04-19 12:03:03
+Executed successfully, rows: 1 /////1461081783 = 2016-04-19 12:03:03
+About to execute: SELECT * FROM ArticleCategory /////1461081785 = 2016-04-19 12:03:05
+Executed successfully, rows: 2 /////1461081785 = 2016-04-19 12:03:05
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461081785 = 2016-04-19 12:03:05
+Executed successfully, rows: 1 /////1461081785 = 2016-04-19 12:03:05
+About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1461082298 = 2016-04-19 12:11:38
+Executed successfully, rows: 4 /////1461082298 = 2016-04-19 12:11:38
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461082298 = 2016-04-19 12:11:38
+Executed successfully, rows: 1 /////1461082298 = 2016-04-19 12:11:38
