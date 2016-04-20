@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+author: Matthew Panzner
+version: 1.2
+
+SQL queries used by the QueryFactory and then used in the DAO for database transactions
+-->
 <queries>
   <query>
     <name>selectAllQuery</name>
@@ -20,44 +26,44 @@
   
   <query>
     <name>addArticleQuery</name>
-    <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
+    <value>INSERT INTO Article (publicationDate, title, summary, content, ownerId, folderId) VALUES ('?', '?', '?', '?', '?', '?')</value>
   </query>
   <query>
     <name>updateArticleQuery</name>
-    <value>UPDATE Articles SET publicationDate='?',title='?',summary='?',content='?',category='?' WHERE articleId='?'</value>
+    <value>UPDATE Article SET publicationDate='?',title='?',summary='?',content='?',ownerId='?',folderId='?' WHERE articleId='?'</value>
   </query>
   <query>
     <name>deleteArticleQuery</name>
-    <value>DELETE FROM Articles WHERE articleId='?' </value>
+    <value>DELETE FROM Article WHERE articleId='?' </value>
   </query>
   <query>
     <name>selectArticleByTitleQuery</name>
-    <value>SELECT * FROM Articles WHERE title = '?' AND category = '?'</value>
+    <value>SELECT * FROM Article WHERE title = '?' AND folderId = '?'</value>
   </query>
   <query>
     <name>selectArticleByIdQuery</name>
-    <value>SELECT * FROM Articles WHERE articleId = '?'</value>
+    <value>SELECT * FROM Article WHERE articleId = '?'</value>
   </query>
   <query>
     <name>selectArticleByCategoryQuery</name>
-    <value>SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '?'</value>
+    <value>SELECT articleId, title, summary, publicationDate, ownerId, folderId FROM Articles WHERE category = '?'</value>
   </query>
   
   
   <query>
-    <name>addArticleCategoryQuery</name>
-    <value>INSERT INTO ArticleCategory (name, summary) VALUES ('?', '?')</value>
+    <name>addFolderQuery</name>
+    <value>INSERT INTO Folder (name, summary, visibility, ownerId, parentId) VALUES ('?', '?', '?', '?', '?')</value>
   </query>
   <query>
-    <name>deleteArticleCategoryQuery</name>
-    <value>DELETE FROM ArticleCategory WHERE id='?'</value>
+    <name>deleteFolderQuery</name>
+    <value>DELETE FROM Folder WHERE folderId='?'</value>
   </query>
   <query>
-    <name>selectArticleCategoryByNameQuery</name>
-    <value>SELECT * FROM ArticleCategory WHERE name = '?'</value>
+    <name>selectFolderByNameQuery</name>
+    <value>SELECT * FROM Folder WHERE name = '?'</value>
   </query>
   <query>
-    <name>countArticlesInCategoryQuery</name>
-    <value>SELECT COUNT(*) FROM Articles WHERE category='?'</value>
+    <name>countArticlesInFolderQuery</name>
+    <value>SELECT COUNT(*) FROM Article WHERE folderId='?'</value>
   </query>
 </queries>
