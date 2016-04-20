@@ -14,7 +14,7 @@ class ArticleController extends Controller{
     }
       
     
-    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) &&isset($_POST['ownerId'] && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) && isset($_POST['ownerId']) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
       logMessage("/error.log", var_dump($_POST));
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");

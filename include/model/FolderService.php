@@ -41,7 +41,7 @@ class ArticleCategoryService{
     $this->dao->insert("addFolderQuery", $args);
     return true;
   }
-  public function getFolders){
+  public function getFolders(){
     $args[0] = "Folder";
     
     //See 1.0001.-- for up-to-date information on query

@@ -1,15 +1,15 @@
 <?php
 require_once(CLASS_DIR . "/model/ArticleService.php");
-require_once(CLASS_DIR . "/model/ArticleCategoryService.php");
+require_once(CLASS_DIR . "/model/FolderService.php");
 
 class ArticleFormController extends Controller{
   public function onLoad(){
-    $acS = new ArticleCategoryService();
-    $this->model['categories'] = $acS->getCategories();
+    $acS = new FolderService();
+    $this->model['folders'] = $acS->getFolders();
     
-    if(isset($_GET['id'])){
+    if(isset($_GET['articleId'])){
       $service = new ArticleService();
-      $this->model['article'] = $service->getArticle($_GET['id']);
+      $this->model['article'] = $service->getArticle($_GET['articleId']);
       $service = null;
     }
     return new View($this->model, "/admin/article-form.php");
