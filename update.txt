@@ -18,17 +18,19 @@ like to make a more robust directory system to store my files and articles.
 4/20/2016~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Began new branch "databaseV1" to change my current database structure. This will fix issue in 4/8/2016
+Down the road Folder and Article may have a parent relationship, because they have so much in common In that situation,
+I would make a File table.
 
 The completion of branch databaseV1 requires that:
 
-[] TODO: Update AritcleController
+[*] TODO: Update AritcleController -- 4/20/2016 redirection features to be added
 [] TODO: Add FolderController
 [x] TODO: Add Folder entity -- 4/20/2016
 [x] TODO: Update Article entity -- 4/20/2016
 [x] TODO: Update queries.xml -- 4/20/2016
 [x] TODO: Update database scripts -- 4/20/2016
-[] TODO: Update ArticleService model
-[] TODO: Add FolderService model
+[~] TODO: Update ArticleService model -- 4/20/2016 Two methods pending
+[x] TODO: Add FolderService model -- 4/20/2016
 [] TODO: Update article-form.php view
 [] TODO: Change name and update article-category-form.php view
 [] TODO: Update articles.php view to be passed model and hyperlinks

@@ -1,4 +1,6 @@
 <?php
+//TODO: Add redirections 
+
 require_once(CLASS_DIR . "/model/ArticleService.php");
 
 class ArticleController extends Controller{
@@ -12,7 +14,7 @@ class ArticleController extends Controller{
     }
       
     
-    if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) &&isset($_POST['ownerId'] && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
       logMessage("/error.log", var_dump($_POST));
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
@@ -21,7 +23,8 @@ class ArticleController extends Controller{
     $service = new ArticleService();
     $data = [
       "title" => $_POST["title"],
-      "category" => $_POST["category"],
+      "folderId" => $_POST["folderId"],
+      "ownerId" => $_POST['ownerId'],
       "summary" => $_POST["summary"],
       "content" => $_POST["content"],
       "publicationDate" => $_POST["publication-date"]
@@ -37,6 +40,9 @@ class ArticleController extends Controller{
     }
   }
   
+  //***************************************
+  // Delete handler
+  //***************************************
   public function onDelete(){
     if(!$this->authenticate("admin")){
         $this->model['error'] = new ErrorModel("Unauthorized Access");
@@ -45,12 +51,12 @@ class ArticleController extends Controller{
     
     $service = new ArticleService();
     
-    if(!isset($_GET['id'])){
+    if(!isset($_GET['articleId'])){
       $this->model['error'] = new ErrorModel("Unresolvsed URI");
       return new View($this->model, "error.php");
     }
     
-    if($service->deleteArticle($_GET['id'])){
+    if($service->deleteArticle($_GET['articlId'])){
       return new View(null, "home.php");
     }
     else{
@@ -69,20 +75,21 @@ class ArticleController extends Controller{
         $this->model['error'] = new ErrorModel("Unauthorized Access");
         return new View($this->model, "error.php");
     }
-    if(!isset($_GET['id'])){
+    if(!isset($_GET['articleId'])){
       $this->model['error'] = new ErrorModel("Unresolvsed URI");
       return new View($this->model, "error.php");
     }
-    if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) && isset($_POST["ownerId"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
       logMessage("/error.log", var_dump($_POST));
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
     }
     
     $service = new ArticleService();
-    $article = $service->getArticle($_GET['id']);
+    $article = $service->getArticle($_GET['articleId']);
     $article->title = $_POST['title'];
-    $article->category = $_POST['category'];
+    $article->folderId = $_POST['folderId'];
+    $article->ownerId = $_POST['ownerId'];
     $article->summary = $_POST['summary'];
     $article->content = $_POST['content'];
     
@@ -113,13 +120,13 @@ class ArticleController extends Controller{
   
   public function onGetArticle(){
     
-    if(!isset($_GET['id'])){
+    if(!isset($_GET['articleId'])){
       $this->model['error'] = new ErrorModel("Failed to resolve id");
       return new View($this->model, "error.php");
     }
     
     $service = new ArticleService();
-    $this->model['article'] = $service->getArticle($_GET['id']);
+    $this->model['article'] = $service->getArticle($_GET['articleId']);
     return new View($this->model, "article.php");
   }
 }?>

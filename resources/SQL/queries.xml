@@ -7,62 +7,76 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
 -->
 <queries>
   <query>
+    <id>1.0001.01</id>
     <name>selectAllQuery</name>
     <value>SELECT * FROM ?</value>
   </query>
   
   <query>
+    <id>1.0002.01</id>
     <name>registerUserQuery</name>
     <value>INSERT INTO Users (Username, Password) VALUES ('?','?')</value>
   </query>
   <query>
+    <id>1.0003.01</id>
     <name>selectUserQuery</name>
     <value>SELECT * FROM Users WHERE username = '?' AND password = '?'</value>
   </query>
   <query>
+    <id>1.0004.01</id>
     <name>selectRoleQuery</name>
     <value>SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = '?'</value>
   </query>
   
   <query>
+    <id>1.0005.02</id>
     <name>addArticleQuery</name>
     <value>INSERT INTO Article (publicationDate, title, summary, content, ownerId, folderId) VALUES ('?', '?', '?', '?', '?', '?')</value>
   </query>
   <query>
+    <id>1.0006.02</id>
     <name>updateArticleQuery</name>
     <value>UPDATE Article SET publicationDate='?',title='?',summary='?',content='?',ownerId='?',folderId='?' WHERE articleId='?'</value>
   </query>
   <query>
+    <id>1.0007.01</id>
     <name>deleteArticleQuery</name>
     <value>DELETE FROM Article WHERE articleId='?' </value>
   </query>
   <query>
+    <id>1.0008.02</id>
     <name>selectArticleByTitleQuery</name>
     <value>SELECT * FROM Article WHERE title = '?' AND folderId = '?'</value>
   </query>
   <query>
+    <id>1.0009.01</id>
     <name>selectArticleByIdQuery</name>
     <value>SELECT * FROM Article WHERE articleId = '?'</value>
   </query>
   <query>
-    <name>selectArticleByCategoryQuery</name>
-    <value>SELECT articleId, title, summary, publicationDate, ownerId, folderId FROM Articles WHERE category = '?'</value>
+    <id>1.0010.02</id>
+    <name>selectArticleByFolderQuery</name>
+    <value>SELECT articleId, title, summary, publicationDate, ownerId, folderId FROM Article WHERE folderId = '?'</value>
   </query>
   
   
   <query>
+    <id>1.0011.02</id>
     <name>addFolderQuery</name>
     <value>INSERT INTO Folder (name, summary, visibility, ownerId, parentId) VALUES ('?', '?', '?', '?', '?')</value>
   </query>
   <query>
+    <id>1.0012.02</id>
     <name>deleteFolderQuery</name>
     <value>DELETE FROM Folder WHERE folderId='?'</value>
   </query>
   <query>
+    <id>1.0013.02</id>
     <name>selectFolderByNameQuery</name>
     <value>SELECT * FROM Folder WHERE name = '?'</value>
   </query>
   <query>
+    <id>1.0014.02</id>
     <name>countArticlesInFolderQuery</name>
     <value>SELECT COUNT(*) FROM Article WHERE folderId='?'</value>
   </query>

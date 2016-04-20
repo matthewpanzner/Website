@@ -5,7 +5,7 @@ require_once(CLASS_DIR . "/entity/Entity.php");
 class Article extends Entity{
 
   public function __construct($data){
-    $this->data['articleId'] = (isset($data['id'])) ? $data['id'] : "";
+    $this->data['articleId'] = (isset($data['articleId'])) ? $data['articleId'] : "";
     $this->data['publicationDate'] = (isset($data['publicationDate'])) ? $data['publicationDate'] : "";
 	  $this->data['title'] = (isset($data['title'])) ? htmlspecialchars($data['title'],ENT_QUOTES) : "";
     $this->data['summary'] = (isset($data['summary'])) ? htmlspecialchars($data['summary'],ENT_QUOTES) : "";
