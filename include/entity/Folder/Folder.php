@@ -18,7 +18,7 @@ class Folder extends Entity{
 		$this->data['summary'] = (isset($data['summary'])) ? htmlspecialchars($data['summary'],ENT_QUOTES) : "";
     $this->data['visibility'] = (isset($data['visibility'])) ? $data['visibility'] : "visible";
     $this->data['ownerId'] = (isset($data['ownerId'])) ? $data['ownderId'] : NULL;
-    $this->data['parentId'] = (isset($data['parentId'])) ? $data['parentId'] : "root";
+    $this->data['parentId'] = (isset($data['parentId'])) ? $data['parentId'] : NULL;
     ]
   }
 }?>
