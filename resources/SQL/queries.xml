@@ -80,4 +80,9 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
     <name>countArticlesInFolderQuery</name>
     <value>SELECT COUNT(*) FROM Article WHERE folderId='?'</value>
   </query>
+  <query>
+    <id>1.0015.01</id>
+    <name>selectChildrenOfFolderQuery</name>
+    <value>SELECT * FROM Folder WHERE parentId='?'</value>
+  </query>
 </queries>

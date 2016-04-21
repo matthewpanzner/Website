@@ -2,7 +2,7 @@
 require_once(CLASS_DIR . "/entity/folder/Folder.php");
 require_once(CLASS_DIR . "/utils/database/DAO.php");
 
-class ArticleCategoryService{
+class FolderService{
   private $dao;
   
   public function __construct(){
@@ -62,6 +62,28 @@ class ArticleCategoryService{
     
     return new Folder($data);
   }
+  
+  public function getChildren($folder){
+    $args[0] = $folder->folderId;
+      
+    //See 1.0015.-- for up-to-date information on query
+    $res = $this->dao->select("selectChildrenOfFolderQuery", $args);
+    
+    $folders = [];
+    while($row = mysqli_fetch_row($res)){
+      $data["folderId"] = $row[0];
+      $data["name"] = $row[1];
+      $data["summary"] = $row[2];
+      $data["visibility"] = $row[3];
+      $data["ownerId"] = $row[4];
+      $data["parentId"] = $row[5];
+      $folders[count($folders)] = new Folder($data);
+    }
+    $result = null;
+    
+    return $folders;
+  }
+  
   public function deleteCategory($folderId){
     $args[0] = $folderId;
     if($this->countArticles($folderId) != 0)

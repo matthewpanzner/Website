@@ -1,7 +1,7 @@
 <?php
-require_once(CLASS_DIR . "/model/ArticleCategoryService.php");
+require_once(CLASS_DIR . "/model/FolderService.php");
 
-class ArticleCategoryController extends Controller{
+class FolderController extends Controller{
   public function onAdd(){
     if(!$this->authenticate("admin")){
       $this->model['error'] = new ErrorModel("Unauthorized Access");
@@ -14,7 +14,7 @@ class ArticleCategoryController extends Controller{
       return new View($this->model, "error.php");
     }
       
-    $service = new ArticleCategoryService();
+    $service = new FolderService();
     $data = [
       "name" => $_POST["title"],
       "summary" => $_POST["summary"]
@@ -32,13 +32,15 @@ class ArticleCategoryController extends Controller{
     }
   }
   
+  
+  
   public function onDelete(){
     if(!$this->authenticate("admin")){
         $this->model['error'] = new ErrorModel("Unauthorized Access");
         return new View($this->model, "error.php");
     }
     
-    $service = new ArticleCategoryService();
+    $service = new FolderService();
     
     if(!isset($_GET['id'])){
       $this->model['error'] = new ErrorModel("Unresolvsed URI");
@@ -57,9 +59,25 @@ class ArticleCategoryController extends Controller{
     }
   }
   
+  
+  
   public function onGetCategories(){
-    $service = new ArticleService();
-    $this->model['categories'] = $service->getCategories();
-    return new View($this->model, "article-categories.php");
+    if(!isset($_GET['name'])){
+      $this->model['error'] = new ErrorModel("Invalid URI");
+      return new View($this->model, "error.php");
+    }
+    
+    $service = new FolderService();
+    
+    $folder = $service->getFolder($_GET['name']);
+    $this->model['folders'] = $service->getChildren($folder);
+    
+    if($this->model['folders'] == null){
+      $this->model['error'] = new ErrorModel("There are no articles!");
+      return new View($this->model, "error.php");
+    }
+ 
+       
+    return new View($this->model, "folders.php");
   }
 }?>

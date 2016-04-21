@@ -1998,3 +1998,331 @@ About to execute: SELECT * FROM ArticleCategory /////1461087078 = 2016-04-19 13:
 Executed successfully, rows: 2 /////1461087078 = 2016-04-19 13:31:18
 About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461087078 = 2016-04-19 13:31:18
 Executed successfully, rows: 1 /////1461087078 = 2016-04-19 13:31:18
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197544 = 2016-04-20 20:12:24
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197610 = 2016-04-20 20:13:30
+Executed successfully, rows: 1 /////1461197610 = 2016-04-20 20:13:30
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197610 = 2016-04-20 20:13:30
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197635 = 2016-04-20 20:13:55
+Executed successfully, rows: 1 /////1461197635 = 2016-04-20 20:13:55
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197635 = 2016-04-20 20:13:55
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197666 = 2016-04-20 20:14:26
+Executed successfully, rows: 1 /////1461197666 = 2016-04-20 20:14:26
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197666 = 2016-04-20 20:14:26
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197669 = 2016-04-20 20:14:29
+Executed successfully, rows: 1 /////1461197669 = 2016-04-20 20:14:29
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197669 = 2016-04-20 20:14:29
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197914 = 2016-04-20 20:18:34
+Executed successfully, rows: 1 /////1461197914 = 2016-04-20 20:18:34
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197914 = 2016-04-20 20:18:34
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197983 = 2016-04-20 20:19:43
+Executed successfully, rows: 1 /////1461197983 = 2016-04-20 20:19:43
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197983 = 2016-04-20 20:19:43
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461197987 = 2016-04-20 20:19:47
+Executed successfully, rows: 1 /////1461197987 = 2016-04-20 20:19:47
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461197987 = 2016-04-20 20:19:47
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198033 = 2016-04-20 20:20:33
+Executed successfully, rows: 1 /////1461198033 = 2016-04-20 20:20:33
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198033 = 2016-04-20 20:20:33
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198035 = 2016-04-20 20:20:35
+Executed successfully, rows: 1 /////1461198035 = 2016-04-20 20:20:35
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198035 = 2016-04-20 20:20:35
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198055 = 2016-04-20 20:20:55
+Executed successfully, rows: 1 /////1461198055 = 2016-04-20 20:20:55
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198055 = 2016-04-20 20:20:55
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198480 = 2016-04-20 20:28:00
+Executed successfully, rows: 1 /////1461198480 = 2016-04-20 20:28:00
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198480 = 2016-04-20 20:28:00
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198502 = 2016-04-20 20:28:22
+Executed successfully, rows: 1 /////1461198502 = 2016-04-20 20:28:22
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198502 = 2016-04-20 20:28:22
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198503 = 2016-04-20 20:28:23
+Executed successfully, rows: 1 /////1461198503 = 2016-04-20 20:28:23
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198503 = 2016-04-20 20:28:23
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198584 = 2016-04-20 20:29:44
+Executed successfully, rows: 1 /////1461198584 = 2016-04-20 20:29:44
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198584 = 2016-04-20 20:29:44
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198599 = 2016-04-20 20:29:59
+Executed successfully, rows: 1 /////1461198599 = 2016-04-20 20:29:59
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198599 = 2016-04-20 20:29:59
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198625 = 2016-04-20 20:30:25
+Executed successfully, rows: 1 /////1461198625 = 2016-04-20 20:30:25
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198625 = 2016-04-20 20:30:25
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198658 = 2016-04-20 20:30:58
+Executed successfully, rows: 1 /////1461198658 = 2016-04-20 20:30:58
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198658 = 2016-04-20 20:30:58
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198675 = 2016-04-20 20:31:15
+Executed successfully, rows: 1 /////1461198675 = 2016-04-20 20:31:15
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198675 = 2016-04-20 20:31:15
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198728 = 2016-04-20 20:32:08
+Executed successfully, rows: 1 /////1461198728 = 2016-04-20 20:32:08
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198728 = 2016-04-20 20:32:08
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198808 = 2016-04-20 20:33:28
+Executed successfully, rows: 1 /////1461198808 = 2016-04-20 20:33:28
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198808 = 2016-04-20 20:33:28
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198830 = 2016-04-20 20:33:50
+Executed successfully, rows: 1 /////1461198830 = 2016-04-20 20:33:50
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198830 = 2016-04-20 20:33:50
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198897 = 2016-04-20 20:34:57
+Executed successfully, rows: 1 /////1461198897 = 2016-04-20 20:34:57
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198916 = 2016-04-20 20:35:16
+Executed successfully, rows: 1 /////1461198916 = 2016-04-20 20:35:16
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198923 = 2016-04-20 20:35:23
+Executed successfully, rows: 1 /////1461198923 = 2016-04-20 20:35:23
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198923 = 2016-04-20 20:35:23
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198948 = 2016-04-20 20:35:48
+Executed successfully, rows: 1 /////1461198948 = 2016-04-20 20:35:48
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198948 = 2016-04-20 20:35:48
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198977 = 2016-04-20 20:36:17
+Executed successfully, rows: 1 /////1461198977 = 2016-04-20 20:36:17
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198977 = 2016-04-20 20:36:17
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461198995 = 2016-04-20 20:36:35
+Executed successfully, rows: 1 /////1461198995 = 2016-04-20 20:36:35
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461198995 = 2016-04-20 20:36:35
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199040 = 2016-04-20 20:37:20
+Executed successfully, rows: 1 /////1461199040 = 2016-04-20 20:37:20
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199040 = 2016-04-20 20:37:20
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199044 = 2016-04-20 20:37:24
+Executed successfully, rows: 1 /////1461199044 = 2016-04-20 20:37:24
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199044 = 2016-04-20 20:37:24
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199045 = 2016-04-20 20:37:25
+Executed successfully, rows: 1 /////1461199045 = 2016-04-20 20:37:25
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199045 = 2016-04-20 20:37:25
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199084 = 2016-04-20 20:38:04
+Executed successfully, rows: 1 /////1461199084 = 2016-04-20 20:38:04
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199084 = 2016-04-20 20:38:04
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199122 = 2016-04-20 20:38:42
+Executed successfully, rows: 1 /////1461199122 = 2016-04-20 20:38:42
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199122 = 2016-04-20 20:38:42
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199123 = 2016-04-20 20:38:43
+Executed successfully, rows: 1 /////1461199123 = 2016-04-20 20:38:43
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199123 = 2016-04-20 20:38:43
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199123 = 2016-04-20 20:38:43
+Executed successfully, rows: 1 /////1461199123 = 2016-04-20 20:38:43
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199123 = 2016-04-20 20:38:43
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199137 = 2016-04-20 20:38:57
+Executed successfully, rows: 1 /////1461199137 = 2016-04-20 20:38:57
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199137 = 2016-04-20 20:38:57
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199138 = 2016-04-20 20:38:58
+Executed successfully, rows: 1 /////1461199138 = 2016-04-20 20:38:58
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199138 = 2016-04-20 20:38:58
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199168 = 2016-04-20 20:39:28
+Executed successfully, rows: 1 /////1461199168 = 2016-04-20 20:39:28
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199168 = 2016-04-20 20:39:28
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199204 = 2016-04-20 20:40:04
+Executed successfully, rows: 1 /////1461199204 = 2016-04-20 20:40:04
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199204 = 2016-04-20 20:40:04
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199308 = 2016-04-20 20:41:48
+Executed successfully, rows: 1 /////1461199308 = 2016-04-20 20:41:48
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199308 = 2016-04-20 20:41:48
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199320 = 2016-04-20 20:42:00
+Executed successfully, rows: 1 /////1461199320 = 2016-04-20 20:42:00
+About to execute: SELECT * FROM Folder WHERE parentId=' /////1461199320 = 2016-04-20 20:42:00
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199341 = 2016-04-20 20:42:21
+Executed successfully, rows: 1 /////1461199341 = 2016-04-20 20:42:21
+About to execute: SELECT * FROM Folder WHERE parentId=1' /////1461199341 = 2016-04-20 20:42:21
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199369 = 2016-04-20 20:42:49
+Executed successfully, rows: 1 /////1461199369 = 2016-04-20 20:42:49
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199369 = 2016-04-20 20:42:49
+Executed successfully, rows: 2 /////1461199369 = 2016-04-20 20:42:49
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199483 = 2016-04-20 20:44:43
+Executed successfully, rows: 1 /////1461199483 = 2016-04-20 20:44:43
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199483 = 2016-04-20 20:44:43
+Executed successfully, rows: 2 /////1461199483 = 2016-04-20 20:44:43
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199566 = 2016-04-20 20:46:06
+Executed successfully, rows: 1 /////1461199566 = 2016-04-20 20:46:06
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199566 = 2016-04-20 20:46:06
+Executed successfully, rows: 2 /////1461199566 = 2016-04-20 20:46:06
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199615 = 2016-04-20 20:46:55
+Executed successfully, rows: 1 /////1461199615 = 2016-04-20 20:46:55
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199615 = 2016-04-20 20:46:55
+Executed successfully, rows: 2 /////1461199615 = 2016-04-20 20:46:55
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199633 = 2016-04-20 20:47:13
+Executed successfully, rows: 1 /////1461199633 = 2016-04-20 20:47:13
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199633 = 2016-04-20 20:47:13
+Executed successfully, rows: 2 /////1461199633 = 2016-04-20 20:47:13
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199850 = 2016-04-20 20:50:50
+Executed successfully, rows: 1 /////1461199850 = 2016-04-20 20:50:50
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199850 = 2016-04-20 20:50:50
+Executed successfully, rows: 2 /////1461199850 = 2016-04-20 20:50:50
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199952 = 2016-04-20 20:52:32
+Executed successfully, rows: 1 /////1461199952 = 2016-04-20 20:52:32
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199952 = 2016-04-20 20:52:32
+Executed successfully, rows: 2 /////1461199952 = 2016-04-20 20:52:32
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461199984 = 2016-04-20 20:53:04
+Executed successfully, rows: 1 /////1461199984 = 2016-04-20 20:53:04
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461199984 = 2016-04-20 20:53:04
+Executed successfully, rows: 2 /////1461199984 = 2016-04-20 20:53:04
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200008 = 2016-04-20 20:53:28
+Executed successfully, rows: 1 /////1461200008 = 2016-04-20 20:53:28
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200008 = 2016-04-20 20:53:28
+Executed successfully, rows: 2 /////1461200008 = 2016-04-20 20:53:28
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200018 = 2016-04-20 20:53:38
+Executed successfully, rows: 1 /////1461200018 = 2016-04-20 20:53:38
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200018 = 2016-04-20 20:53:38
+Executed successfully, rows: 2 /////1461200018 = 2016-04-20 20:53:38
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200034 = 2016-04-20 20:53:54
+Executed successfully, rows: 1 /////1461200034 = 2016-04-20 20:53:54
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200034 = 2016-04-20 20:53:54
+Executed successfully, rows: 2 /////1461200034 = 2016-04-20 20:53:54
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200048 = 2016-04-20 20:54:08
+Executed successfully, rows: 1 /////1461200048 = 2016-04-20 20:54:08
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200049 = 2016-04-20 20:54:09
+Executed successfully, rows: 2 /////1461200049 = 2016-04-20 20:54:09
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200066 = 2016-04-20 20:54:26
+Executed successfully, rows: 1 /////1461200066 = 2016-04-20 20:54:26
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200066 = 2016-04-20 20:54:26
+Executed successfully, rows: 2 /////1461200066 = 2016-04-20 20:54:26
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200078 = 2016-04-20 20:54:38
+Executed successfully, rows: 1 /////1461200078 = 2016-04-20 20:54:38
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200078 = 2016-04-20 20:54:38
+Executed successfully, rows: 2 /////1461200078 = 2016-04-20 20:54:38
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200097 = 2016-04-20 20:54:57
+Executed successfully, rows: 1 /////1461200097 = 2016-04-20 20:54:57
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200097 = 2016-04-20 20:54:57
+Executed successfully, rows: 2 /////1461200097 = 2016-04-20 20:54:57
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200167 = 2016-04-20 20:56:07
+Executed successfully, rows: 1 /////1461200167 = 2016-04-20 20:56:07
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200167 = 2016-04-20 20:56:07
+Executed successfully, rows: 2 /////1461200167 = 2016-04-20 20:56:07
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200183 = 2016-04-20 20:56:23
+Executed successfully, rows: 1 /////1461200183 = 2016-04-20 20:56:23
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200183 = 2016-04-20 20:56:23
+Executed successfully, rows: 2 /////1461200183 = 2016-04-20 20:56:23
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200208 = 2016-04-20 20:56:48
+Executed successfully, rows: 1 /////1461200208 = 2016-04-20 20:56:48
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200208 = 2016-04-20 20:56:48
+Executed successfully, rows: 2 /////1461200208 = 2016-04-20 20:56:48
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200240 = 2016-04-20 20:57:20
+Executed successfully, rows: 1 /////1461200240 = 2016-04-20 20:57:20
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200240 = 2016-04-20 20:57:20
+Executed successfully, rows: 2 /////1461200240 = 2016-04-20 20:57:20
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200255 = 2016-04-20 20:57:35
+Executed successfully, rows: 1 /////1461200255 = 2016-04-20 20:57:35
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200255 = 2016-04-20 20:57:35
+Executed successfully, rows: 2 /////1461200255 = 2016-04-20 20:57:35
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200273 = 2016-04-20 20:57:53
+Executed successfully, rows: 1 /////1461200273 = 2016-04-20 20:57:53
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200273 = 2016-04-20 20:57:53
+Executed successfully, rows: 2 /////1461200273 = 2016-04-20 20:57:53
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200284 = 2016-04-20 20:58:04
+Executed successfully, rows: 1 /////1461200284 = 2016-04-20 20:58:04
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200284 = 2016-04-20 20:58:04
+Executed successfully, rows: 2 /////1461200284 = 2016-04-20 20:58:04
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461200287 = 2016-04-20 20:58:07
+Executed successfully, rows: 1 /////1461200287 = 2016-04-20 20:58:07
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461200287 = 2016-04-20 20:58:07
+Executed successfully, rows: 2 /////1461200287 = 2016-04-20 20:58:07
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215172 = 2016-04-21 01:06:12
+Executed successfully, rows: 1 /////1461215172 = 2016-04-21 01:06:12
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215172 = 2016-04-21 01:06:12
+Executed successfully, rows: 2 /////1461215172 = 2016-04-21 01:06:12
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215194 = 2016-04-21 01:06:34
+Executed successfully, rows: 1 /////1461215194 = 2016-04-21 01:06:34
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215194 = 2016-04-21 01:06:34
+Executed successfully, rows: 2 /////1461215194 = 2016-04-21 01:06:34
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215235 = 2016-04-21 01:07:15
+Executed successfully, rows: 1 /////1461215235 = 2016-04-21 01:07:15
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215235 = 2016-04-21 01:07:15
+Executed successfully, rows: 2 /////1461215235 = 2016-04-21 01:07:15
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215242 = 2016-04-21 01:07:22
+Executed successfully, rows: 1 /////1461215242 = 2016-04-21 01:07:22
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215242 = 2016-04-21 01:07:22
+Executed successfully, rows: 2 /////1461215242 = 2016-04-21 01:07:22
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215266 = 2016-04-21 01:07:46
+Executed successfully, rows: 1 /////1461215266 = 2016-04-21 01:07:46
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215266 = 2016-04-21 01:07:46
+Executed successfully, rows: 2 /////1461215266 = 2016-04-21 01:07:46
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215277 = 2016-04-21 01:07:57
+Executed successfully, rows: 1 /////1461215277 = 2016-04-21 01:07:57
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215277 = 2016-04-21 01:07:57
+Executed successfully, rows: 2 /////1461215277 = 2016-04-21 01:07:57
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215284 = 2016-04-21 01:08:04
+Executed successfully, rows: 1 /////1461215284 = 2016-04-21 01:08:04
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215284 = 2016-04-21 01:08:04
+Executed successfully, rows: 2 /////1461215284 = 2016-04-21 01:08:04
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215301 = 2016-04-21 01:08:21
+Executed successfully, rows: 1 /////1461215301 = 2016-04-21 01:08:21
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215301 = 2016-04-21 01:08:21
+Executed successfully, rows: 2 /////1461215301 = 2016-04-21 01:08:21
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215377 = 2016-04-21 01:09:37
+Executed successfully, rows: 1 /////1461215377 = 2016-04-21 01:09:37
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215377 = 2016-04-21 01:09:37
+Executed successfully, rows: 2 /////1461215377 = 2016-04-21 01:09:37
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215634 = 2016-04-21 01:13:54
+Executed successfully, rows: 1 /////1461215634 = 2016-04-21 01:13:54
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215634 = 2016-04-21 01:13:54
+Executed successfully, rows: 2 /////1461215634 = 2016-04-21 01:13:54
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215654 = 2016-04-21 01:14:14
+Executed successfully, rows: 1 /////1461215654 = 2016-04-21 01:14:14
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215654 = 2016-04-21 01:14:14
+Executed successfully, rows: 2 /////1461215654 = 2016-04-21 01:14:14
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215668 = 2016-04-21 01:14:28
+Executed successfully, rows: 1 /////1461215668 = 2016-04-21 01:14:28
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215668 = 2016-04-21 01:14:28
+Executed successfully, rows: 2 /////1461215668 = 2016-04-21 01:14:28
+About to execute: SELECT * FROM Users WHERE username = 'root' AND password = '' /////1461215726 = 2016-04-21 01:15:26
+Executed successfully, rows: 1 /////1461215726 = 2016-04-21 01:15:26
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215726 = 2016-04-21 01:15:26
+Executed successfully, rows: 1 /////1461215726 = 2016-04-21 01:15:26
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215728 = 2016-04-21 01:15:28
+Executed successfully, rows: 1 /////1461215728 = 2016-04-21 01:15:28
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215728 = 2016-04-21 01:15:28
+Executed successfully, rows: 2 /////1461215728 = 2016-04-21 01:15:28
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215728 = 2016-04-21 01:15:28
+Executed successfully, rows: 1 /////1461215728 = 2016-04-21 01:15:28
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215736 = 2016-04-21 01:15:36
+Executed successfully, rows: 1 /////1461215736 = 2016-04-21 01:15:36
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215736 = 2016-04-21 01:15:36
+Executed successfully, rows: 2 /////1461215736 = 2016-04-21 01:15:36
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215736 = 2016-04-21 01:15:36
+Executed successfully, rows: 1 /////1461215736 = 2016-04-21 01:15:36
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215911 = 2016-04-21 01:18:31
+Executed successfully, rows: 1 /////1461215911 = 2016-04-21 01:18:31
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215911 = 2016-04-21 01:18:31
+Executed successfully, rows: 2 /////1461215911 = 2016-04-21 01:18:31
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215911 = 2016-04-21 01:18:31
+Executed successfully, rows: 1 /////1461215911 = 2016-04-21 01:18:31
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215928 = 2016-04-21 01:18:48
+Executed successfully, rows: 1 /////1461215928 = 2016-04-21 01:18:48
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215928 = 2016-04-21 01:18:48
+Executed successfully, rows: 2 /////1461215928 = 2016-04-21 01:18:48
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215928 = 2016-04-21 01:18:48
+Executed successfully, rows: 1 /////1461215928 = 2016-04-21 01:18:48
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215929 = 2016-04-21 01:18:49
+Executed successfully, rows: 1 /////1461215929 = 2016-04-21 01:18:49
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215929 = 2016-04-21 01:18:49
+Executed successfully, rows: 2 /////1461215929 = 2016-04-21 01:18:49
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215929 = 2016-04-21 01:18:49
+Executed successfully, rows: 1 /////1461215929 = 2016-04-21 01:18:49
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215955 = 2016-04-21 01:19:15
+Executed successfully, rows: 1 /////1461215955 = 2016-04-21 01:19:15
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215955 = 2016-04-21 01:19:15
+Executed successfully, rows: 2 /////1461215955 = 2016-04-21 01:19:15
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215955 = 2016-04-21 01:19:15
+Executed successfully, rows: 1 /////1461215955 = 2016-04-21 01:19:15
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215979 = 2016-04-21 01:19:39
+Executed successfully, rows: 1 /////1461215979 = 2016-04-21 01:19:39
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215979 = 2016-04-21 01:19:39
+Executed successfully, rows: 2 /////1461215979 = 2016-04-21 01:19:39
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215979 = 2016-04-21 01:19:39
+Executed successfully, rows: 1 /////1461215979 = 2016-04-21 01:19:39
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215980 = 2016-04-21 01:19:40
+Executed successfully, rows: 1 /////1461215980 = 2016-04-21 01:19:40
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461215982 = 2016-04-21 01:19:42
+Executed successfully, rows: 1 /////1461215982 = 2016-04-21 01:19:42
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461215982 = 2016-04-21 01:19:42
+Executed successfully, rows: 2 /////1461215982 = 2016-04-21 01:19:42
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461215982 = 2016-04-21 01:19:42
+Executed successfully, rows: 1 /////1461215982 = 2016-04-21 01:19:42
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461216018 = 2016-04-21 01:20:18
+Executed successfully, rows: 1 /////1461216018 = 2016-04-21 01:20:18
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461216018 = 2016-04-21 01:20:18
+Executed successfully, rows: 2 /////1461216018 = 2016-04-21 01:20:18
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461216018 = 2016-04-21 01:20:18
+Executed successfully, rows: 1 /////1461216018 = 2016-04-21 01:20:18
+About to execute: SELECT * FROM Folder WHERE name = 'root' /////1461216030 = 2016-04-21 01:20:30
+Executed successfully, rows: 1 /////1461216030 = 2016-04-21 01:20:30
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1461216030 = 2016-04-21 01:20:30
+Executed successfully, rows: 2 /////1461216030 = 2016-04-21 01:20:30
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'root' /////1461216030 = 2016-04-21 01:20:30
+Executed successfully, rows: 1 /////1461216030 = 2016-04-21 01:20:30
