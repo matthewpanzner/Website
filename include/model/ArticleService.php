@@ -106,14 +106,14 @@ class ArticleService{
 //******************************************************
 // Article Folder relationship methods
  //*************************************
-  
+  /*
   public function getArticlesByFolder($folderId){
     $args[0] = $folderId;
     
     //See 1.0010.-- for up-to-date information on query
     return $this->dao->select("selectArticleByFolderQuery", $args);
   }
-  
+  */
   /* FOR DELETE------------------------------------------------------------------------+
   private function articleAlreadyExistsInFolder($folder){
     $args[0] = $folder->name;

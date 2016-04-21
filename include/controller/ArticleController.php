@@ -114,19 +114,19 @@ class ArticleController extends Controller{
   
   public function onGetArticlesByCategory(){
     $service = new ArticleService();
-    $this->model['articles'] = $service->getArticlesByCategory($_GET['c']);
+    $this->model['articles'] = $service->getArticlesByFolder($_GET['cId']);
     return new View($this->model, "articles.php");
   }
   
   public function onGetArticle(){
     
-    if(!isset($_GET['articleId'])){
+    if(!isset($_GET['id'])){
       $this->model['error'] = new ErrorModel("Failed to resolve id");
       return new View($this->model, "error.php");
     }
     
     $service = new ArticleService();
-    $this->model['article'] = $service->getArticle($_GET['articleId']);
+    $this->model['article'] = $service->getArticle($_GET['id']);
     return new View($this->model, "article.php");
   }
 }?>

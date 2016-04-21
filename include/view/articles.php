@@ -9,7 +9,7 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
 
       if($key === 1){ //title
         $html .= "      <div class='article_cell-title'>\n";
-        $html .= "        <a href='index.php?controller=ArticleController&action=onGetArticle&id=" . $row[0] . "'><h2>" . htmlspecialchars_decode($value) . " </h2></a>\n";
+        $html .= "        <a href='index.php?controller=Article&action=onGetArticle&id=" . $row[0] . "'><h2>" . htmlspecialchars_decode($value) . " </h2></a>\n";
         $html .= "      </div>\n";
         $html .="       <div class='article_cell-body'>\n";
       }
@@ -20,8 +20,8 @@ if(mysqli_num_rows($this->model['articles'])){ //Needs to be changed to do in co
     }
     
     if($role == 'admin'){
-      $html .= "          <a id='article-delete' href='index.php?controller=ArticleController&action=onDelete&id=" . $row[0] . "'>delete</a>\n";
-      $html .= "          <a id='article-edit' href='index.php?controller=ArticleFormController&action=onLoad&id=" . $row[0] . "'>edit</a>\n";
+      $html .= "          <a id='article-delete' href='index.php?controller=Article&action=onDelete&id=" . $row[0] . "'>delete</a>\n";
+      $html .= "          <a id='article-edit' href='index.php?controller=ArticleForm&action=onLoad&id=" . $row[0] . "'>edit</a>\n";
     }
     
     $html .= "      </div>\n";

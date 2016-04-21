@@ -1,5 +1,6 @@
 <?php
 require_once(CLASS_DIR . "/model/FolderService.php");
+require_once(CLASS_DIR . "/model/ArticleService.php");
 
 class FolderController extends Controller{
   public function onAdd(){
@@ -60,7 +61,6 @@ class FolderController extends Controller{
   }
   
   
-  
   public function onGetCategories(){
     if(!isset($_GET['name'])){
       $this->model['error'] = new ErrorModel("Invalid URI");
@@ -68,12 +68,14 @@ class FolderController extends Controller{
     }
     
     $service = new FolderService();
-    
+     
     $folder = $service->getFolder($_GET['name']);
+ 
     $this->model['folders'] = $service->getChildren($folder);
+    $this->model['articles'] = $service->getArticlesByFolder($folder->folderId);
     
-    if($this->model['folders'] == null){
-      $this->model['error'] = new ErrorModel("There are no articles!");
+    if($this->model['folders'] == null && $this->model['articles'] == null){
+      $this->model['error'] = new ErrorModel("There are is no content here!");
       return new View($this->model, "error.php");
     }
  

@@ -67,7 +67,7 @@ class FolderService{
     $args[0] = $folder->folderId;
       
     //See 1.0015.-- for up-to-date information on query
-    $res = $this->dao->select("selectChildrenOfFolderQuery", $args);
+    $res = $this->dao->select("selectChildFoldersQuery", $args);
     
     $folders = [];
     while($row = mysqli_fetch_row($res)){
@@ -92,5 +92,28 @@ class FolderService{
     //See 1.0012.-- for up-to-date information on query
     $this->dao->delete("deleteArticleCategoryQuery", $args); // do check here later for how many rows effected
     return true;
+  }
+ 
+  public function getArticlesByFolder($folderId){
+    $args[0] = $folderId;
+    
+    //See 1.0010.-- for up-to-date information on query
+    $res = $this->dao->select("selectArticleByFolderQuery", $args);
+    
+    $articles = [];
+    while($row = mysqli_fetch_row($res)){
+      $data["articleId"] = $row[0];
+      $data["publicationDate"] = $row[1];
+      $data["title"] = $row[2];
+      $data["summary"] = $row[3];
+      $data["content"] = $row[4];
+      $data["visibility"] = $row[5];
+      $data["ownerId"] = $row[6];
+      $data["folderId"] = $row[7];
+      $articles[count($articles)] = new Article($data);
+    }
+    $result = null;
+    
+    return $articles;
   }
 }?>

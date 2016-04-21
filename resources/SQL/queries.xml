@@ -56,7 +56,7 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
   <query>
     <id>1.0010.02</id>
     <name>selectArticleByFolderQuery</name>
-    <value>SELECT articleId, title, summary, publicationDate, ownerId, folderId FROM Article WHERE folderId = '?'</value>
+    <value>SELECT * FROM Article WHERE folderId = '?'</value>
   </query>
   
   
@@ -82,7 +82,7 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
   </query>
   <query>
     <id>1.0015.01</id>
-    <name>selectChildrenOfFolderQuery</name>
+    <name>selectChildFoldersQuery</name>
     <value>SELECT * FROM Folder WHERE parentId='?'</value>
   </query>
 </queries>

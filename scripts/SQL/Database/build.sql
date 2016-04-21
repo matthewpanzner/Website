@@ -46,6 +46,7 @@ CREATE TABLE `Article` (
  `title` varchar(255) NOT NULL,
  `summary` text NOT NULL,
  `content` mediumtext NOT NULL,
+ `visibility` varchar(8) NOT NULL DEFAULT 'visible',
  `ownerId` int(15) DEFAULT NULL,
  `folderId` int(5) DEFAULT NULL,
  PRIMARY KEY (`articleId`),
