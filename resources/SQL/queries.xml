@@ -71,9 +71,9 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
     <value>DELETE FROM Folder WHERE folderId='?'</value>
   </query>
   <query>
-    <id>1.0013.02</id>
-    <name>selectFolderByNameQuery</name>
-    <value>SELECT * FROM Folder WHERE name = '?'</value>
+    <id>1.0013.03</id>
+    <name>selectFolderByIdQuery</name>
+    <value>SELECT * FROM Folder WHERE folderId = '?'</value>
   </query>
   <query>
     <id>1.0014.02</id>

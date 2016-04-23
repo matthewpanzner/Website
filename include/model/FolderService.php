@@ -45,14 +45,27 @@ class FolderService{
     $args[0] = "Folder";
     
     //See 1.0001.-- for up-to-date information on query
-    return $this->dao->select("selectAllQuery", $args);
+    $res = $this->dao->select("selectAllQuery", $args);
+    $folders = [];
+    
+    while($row = mysqli_fetch_row($res)){
+      $data["folderId"] = $row[0];
+      $data["name"] = $row[1];
+      $data["summary"] = $row[2];
+      $data["visibility"] = $row[3];
+      $data["ownerId"] = $row[4];
+      $data["parentId"] = $row[5];
+      $folders[count($folders)] = new Folder($data);
+    }
+    
+    return $folders;
   }
   
-  public function getFolder($name){
-    $args[0] = $name;
+  public function getFolder($id){
+    $args[0] = $id;
     
     //See 1.0013.-- for up-to-date information on query
-    $row = mysqli_fetch_row($this->dao->select("selectFolderByNameQuery", $args));
+    $row = mysqli_fetch_row($this->dao->select("selectFolderByIdQuery", $args));
     $data["folderId"] = $row[0];
     $data["name"] = $row[1];
     $data["summary"] = $row[2];
@@ -84,13 +97,13 @@ class FolderService{
     return $folders;
   }
   
-  public function deleteCategory($folderId){
+  public function deleteFolder($folderId){
     $args[0] = $folderId;
     if($this->countArticles($folderId) != 0)
       return false;
     
     //See 1.0012.-- for up-to-date information on query
-    $this->dao->delete("deleteArticleCategoryQuery", $args); // do check here later for how many rows effected
+    $this->dao->delete("deleteFolderQuery", $args); // do check here later for how many rows effected
     return true;
   }
  

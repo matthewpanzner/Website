@@ -48,11 +48,11 @@ class FolderController extends Controller{
       return new View($this->model, "error.php");
     }  
     
-    if($service->deleteCategory($_GET['id'])){
+    if($service->deleteFolder($_GET['id'])){
       $this->model['msg'] = "Deletion was successful";
       $this->model['reroute'] = true;
       
-      return new View($this->model, "index.php?controller=ArticleCategoryController&action=onGetCategories");
+      return new View($this->model, "index.php?controller=Folder&action=onGetFolders");
     }
     else{
       $this->model['error'] = new ErrorModel("Error in deleting!");
@@ -61,15 +61,15 @@ class FolderController extends Controller{
   }
   
   
-  public function onGetCategories(){
-    if(!isset($_GET['name'])){
+  public function onGetFolders(){
+    if(!isset($_GET['id'])){
       $this->model['error'] = new ErrorModel("Invalid URI");
       return new View($this->model, "error.php");
     }
     
     $service = new FolderService();
      
-    $folder = $service->getFolder($_GET['name']);
+    $folder = $service->getFolder($_GET['id']);
  
     $this->model['folders'] = $service->getChildren($folder);
     $this->model['articles'] = $service->getArticlesByFolder($folder->folderId);

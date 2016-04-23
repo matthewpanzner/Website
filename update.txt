@@ -24,7 +24,7 @@ I would make a File table.
 The completion of branch databaseV1 requires that:
 
 [*] TODO: Update AritcleController -- 4/20/2016 redirection features to be added
-[] TODO: Add FolderController
+[x] TODO: Add FolderController -- 4/22/2016
 [x] TODO: Add Folder entity -- 4/20/2016
 [x] TODO: Update Article entity -- 4/20/2016
 [x] TODO: Update queries.xml -- 4/20/2016
@@ -33,7 +33,7 @@ The completion of branch databaseV1 requires that:
 [x] TODO: Add FolderService model -- 4/20/2016
 [] TODO: Update article-form.php view
 [] TODO: Change name and update article-category-form.php view
-[] TODO: Update articles.php view to be passed model and hyperlinks
+[x] TODO: Update articles.php view to be passed model and hyperlinks -- 4/22/2016
 [x]] TODO: Update article-categories.php view to be renamed and hyperlink changes -- 4/21/2016
 [] TODO-LAST: Remove all ArticleCategory references
 [] TODO-LAST-LAST: Test and check if passed
