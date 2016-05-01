@@ -24,6 +24,18 @@ class ArticleService{
     return false;
   }
   
+  private function isArticleFolder($folderId){
+    $args[0] = $folderId;
+    
+    //See 1.0018.-- for up-to-date information on query
+    $result = $this->dao->select("countFoldersInFolderQuery", $args);
+    $row = mysqli_fetch_row($result);
+    
+    if($row[0] == 0)
+      return true;
+    return false;
+  }
+  
   private function alreadyExistsById($id){
     $args[0] = $id;
     
@@ -41,9 +53,11 @@ class ArticleService{
     $args[1] = $article->title;
     $args[2] = $article->summary;
     $args[3] = $article->content;
-    $args[4] = $article->category;
+    $args[4] = $article->visibility;
+    $args[5] = $article->ownerId;
+    $args[6] = $article->folderId;
     
-    if($this->alreadyExists($article))
+    if($this->alreadyExists($article) || !$this->isArticleFolder($article->folderId))
       return false;
     
     //See 1.0005.-- for up-to-date information on query
@@ -57,11 +71,12 @@ class ArticleService{
     $args[1] = $article->title;
     $args[2] = $article->summary;
     $args[3] = $article->content;
-    $args[4] = $article->ownerId;
-    $args[5] = $article->folderId;
-    $args[6] = $article->articleId;
+    $args[4] = $article->visibility;
+    $args[5] = $article->ownerId;
+    $args[6] = $article->folderId;
+    $args[7] = $article->articleId;
     
-    if(!$this->alreadyExistsById($article->id))
+    if($this->alreadyExists($article))
       return false;
     
     //See 1.0006.-- for up-to-date information on query
@@ -97,8 +112,9 @@ class ArticleService{
     $data['title'] = htmlspecialchars_decode($row[2]);
     $data['summary'] = htmlspecialchars_decode($row[3]);
     $data['content'] = htmlspecialchars_decode($row[4]);
-    $data['ownerId'] = $row[5];
-    $data['folderId'] = $row[6];
+    $data['visibility'] = $row[5];
+    $data['ownerId'] = $row[6];
+    $data['folderId'] = $row[7];
     
     return new Article($data);
   }

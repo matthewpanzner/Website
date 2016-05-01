@@ -29,12 +29,17 @@ The completion of branch databaseV1 requires that:
 [x] TODO: Update Article entity -- 4/20/2016
 [x] TODO: Update queries.xml -- 4/20/2016
 [x] TODO: Update database scripts -- 4/20/2016
-[~] TODO: Update ArticleService model -- 4/20/2016 Two methods pending
+[x] TODO: Update ArticleService model -- 4/20/2016 Two methods pending
 [x] TODO: Add FolderService model -- 4/20/2016
-[] TODO: Update article-form.php view
-[] TODO: Change name and update article-category-form.php view
+[x] TODO: Update article-form.php view -- 4/23/2016
+[x] TODO: Change name and update article-category-form.php view -- 4/30/2016
 [x] TODO: Update articles.php view to be passed model and hyperlinks -- 4/22/2016
-[x]] TODO: Update article-categories.php view to be renamed and hyperlink changes -- 4/21/2016
-[] TODO-LAST: Remove all ArticleCategory references
+[x] TODO: Update article-categories.php view to be renamed and hyperlink changes -- 4/21/2016
+[x] TODO-LAST: Remove all ArticleCategory references -- 4/30/2016
 [] TODO-LAST-LAST: Test and check if passed
+
+-----
+NEW BUGS:
+001 Same titles not allowed, even if differnt folders.
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -11,6 +11,7 @@ class FolderService{
   
   private function alreadyExists($folder){
     $args[0] = $folder->name;
+    $args[1] = $folder->parentId;
     
     //See 1.0013.-- for up-to-date information on query
     if(mysqli_num_rows($this->dao->select("selectFolderByNameQuery", $args)) > 0)
@@ -22,6 +23,14 @@ class FolderService{
     
   //See 1.0014.-- for up-to-date information on query    
     $result = $this->dao->select("countArticlesInFolderQuery", $args);
+    $row = mysqli_fetch_row($result);
+    return $row[0];
+  }
+  private function countFolders($folderId){
+    $args[0] = $folderId;
+    
+    //See 1.0018.-- for up-to-date information on query    
+    $result = $this->dao->select("countFoldersInFolderQuery", $args);
     $row = mysqli_fetch_row($result);
     return $row[0];
   }
@@ -76,6 +85,22 @@ class FolderService{
     return new Folder($data);
   }
   
+  public function getFolderByName($name, $parentId){
+    $args[0] = $name;
+    $args[1] = $parentId;
+    
+    //See 1.0017.-- for up-to-date information on query
+    $row = mysqli_fetch_row($this->dao->select("selectFolderByNameQuery", $args));
+    $data["folderId"] = $row[0];
+    $data["name"] = $row[1];
+    $data["summary"] = $row[2];
+    $data["visibility"] = $row[3];
+    $data["ownerId"] = $row[4];
+    $data["parentId"] = $row[5];
+    
+    return new Folder($data);
+  }
+  
   public function getChildren($folder){
     $args[0] = $folder->folderId;
       
@@ -99,7 +124,7 @@ class FolderService{
   
   public function deleteFolder($folderId){
     $args[0] = $folderId;
-    if($this->countArticles($folderId) != 0)
+    if($this->countArticles($folderId) != 0 || $this->countFolders($folderId) != 0)
       return false;
     
     //See 1.0012.-- for up-to-date information on query

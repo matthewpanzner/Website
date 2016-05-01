@@ -44,3 +44,4 @@ if(isset($_SESSION['logged_in'])){
       </nav>
     </header>
     <section class="main">
+<?php if(isset($this->model['msg'])) echo $this->model['msg'];?>

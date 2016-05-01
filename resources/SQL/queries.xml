@@ -27,16 +27,21 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
     <name>selectRoleQuery</name>
     <value>SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = '?'</value>
   </query>
+  <query>
+    <id>1.0016.01</id>
+    <name>selectUserByUsernameQuery</name>
+    <value>SELECT * FROM Users WHERE username='?'</value>
+  </query>
   
   <query>
     <id>1.0005.02</id>
     <name>addArticleQuery</name>
-    <value>INSERT INTO Article (publicationDate, title, summary, content, ownerId, folderId) VALUES ('?', '?', '?', '?', '?', '?')</value>
+    <value>INSERT INTO Article (publicationDate, title, summary, content, visibility, ownerId, folderId) VALUES ('?', '?', '?', '?', '?', '?', '?')</value>
   </query>
   <query>
     <id>1.0006.02</id>
     <name>updateArticleQuery</name>
-    <value>UPDATE Article SET publicationDate='?',title='?',summary='?',content='?',ownerId='?',folderId='?' WHERE articleId='?'</value>
+    <value>UPDATE Article SET publicationDate='?',title='?',summary='?',content='?',visibility='?',ownerId='?',folderId='?' WHERE articleId='?'</value>
   </query>
   <query>
     <id>1.0007.01</id>
@@ -81,8 +86,18 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
     <value>SELECT COUNT(*) FROM Article WHERE folderId='?'</value>
   </query>
   <query>
+    <id>1.0018.01</id>
+    <name>countFoldersInFolderQuery</name>
+    <value>SELECT COUNT(*) FROM Folder WHERE parentId='?'</value>
+  </query>
+  <query>
     <id>1.0015.01</id>
     <name>selectChildFoldersQuery</name>
     <value>SELECT * FROM Folder WHERE parentId='?'</value>
+  </query>
+  <query>
+    <id>1.0017.02</id>
+    <name>selectFolderByNameQuery</name>
+    <value>SELECT * FROM Folder WHERE name='?' AND parentId='?'</value>
   </query>
 </queries>
