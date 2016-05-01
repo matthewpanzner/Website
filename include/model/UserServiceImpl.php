@@ -29,5 +29,19 @@ class UserServiceImpl{
     $this->dao->insert("registerUserQuery", $args);
 		return true;
   }
+	
+	public function getUser($username){
+		$args[0] = $username;
+		$res = $this->dao->select("selectUserByUsernameQuery", $args);
+		$row = mysqli_fetch_row($res);
+		$data['id'] = $row[0];
+		$data['username'] = $row[1];
+		$data['password'] = $row[2];
+		$data['joinDate'] = $row[3];
+		$data['role'] = $row[4];
+		$user = new User($data);
+		
+		return $user;
+	}
 }
 ?>

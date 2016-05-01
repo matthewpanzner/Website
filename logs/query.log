@@ -1,6 +1,0 @@
-About to execute: SELECT * FROM ArticleCategory /////1462117779 = 2016-05-01 11:49:39
-Executed successfully, rows: 2 /////1462117779 = 2016-05-01 11:49:39
-About to execute: SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '3' /////1462117781 = 2016-05-01 11:49:41
-Executed successfully, rows: 4 /////1462117781 = 2016-05-01 11:49:41
-About to execute: SELECT * FROM ArticleCategory /////1462117788 = 2016-05-01 11:49:48
-Executed successfully, rows: 2 /////1462117788 = 2016-05-01 11:49:48

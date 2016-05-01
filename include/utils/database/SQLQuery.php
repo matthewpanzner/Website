@@ -11,7 +11,7 @@ require_once 'QueryFactories.php';
 //Basic SQL getter setter class
 class SQLQuery{
   private $query = "";
- 
+  
   public function getQuery(){
     return $this->query;
   }

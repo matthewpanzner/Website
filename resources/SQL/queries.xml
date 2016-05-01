@@ -1,63 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+author: Matthew Panzner
+version: 1.2
+
+SQL queries used by the QueryFactory and then used in the DAO for database transactions
+-->
 <queries>
   <query>
+    <id>1.0001.01</id>
     <name>selectAllQuery</name>
     <value>SELECT * FROM ?</value>
   </query>
   
   <query>
+    <id>1.0002.01</id>
     <name>registerUserQuery</name>
     <value>INSERT INTO Users (Username, Password) VALUES ('?','?')</value>
   </query>
   <query>
+    <id>1.0003.01</id>
     <name>selectUserQuery</name>
     <value>SELECT * FROM Users WHERE username = '?' AND password = '?'</value>
   </query>
   <query>
+    <id>1.0004.01</id>
     <name>selectRoleQuery</name>
     <value>SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = '?'</value>
   </query>
+  <query>
+    <id>1.0016.01</id>
+    <name>selectUserByUsernameQuery</name>
+    <value>SELECT * FROM Users WHERE username='?'</value>
+  </query>
   
   <query>
+    <id>1.0005.02</id>
     <name>addArticleQuery</name>
-    <value>INSERT INTO Articles (publicationDate, title, summary, content, category) VALUES ('?', '?', '?', '?', '?')</value>
+    <value>INSERT INTO Article (publicationDate, title, summary, content, visibility, ownerId, folderId) VALUES ('?', '?', '?', '?', '?', '?', '?')</value>
   </query>
   <query>
+    <id>1.0006.02</id>
     <name>updateArticleQuery</name>
-    <value>UPDATE Articles SET publicationDate='?',title='?',summary='?',content='?',category='?' WHERE articleId='?'</value>
+    <value>UPDATE Article SET publicationDate='?',title='?',summary='?',content='?',visibility='?',ownerId='?',folderId='?' WHERE articleId='?'</value>
   </query>
   <query>
+    <id>1.0007.01</id>
     <name>deleteArticleQuery</name>
-    <value>DELETE FROM Articles WHERE articleId='?' </value>
+    <value>DELETE FROM Article WHERE articleId='?' </value>
   </query>
   <query>
+    <id>1.0008.02</id>
     <name>selectArticleByTitleQuery</name>
-    <value>SELECT * FROM Articles WHERE title = '?' AND category = '?'</value>
+    <value>SELECT * FROM Article WHERE title = '?' AND folderId = '?'</value>
   </query>
   <query>
+    <id>1.0009.01</id>
     <name>selectArticleByIdQuery</name>
-    <value>SELECT * FROM Articles WHERE articleId = '?'</value>
+    <value>SELECT * FROM Article WHERE articleId = '?'</value>
   </query>
   <query>
-    <name>selectArticleByCategoryQuery</name>
-    <value>SELECT articleId, title, summary, content, publicationDate FROM Articles WHERE category = '?'</value>
+    <id>1.0010.02</id>
+    <name>selectArticleByFolderQuery</name>
+    <value>SELECT * FROM Article WHERE folderId = '?'</value>
   </query>
   
   
   <query>
-    <name>addArticleCategoryQuery</name>
-    <value>INSERT INTO ArticleCategory (name, summary) VALUES ('?', '?')</value>
+    <id>1.0011.02</id>
+    <name>addFolderQuery</name>
+    <value>INSERT INTO Folder (name, summary, visibility, ownerId, parentId) VALUES ('?', '?', '?', '?', '?')</value>
   </query>
   <query>
-    <name>deleteArticleCategoryQuery</name>
-    <value>DELETE FROM ArticleCategory WHERE id='?'</value>
+    <id>1.0012.02</id>
+    <name>deleteFolderQuery</name>
+    <value>DELETE FROM Folder WHERE folderId='?'</value>
   </query>
   <query>
-    <name>selectArticleCategoryByNameQuery</name>
-    <value>SELECT * FROM ArticleCategory WHERE name = '?'</value>
+    <id>1.0013.03</id>
+    <name>selectFolderByIdQuery</name>
+    <value>SELECT * FROM Folder WHERE folderId = '?'</value>
   </query>
   <query>
-    <name>countArticlesInCategoryQuery</name>
-    <value>SELECT COUNT(*) FROM Articles WHERE category='?'</value>
+    <id>1.0014.02</id>
+    <name>countArticlesInFolderQuery</name>
+    <value>SELECT COUNT(*) FROM Article WHERE folderId='?'</value>
+  </query>
+  <query>
+    <id>1.0018.01</id>
+    <name>countFoldersInFolderQuery</name>
+    <value>SELECT COUNT(*) FROM Folder WHERE parentId='?'</value>
+  </query>
+  <query>
+    <id>1.0015.01</id>
+    <name>selectChildFoldersQuery</name>
+    <value>SELECT * FROM Folder WHERE parentId='?'</value>
+  </query>
+  <query>
+    <id>1.0017.02</id>
+    <name>selectFolderByNameQuery</name>
+    <value>SELECT * FROM Folder WHERE name='?' AND parentId='?'</value>
   </query>
 </queries>

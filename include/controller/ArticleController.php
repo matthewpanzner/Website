@@ -1,5 +1,8 @@
 <?php
+//TODO: Add redirections 
+
 require_once(CLASS_DIR . "/model/ArticleService.php");
+require_once(CLASS_DIR . "/model/UserServiceImpl.php");
 
 class ArticleController extends Controller{
   //*************************************************
@@ -12,24 +15,31 @@ class ArticleController extends Controller{
     }
       
     
-    if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
-      logMessage("/error.log", var_dump($_POST));
+    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) && isset($_POST["owner"]) && isset($_POST["visibility"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+      logMessage("/error.log", "Error, not all fields are filled out");
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
     }
       
     $service = new ArticleService();
+    $uService = new UserServiceImpl();
+    $user = $uService->getUser($_POST['owner']);
+    
     $data = [
       "title" => $_POST["title"],
-      "category" => $_POST["category"],
+      "folderId" => $_POST["folderId"],
+      "ownerId" => $user->id,
       "summary" => $_POST["summary"],
       "content" => $_POST["content"],
-      "publicationDate" => $_POST["publication-date"]
+      "publicationDate" => $_POST["publication-date"],
+      "visibility" => $_POST["visibility"]
     ];
     
     if($service->addArticle($data)){
       $this->model['msg'] = "Successfully added";
-      return new View(null, "home.php");
+      $this->model['reroute'] = true;
+      
+      return new View($this->model, "index.php?controller=Folder&action=onGetFolders&id=" . $data['folderId']);
     }
     else{
       $this->model['error'] = new ErrorModel("Could not add article!");
@@ -37,6 +47,9 @@ class ArticleController extends Controller{
     }
   }
   
+  //***************************************
+  // Delete handler
+  //***************************************
   public function onDelete(){
     if(!$this->authenticate("admin")){
         $this->model['error'] = new ErrorModel("Unauthorized Access");
@@ -45,13 +58,15 @@ class ArticleController extends Controller{
     
     $service = new ArticleService();
     
-    if(!isset($_GET['id'])){
+    if(!isset($_GET['articleId'])){
       $this->model['error'] = new ErrorModel("Unresolvsed URI");
       return new View($this->model, "error.php");
     }
-    
-    if($service->deleteArticle($_GET['id'])){
-      return new View(null, "home.php");
+    $article = $service->getArticle($_GET['articleId']);
+      
+    if($service->deleteArticle($_GET['articleId'])){
+      $this->model['reroute'] = true;
+      return new View($this->model, "index.php?controller=Folder&action=onGetFolders&id=" . $article->folderId);
     }
     else{
       $this->model['error'] = new ErrorModel("Error in deleting!");
@@ -69,25 +84,33 @@ class ArticleController extends Controller{
         $this->model['error'] = new ErrorModel("Unauthorized Access");
         return new View($this->model, "error.php");
     }
-    if(!isset($_GET['id'])){
+    if(!isset($_GET['articleId'])){
       $this->model['error'] = new ErrorModel("Unresolvsed URI");
       return new View($this->model, "error.php");
     }
-    if(!(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
-      logMessage("/error.log", var_dump($_POST));
+    if(!(isset($_POST["title"]) && isset($_POST["folderId"]) && isset($_POST["owner"]) && isset($_POST["visibility"]) && isset($_POST["summary"]) && isset($_POST["content"]) && isset($_POST["publication-date"]))){
+      logMessage("/error.log", "All fields were not filled out!"); //Make better
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
     }
     
     $service = new ArticleService();
-    $article = $service->getArticle($_GET['id']);
+    $article = $service->getArticle($_GET['articleId']);
+    
+    $uService = new UserServiceImpl();
+    $user = $uService->getUser($_POST['owner']);
+    
     $article->title = $_POST['title'];
-    $article->category = $_POST['category'];
+    $article->folderId = $_POST['folderId'];
+    $article->ownerId = $user->id;
     $article->summary = $_POST['summary'];
     $article->content = $_POST['content'];
+    $article->publicationDate = $_POST['publication-date'];
+    $article->visibility = $_POST['visibility'];
     
     if($service->updateArticle($article)){
-      return new View(null, "home.php");
+      $this->model['reroute'] = true;
+      return new View($this->model, "index.php?controller=Folder&action=onGetFolders&id=" . $article->folderId);
     }
     else{
       $this->model['error'] = new ErrorModel("Error in updating!");
@@ -107,7 +130,7 @@ class ArticleController extends Controller{
   
   public function onGetArticlesByCategory(){
     $service = new ArticleService();
-    $this->model['articles'] = $service->getArticlesByCategory($_GET['c']);
+    $this->model['articles'] = $service->getArticlesByFolder($_GET['cId']);
     return new View($this->model, "articles.php");
   }
   
