@@ -291,8 +291,9 @@ select {
   .folder_cell-body .article-date,
   .article_cell-body .article-date {
     display: inline-block;
+    text-align: right;
     vertical-align: bottom;
-    padding-bottom: 1em;
+    margin-bottom: 0em;
     background-clip: content-box; }
 
 .folder_cell-title {

@@ -1,0 +1,108 @@
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462118060 = 2016-05-01 11:54:20
+Executed successfully, rows: 1 /////1462118060 = 2016-05-01 11:54:20
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462118060 = 2016-05-01 11:54:20
+Executed successfully, rows: 0 /////1462118060 = 2016-05-01 11:54:20
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462118060 = 2016-05-01 11:54:20
+Executed successfully, rows: 2 /////1462118060 = 2016-05-01 11:54:20
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462118060 = 2016-05-01 11:54:20
+Executed successfully, rows: 1 /////1462118060 = 2016-05-01 11:54:20
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462136067 = 2016-05-01 16:54:27
+Executed successfully, rows: 1 /////1462136067 = 2016-05-01 16:54:27
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462136067 = 2016-05-01 16:54:27
+Executed successfully, rows: 0 /////1462136067 = 2016-05-01 16:54:27
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462136067 = 2016-05-01 16:54:27
+Executed successfully, rows: 2 /////1462136067 = 2016-05-01 16:54:27
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462136067 = 2016-05-01 16:54:27
+Executed successfully, rows: 1 /////1462136067 = 2016-05-01 16:54:27
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159466 = 2016-05-01 23:24:26
+Executed successfully, rows: 1 /////1462159466 = 2016-05-01 23:24:26
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462159466 = 2016-05-01 23:24:26
+Executed successfully, rows: 0 /////1462159466 = 2016-05-01 23:24:26
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462159466 = 2016-05-01 23:24:26
+Executed successfully, rows: 2 /////1462159466 = 2016-05-01 23:24:26
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462159466 = 2016-05-01 23:24:26
+Executed successfully, rows: 1 /////1462159466 = 2016-05-01 23:24:26
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159470 = 2016-05-01 23:24:30
+Executed successfully, rows: 1 /////1462159470 = 2016-05-01 23:24:30
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159470 = 2016-05-01 23:24:30
+Executed successfully, rows: 1 /////1462159470 = 2016-05-01 23:24:30
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159470 = 2016-05-01 23:24:30
+Executed successfully, rows: 0 /////1462159470 = 2016-05-01 23:24:30
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159470 = 2016-05-01 23:24:30
+Executed successfully, rows: 2 /////1462159470 = 2016-05-01 23:24:30
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159472 = 2016-05-01 23:24:32
+Executed successfully, rows: 1 /////1462159472 = 2016-05-01 23:24:32
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462159472 = 2016-05-01 23:24:32
+Executed successfully, rows: 0 /////1462159472 = 2016-05-01 23:24:32
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462159472 = 2016-05-01 23:24:32
+Executed successfully, rows: 2 /////1462159472 = 2016-05-01 23:24:32
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462159472 = 2016-05-01 23:24:32
+Executed successfully, rows: 1 /////1462159472 = 2016-05-01 23:24:32
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159474 = 2016-05-01 23:24:34
+Executed successfully, rows: 1 /////1462159474 = 2016-05-01 23:24:34
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159474 = 2016-05-01 23:24:34
+Executed successfully, rows: 1 /////1462159474 = 2016-05-01 23:24:34
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159474 = 2016-05-01 23:24:34
+Executed successfully, rows: 0 /////1462159474 = 2016-05-01 23:24:34
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159474 = 2016-05-01 23:24:34
+Executed successfully, rows: 2 /////1462159474 = 2016-05-01 23:24:34
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159493 = 2016-05-01 23:24:53
+Executed successfully, rows: 1 /////1462159493 = 2016-05-01 23:24:53
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159493 = 2016-05-01 23:24:53
+Executed successfully, rows: 1 /////1462159493 = 2016-05-01 23:24:53
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159493 = 2016-05-01 23:24:53
+Executed successfully, rows: 0 /////1462159493 = 2016-05-01 23:24:53
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159493 = 2016-05-01 23:24:53
+Executed successfully, rows: 2 /////1462159493 = 2016-05-01 23:24:53
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159494 = 2016-05-01 23:24:54
+Executed successfully, rows: 1 /////1462159494 = 2016-05-01 23:24:54
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159494 = 2016-05-01 23:24:54
+Executed successfully, rows: 1 /////1462159494 = 2016-05-01 23:24:54
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159494 = 2016-05-01 23:24:54
+Executed successfully, rows: 0 /////1462159494 = 2016-05-01 23:24:54
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159494 = 2016-05-01 23:24:54
+Executed successfully, rows: 2 /////1462159494 = 2016-05-01 23:24:54
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159501 = 2016-05-01 23:25:01
+Executed successfully, rows: 1 /////1462159501 = 2016-05-01 23:25:01
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159501 = 2016-05-01 23:25:01
+Executed successfully, rows: 1 /////1462159501 = 2016-05-01 23:25:01
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159501 = 2016-05-01 23:25:01
+Executed successfully, rows: 0 /////1462159501 = 2016-05-01 23:25:01
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159501 = 2016-05-01 23:25:01
+Executed successfully, rows: 2 /////1462159501 = 2016-05-01 23:25:01
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462159529 = 2016-05-01 23:25:29
+Executed successfully, rows: 1 /////1462159529 = 2016-05-01 23:25:29
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159529 = 2016-05-01 23:25:29
+Executed successfully, rows: 1 /////1462159529 = 2016-05-01 23:25:29
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462159529 = 2016-05-01 23:25:29
+Executed successfully, rows: 0 /////1462159529 = 2016-05-01 23:25:29
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462159529 = 2016-05-01 23:25:29
+Executed successfully, rows: 2 /////1462159529 = 2016-05-01 23:25:29
+About to execute: SELECT * FROM Article WHERE articleId = '4' /////1462159532 = 2016-05-01 23:25:32
+Executed successfully, rows: 1 /////1462159532 = 2016-05-01 23:25:32
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159534 = 2016-05-01 23:25:34
+Executed successfully, rows: 1 /////1462159534 = 2016-05-01 23:25:34
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462159534 = 2016-05-01 23:25:34
+Executed successfully, rows: 0 /////1462159534 = 2016-05-01 23:25:34
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462159534 = 2016-05-01 23:25:34
+Executed successfully, rows: 2 /////1462159534 = 2016-05-01 23:25:34
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462159534 = 2016-05-01 23:25:34
+Executed successfully, rows: 1 /////1462159534 = 2016-05-01 23:25:34
+About to execute: SELECT * FROM Folder WHERE folderId = '4' /////1462159538 = 2016-05-01 23:25:38
+Executed successfully, rows: 1 /////1462159538 = 2016-05-01 23:25:38
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159538 = 2016-05-01 23:25:38
+Executed successfully, rows: 1 /////1462159538 = 2016-05-01 23:25:38
+About to execute: SELECT * FROM Folder WHERE parentId='4' /////1462159538 = 2016-05-01 23:25:38
+Executed successfully, rows: 0 /////1462159538 = 2016-05-01 23:25:38
+About to execute: SELECT * FROM Article WHERE folderId = '4' /////1462159538 = 2016-05-01 23:25:38
+Executed successfully, rows: 2 /////1462159538 = 2016-05-01 23:25:38
+About to execute: SELECT * FROM Article WHERE articleId = '3' /////1462159539 = 2016-05-01 23:25:39
+Executed successfully, rows: 1 /////1462159539 = 2016-05-01 23:25:39
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462159541 = 2016-05-01 23:25:41
+Executed successfully, rows: 1 /////1462159541 = 2016-05-01 23:25:41
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462159541 = 2016-05-01 23:25:41
+Executed successfully, rows: 0 /////1462159541 = 2016-05-01 23:25:41
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462159541 = 2016-05-01 23:25:41
+Executed successfully, rows: 2 /////1462159541 = 2016-05-01 23:25:41
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462159541 = 2016-05-01 23:25:41
+Executed successfully, rows: 1 /////1462159541 = 2016-05-01 23:25:41
