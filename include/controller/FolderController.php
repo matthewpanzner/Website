@@ -83,7 +83,11 @@ class FolderController extends Controller{
     $service = new FolderService();
      
     $folder = $service->getFolder($_GET['id']);
- 
+    if($folder->folderId == null){
+      $this->model['error'] = new ErrorModel("Invalid Folder Id!");
+      return new View($this->model, "error.php");
+    }
+    
     $this->model['currFolder'] = $folder;
     $this->model['parentFolder'] = $service->getFolder($folder->parentId);
     $this->model['folders'] = $service->getChildren($folder);

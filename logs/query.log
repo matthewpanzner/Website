@@ -106,3 +106,254 @@ About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462159541 = 2016
 Executed successfully, rows: 2 /////1462159541 = 2016-05-01 23:25:41
 About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462159541 = 2016-05-01 23:25:41
 Executed successfully, rows: 1 /////1462159541 = 2016-05-01 23:25:41
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197202 = 2016-05-02 09:53:22
+Executed successfully, rows: 1 /////1462197202 = 2016-05-02 09:53:22
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197202 = 2016-05-02 09:53:22
+Executed successfully, rows: 0 /////1462197202 = 2016-05-02 09:53:22
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462197202 = 2016-05-02 09:53:22
+Executed successfully, rows: 2 /////1462197202 = 2016-05-02 09:53:22
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462197202 = 2016-05-02 09:53:22
+Executed successfully, rows: 1 /////1462197202 = 2016-05-02 09:53:22
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197204 = 2016-05-02 09:53:24
+Executed successfully, rows: 1 /////1462197204 = 2016-05-02 09:53:24
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197204 = 2016-05-02 09:53:24
+Executed successfully, rows: 0 /////1462197204 = 2016-05-02 09:53:24
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462197204 = 2016-05-02 09:53:24
+Executed successfully, rows: 2 /////1462197204 = 2016-05-02 09:53:24
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462197204 = 2016-05-02 09:53:24
+Executed successfully, rows: 1 /////1462197204 = 2016-05-02 09:53:24
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197205 = 2016-05-02 09:53:25
+Executed successfully, rows: 1 /////1462197205 = 2016-05-02 09:53:25
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197205 = 2016-05-02 09:53:25
+Executed successfully, rows: 1 /////1462197205 = 2016-05-02 09:53:25
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197205 = 2016-05-02 09:53:25
+Executed successfully, rows: 0 /////1462197205 = 2016-05-02 09:53:25
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197205 = 2016-05-02 09:53:25
+Executed successfully, rows: 2 /////1462197205 = 2016-05-02 09:53:25
+About to execute: SELECT * FROM Users WHERE username = 'ROOT' AND password = '' /////1462197209 = 2016-05-02 09:53:29
+Executed successfully, rows: 1 /////1462197209 = 2016-05-02 09:53:29
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197209 = 2016-05-02 09:53:29
+Executed successfully, rows: 1 /////1462197209 = 2016-05-02 09:53:29
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197212 = 2016-05-02 09:53:32
+Executed successfully, rows: 1 /////1462197212 = 2016-05-02 09:53:32
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197212 = 2016-05-02 09:53:32
+Executed successfully, rows: 0 /////1462197212 = 2016-05-02 09:53:32
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462197212 = 2016-05-02 09:53:32
+Executed successfully, rows: 2 /////1462197212 = 2016-05-02 09:53:32
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462197212 = 2016-05-02 09:53:32
+Executed successfully, rows: 1 /////1462197212 = 2016-05-02 09:53:32
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197212 = 2016-05-02 09:53:32
+Executed successfully, rows: 1 /////1462197212 = 2016-05-02 09:53:32
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197214 = 2016-05-02 09:53:34
+Executed successfully, rows: 1 /////1462197214 = 2016-05-02 09:53:34
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197214 = 2016-05-02 09:53:34
+Executed successfully, rows: 1 /////1462197214 = 2016-05-02 09:53:34
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197214 = 2016-05-02 09:53:34
+Executed successfully, rows: 0 /////1462197214 = 2016-05-02 09:53:34
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197214 = 2016-05-02 09:53:34
+Executed successfully, rows: 2 /////1462197214 = 2016-05-02 09:53:34
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197214 = 2016-05-02 09:53:34
+Executed successfully, rows: 1 /////1462197214 = 2016-05-02 09:53:34
+About to execute: SELECT * FROM Folder /////1462197215 = 2016-05-02 09:53:35
+Executed successfully, rows: 5 /////1462197215 = 2016-05-02 09:53:35
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197215 = 2016-05-02 09:53:35
+Executed successfully, rows: 1 /////1462197215 = 2016-05-02 09:53:35
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Users WHERE username='ROOT' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Article WHERE title = 'test' AND folderId = '5' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 0 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT COUNT(*) FROM Folder WHERE parentId='5' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: INSERT INTO Article (publicationDate, title, summary, content, visibility, ownerId, folderId) VALUES ('2016-05-02', 'test', 'test', 'test
+', 'visible', '1', '5') /////1462197221 = 2016-05-02 09:53:41
+Executed successfully /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 0 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 3 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197221 = 2016-05-02 09:53:41
+Executed successfully, rows: 1 /////1462197221 = 2016-05-02 09:53:41
+About to execute: SELECT * FROM Folder /////1462197224 = 2016-05-02 09:53:44
+Executed successfully, rows: 5 /////1462197224 = 2016-05-02 09:53:44
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197224 = 2016-05-02 09:53:44
+Executed successfully, rows: 1 /////1462197224 = 2016-05-02 09:53:44
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Users WHERE username='ROOT' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE name='sub1' AND parentId='5' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 0 /////1462197229 = 2016-05-02 09:53:49
+About to execute: INSERT INTO Folder (name, summary, visibility, ownerId, parentId) VALUES ('sub1', 'test', 'visible', '1', '5') /////1462197229 = 2016-05-02 09:53:49
+Executed successfully /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE name='sub1' AND parentId='5' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 3 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197229 = 2016-05-02 09:53:49
+Executed successfully, rows: 1 /////1462197229 = 2016-05-02 09:53:49
+About to execute: SELECT * FROM Folder WHERE folderId = '24' /////1462197231 = 2016-05-02 09:53:51
+Executed successfully, rows: 1 /////1462197231 = 2016-05-02 09:53:51
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197231 = 2016-05-02 09:53:51
+Executed successfully, rows: 1 /////1462197231 = 2016-05-02 09:53:51
+About to execute: SELECT * FROM Folder WHERE parentId='24' /////1462197231 = 2016-05-02 09:53:51
+Executed successfully, rows: 0 /////1462197231 = 2016-05-02 09:53:51
+About to execute: SELECT * FROM Article WHERE folderId = '24' /////1462197231 = 2016-05-02 09:53:51
+Executed successfully, rows: 0 /////1462197231 = 2016-05-02 09:53:51
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197231 = 2016-05-02 09:53:51
+Executed successfully, rows: 1 /////1462197231 = 2016-05-02 09:53:51
+About to execute: SELECT * FROM Folder /////1462197233 = 2016-05-02 09:53:53
+Executed successfully, rows: 6 /////1462197233 = 2016-05-02 09:53:53
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197233 = 2016-05-02 09:53:53
+Executed successfully, rows: 1 /////1462197233 = 2016-05-02 09:53:53
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197241 = 2016-05-02 09:54:01
+Executed successfully, rows: 1 /////1462197241 = 2016-05-02 09:54:01
+About to execute: SELECT * FROM Users WHERE username='ROOT' /////1462197241 = 2016-05-02 09:54:01
+Executed successfully, rows: 1 /////1462197241 = 2016-05-02 09:54:01
+About to execute: SELECT * FROM Folder WHERE name='sub1 ' AND parentId='1' /////1462197241 = 2016-05-02 09:54:01
+Executed successfully, rows: 1 /////1462197241 = 2016-05-02 09:54:01
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197241 = 2016-05-02 09:54:01
+Executed successfully, rows: 1 /////1462197241 = 2016-05-02 09:54:01
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197243 = 2016-05-02 09:54:03
+Executed successfully, rows: 1 /////1462197243 = 2016-05-02 09:54:03
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197243 = 2016-05-02 09:54:03
+Executed successfully, rows: 0 /////1462197243 = 2016-05-02 09:54:03
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462197243 = 2016-05-02 09:54:03
+Executed successfully, rows: 2 /////1462197243 = 2016-05-02 09:54:03
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462197243 = 2016-05-02 09:54:03
+Executed successfully, rows: 1 /////1462197243 = 2016-05-02 09:54:03
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197243 = 2016-05-02 09:54:03
+Executed successfully, rows: 1 /////1462197243 = 2016-05-02 09:54:03
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197246 = 2016-05-02 09:54:06
+Executed successfully, rows: 1 /////1462197246 = 2016-05-02 09:54:06
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197246 = 2016-05-02 09:54:06
+Executed successfully, rows: 1 /////1462197246 = 2016-05-02 09:54:06
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197246 = 2016-05-02 09:54:06
+Executed successfully, rows: 1 /////1462197246 = 2016-05-02 09:54:06
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197246 = 2016-05-02 09:54:06
+Executed successfully, rows: 3 /////1462197246 = 2016-05-02 09:54:06
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197246 = 2016-05-02 09:54:06
+Executed successfully, rows: 1 /////1462197246 = 2016-05-02 09:54:06
+About to execute: SELECT * FROM Folder WHERE folderId = '24' /////1462197248 = 2016-05-02 09:54:08
+Executed successfully, rows: 1 /////1462197248 = 2016-05-02 09:54:08
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197248 = 2016-05-02 09:54:08
+Executed successfully, rows: 1 /////1462197248 = 2016-05-02 09:54:08
+About to execute: SELECT * FROM Folder WHERE parentId='24' /////1462197248 = 2016-05-02 09:54:08
+Executed successfully, rows: 0 /////1462197248 = 2016-05-02 09:54:08
+About to execute: SELECT * FROM Article WHERE folderId = '24' /////1462197248 = 2016-05-02 09:54:08
+Executed successfully, rows: 0 /////1462197248 = 2016-05-02 09:54:08
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197248 = 2016-05-02 09:54:08
+Executed successfully, rows: 1 /////1462197248 = 2016-05-02 09:54:08
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197249 = 2016-05-02 09:54:09
+Executed successfully, rows: 1 /////1462197249 = 2016-05-02 09:54:09
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197249 = 2016-05-02 09:54:09
+Executed successfully, rows: 1 /////1462197249 = 2016-05-02 09:54:09
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197249 = 2016-05-02 09:54:09
+Executed successfully, rows: 1 /////1462197249 = 2016-05-02 09:54:09
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197249 = 2016-05-02 09:54:09
+Executed successfully, rows: 3 /////1462197249 = 2016-05-02 09:54:09
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197249 = 2016-05-02 09:54:09
+Executed successfully, rows: 1 /////1462197249 = 2016-05-02 09:54:09
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT * FROM Folder WHERE folderId = '24' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT COUNT(*) FROM Article WHERE folderId='24' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT COUNT(*) FROM Folder WHERE parentId='24' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: DELETE FROM Folder WHERE folderId='24' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 0 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 3 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197251 = 2016-05-02 09:54:11
+Executed successfully, rows: 1 /////1462197251 = 2016-05-02 09:54:11
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197252 = 2016-05-02 09:54:12
+Executed successfully, rows: 1 /////1462197252 = 2016-05-02 09:54:12
+About to execute: SELECT * FROM Article WHERE articleId = '16' /////1462197252 = 2016-05-02 09:54:12
+Executed successfully, rows: 1 /////1462197252 = 2016-05-02 09:54:12
+About to execute: DELETE FROM Article WHERE articleId='16'  /////1462197252 = 2016-05-02 09:54:12
+Executed successfully /////1462197252 = 2016-05-02 09:54:12
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197252 = 2016-05-02 09:54:12
+Executed successfully, rows: 1 /////1462197252 = 2016-05-02 09:54:12
+About to execute: SELECT * FROM Folder WHERE folderId = '5' /////1462197253 = 2016-05-02 09:54:13
+Executed successfully, rows: 1 /////1462197253 = 2016-05-02 09:54:13
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197253 = 2016-05-02 09:54:13
+Executed successfully, rows: 1 /////1462197253 = 2016-05-02 09:54:13
+About to execute: SELECT * FROM Folder WHERE parentId='5' /////1462197253 = 2016-05-02 09:54:13
+Executed successfully, rows: 0 /////1462197253 = 2016-05-02 09:54:13
+About to execute: SELECT * FROM Article WHERE folderId = '5' /////1462197253 = 2016-05-02 09:54:13
+Executed successfully, rows: 2 /////1462197253 = 2016-05-02 09:54:13
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197253 = 2016-05-02 09:54:13
+Executed successfully, rows: 1 /////1462197253 = 2016-05-02 09:54:13
+About to execute: SELECT * FROM Folder WHERE folderId = '23' /////1462197413 = 2016-05-02 09:56:53
+Executed successfully, rows: 1 /////1462197413 = 2016-05-02 09:56:53
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197413 = 2016-05-02 09:56:53
+Executed successfully, rows: 0 /////1462197413 = 2016-05-02 09:56:53
+About to execute: SELECT * FROM Folder WHERE parentId='23' /////1462197413 = 2016-05-02 09:56:53
+Executed successfully, rows: 0 /////1462197413 = 2016-05-02 09:56:53
+About to execute: SELECT * FROM Article WHERE folderId = '23' /////1462197413 = 2016-05-02 09:56:53
+Executed successfully, rows: 0 /////1462197413 = 2016-05-02 09:56:53
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197413 = 2016-05-02 09:56:53
+Executed successfully, rows: 1 /////1462197413 = 2016-05-02 09:56:53
+About to execute: SELECT * FROM Folder WHERE folderId = '23' /////1462197435 = 2016-05-02 09:57:15
+Executed successfully, rows: 1 /////1462197435 = 2016-05-02 09:57:15
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197435 = 2016-05-02 09:57:15
+Executed successfully, rows: 1 /////1462197435 = 2016-05-02 09:57:15
+About to execute: SELECT * FROM Folder WHERE folderId = '23' /////1462197450 = 2016-05-02 09:57:30
+Executed successfully, rows: 1 /////1462197450 = 2016-05-02 09:57:30
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197450 = 2016-05-02 09:57:30
+Executed successfully, rows: 1 /////1462197450 = 2016-05-02 09:57:30
+About to execute: SELECT * FROM Folder WHERE folderId = '23' /////1462197450 = 2016-05-02 09:57:30
+Executed successfully, rows: 1 /////1462197450 = 2016-05-02 09:57:30
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197450 = 2016-05-02 09:57:30
+Executed successfully, rows: 1 /////1462197450 = 2016-05-02 09:57:30
+About to execute: SELECT * FROM Folder WHERE folderId = '23' /////1462197451 = 2016-05-02 09:57:31
+Executed successfully, rows: 1 /////1462197451 = 2016-05-02 09:57:31
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197451 = 2016-05-02 09:57:31
+Executed successfully, rows: 1 /////1462197451 = 2016-05-02 09:57:31
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197453 = 2016-05-02 09:57:33
+Executed successfully, rows: 1 /////1462197453 = 2016-05-02 09:57:33
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197453 = 2016-05-02 09:57:33
+Executed successfully, rows: 1 /////1462197453 = 2016-05-02 09:57:33
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197455 = 2016-05-02 09:57:35
+Executed successfully, rows: 1 /////1462197455 = 2016-05-02 09:57:35
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197455 = 2016-05-02 09:57:35
+Executed successfully, rows: 1 /////1462197455 = 2016-05-02 09:57:35
+About to execute: SELECT * FROM Folder WHERE folderId = '1' /////1462197499 = 2016-05-02 09:58:19
+Executed successfully, rows: 1 /////1462197499 = 2016-05-02 09:58:19
+About to execute: SELECT * FROM Folder WHERE folderId = '' /////1462197499 = 2016-05-02 09:58:19
+Executed successfully, rows: 0 /////1462197499 = 2016-05-02 09:58:19
+About to execute: SELECT * FROM Folder WHERE parentId='1' /////1462197499 = 2016-05-02 09:58:19
+Executed successfully, rows: 2 /////1462197499 = 2016-05-02 09:58:19
+About to execute: SELECT * FROM Article WHERE folderId = '1' /////1462197499 = 2016-05-02 09:58:19
+Executed successfully, rows: 1 /////1462197499 = 2016-05-02 09:58:19
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197499 = 2016-05-02 09:58:19
+Executed successfully, rows: 1 /////1462197499 = 2016-05-02 09:58:19
+About to execute: SELECT * FROM Folder WHERE folderId = '1323' /////1462197504 = 2016-05-02 09:58:24
+Executed successfully, rows: 0 /////1462197504 = 2016-05-02 09:58:24
+About to execute: SELECT role FROM Users, PrivilegeRole WHERE Users.roleId = PrivilegeRole.roleId AND Users.username = 'ROOT' /////1462197504 = 2016-05-02 09:58:24
+Executed successfully, rows: 1 /////1462197504 = 2016-05-02 09:58:24

@@ -1,0 +1,3 @@
+RESOLVED 001 Same titles not allowed, even if differnt folders.
+RESOLVED 002 Can put any id for folder in article link and it will allow adding.  Cannot actually add because of required field.
+003 When I added the first folder it did not have CSS.  Cannot replicate.
