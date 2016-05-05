@@ -40,7 +40,7 @@
               </a>
             </div>
             <div class='article_cell-body'>
-              <p><?php $this->model['articles'][$i]->summary;?></p>
+              <p><?php echo $this->model['articles'][$i]->summary;?></p>
               <p class='article-date'><?php echo $this->model['articles'][$i]->publicationDate;?></p>
 <?php if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true && isset($role) && $role === 'admin'):?>
               <a id='article-delete' href='index.php?controller=Article&action=onDelete&articleId=<?php echo $this->model['articles'][$i]->articleId;?>'>delete</a>

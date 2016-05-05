@@ -36,7 +36,7 @@ The completion of branch databaseV1 requires that:
 [x] TODO: Update articles.php view to be passed model and hyperlinks -- 4/22/2016
 [x] TODO: Update article-categories.php view to be renamed and hyperlink changes -- 4/21/2016
 [x] TODO-LAST: Remove all ArticleCategory references -- 4/30/2016
-[] TODO-LAST-LAST: Test and check if passed
+[x] TODO-LAST-LAST: Test and check if passed
 
 -----
 NEW BUGS:
