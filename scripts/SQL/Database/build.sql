@@ -30,6 +30,7 @@ CREATE TABLE `Folder` (
  `name` varchar(255) NOT NULL,
  `summary` text,
  `visibility` varchar(8) NOT NULL DEFAULT 'visible',
+ `color` varchar(7) NOT NULL DEFAULT '#FFFFFF',
  `ownerId` int(15) DEFAULT NULL,
  `parentId` int(5) DEFAULT NULL,
  PRIMARY KEY (`folderId`),
