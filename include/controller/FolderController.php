@@ -2,6 +2,7 @@
 require_once(CLASS_DIR . "/model/FolderService.php");
 require_once(CLASS_DIR . "/model/ArticleService.php");
 require_once(CLASS_DIR . "/model/UserServiceImpl.php");
+require_once(CLASS_DIR . "/model/ColorService.php");
 
 class FolderController extends Controller{
   public function onAdd(){
@@ -11,7 +12,7 @@ class FolderController extends Controller{
     }
       
     
-    if(!(isset($_POST["name"]) &&isset($_POST["summary"]) && isset($_POST['visibility']) && isset($_POST['owner'])) && isset($_POST['parentId'])){
+    if(!(isset($_POST["name"]) &&isset($_POST["summary"]) && isset($_POST['visibility']) && isset($_POST['color']) && isset($_POST['owner'])) && isset($_POST['parentId'])){
       $this->model['error'] = new ErrorModel("Required Fields not all filled out!");
       return new View($this->model, "error.php");
     }
@@ -24,6 +25,7 @@ class FolderController extends Controller{
       "name" => $_POST["name"],
       "summary" => $_POST["summary"],
       "visibility" => $_POST["visibility"],
+      "color" => $_POST["color"],
       "ownerId" => $user->id,
       "parentId" => $_POST["parentId"]
     ];

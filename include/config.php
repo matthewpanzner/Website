@@ -61,7 +61,9 @@ function logBackupQuery($message){
   
   file_put_contents(LOG_DIR . "/backup.sql", $message . ";\n", FILE_APPEND | LOCK_EX);
 }
-     
+ 
+//Utility. to be moved
+
 function formatHtml($html, $indent_val){
   $fhtml = "";
 

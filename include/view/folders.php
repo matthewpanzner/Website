@@ -11,7 +11,7 @@
   for($i = 0; $i < $numOfFolders; $i++){ if($this->model['folders'][$i]->visibility != 'visible' && $role != 'admin') continue;?>
         <div class='grid_cell'>
           <div class='grid_cell--content folder_cell grid-shadow'>
-            <div class='folder_cell-title'>
+            <div class='folder_cell-title' style='background-color:<?php echo $this->model['folders'][$i]->color->value?>'>
               <a href='index.php?controller=Folder&action=onGetFolders&id=<?php echo $this->model['folders'][$i]->folderId;?>'>
                 <h2><?php echo $this->model['folders'][$i]->name;?></h2>
               </a>
@@ -34,7 +34,7 @@
   for($i = 0; $i < $numOfArticles; $i++){ if($this->model['articles'][$i]->visibility != 'visible' && $role != 'admin') continue;?>
         <div class='grid_cell'>
           <div class='grid_cell--content article_cell grid-shadow'>
-            <div class='article_cell-title'>
+            <div class='article_cell-title'style='background-color:<?php echo $this->model['currFolder']->color->value?>'>
               <a href='index.php?controller=Article&action=onGetArticle&id=<?php echo $this->model['articles'][$i]->articleId;?>'>
                 <h2><?php echo $this->model['articles'][$i]->title?></h2>
               </a>

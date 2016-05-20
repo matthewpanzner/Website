@@ -24,18 +24,26 @@ CREATE TABLE Users (
  CONSTRAINT `fk_constraint_User_On_Role` FOREIGN KEY (`roleId`) REFERENCES `PrivilegeRole` (`roleId`) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+DROP TABLE IF EXISTS Color;
+CREATE TABLE `Color` (
+ `name` varchar(16) NOT NULL,
+ `value` varchar(7) NOT NULL,
+ PRIMARY KEY (`name`)
+) ;
+
 DROP TABLE IF EXISTS Folder;
 CREATE TABLE `Folder` (
  `folderId` int(5) NOT NULL AUTO_INCREMENT,
  `name` varchar(255) NOT NULL,
  `summary` text,
  `visibility` varchar(8) NOT NULL DEFAULT 'visible',
- `color` varchar(7) NOT NULL DEFAULT '#FFFFFF',
+ `color` varchar(16) DEFAULT NULL,
  `ownerId` int(15) DEFAULT NULL,
  `parentId` int(5) DEFAULT NULL,
  PRIMARY KEY (`folderId`),
  KEY `parentId` (`parentId`),
  KEY `ownerId` (`ownerId`),
+ CONSTRAINT `FK_CONSTRAINT_FOLDER_COLOR` FOREIGN KEY (`color`) REFERENCES `Color` (`name`) ON DELETE SET NULL ON UPDATE CASCADE,
  CONSTRAINT `FK_CONSTRAINT_OWNER_USERID` FOREIGN KEY (`ownerId`) REFERENCES `Users` (`userId`) ON DELETE SET NULL ON UPDATE NO ACTION,
  CONSTRAINT `FK_CONSTRAINT_PARENT_FOLDER` FOREIGN KEY (`parentId`) REFERENCES `Folder` (`folderId`) ON DELETE SET NULL ON UPDATE NO ACTION
 )

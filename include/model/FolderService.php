@@ -1,6 +1,7 @@
 <?php
 require_once(CLASS_DIR . "/entity/folder/Folder.php");
 require_once(CLASS_DIR . "/utils/database/DAO.php");
+require_once(CLASS_DIR . "/model/ColorService.php");
 
 class FolderService{
   private $dao;
@@ -40,8 +41,9 @@ class FolderService{
     $args[0] = $folder->name;
     $args[1] = $folder->summary;
     $args[2] = $folder->visibility;
-    $args[3] = $folder->ownerId;
-    $args[4] = $folder->parentId;
+    $args[3] = $folder->color;
+    $args[4] = $folder->ownerId;
+    $args[5] = $folder->parentId;
     
     if($this->alreadyExists($folder))
       return false;
@@ -56,14 +58,16 @@ class FolderService{
     //See 1.0001.-- for up-to-date information on query
     $res = $this->dao->select("selectAllQuery", $args);
     $folders = [];
+    $cS = new ColorService();
     
     while($row = mysqli_fetch_row($res)){
       $data["folderId"] = $row[0];
       $data["name"] = $row[1];
       $data["summary"] = $row[2];
       $data["visibility"] = $row[3];
-      $data["ownerId"] = $row[4];
-      $data["parentId"] = $row[5];
+      $data["color"] = $cS->getColor($row[4]);
+      $data["ownerId"] = $row[5];
+      $data["parentId"] = $row[6];
       $folders[count($folders)] = new Folder($data);
     }
     
@@ -73,14 +77,16 @@ class FolderService{
   public function getFolder($id){
     $args[0] = $id;
     
+    $cS = new ColorService();
     //See 1.0013.-- for up-to-date information on query
     $row = mysqli_fetch_row($this->dao->select("selectFolderByIdQuery", $args));
     $data["folderId"] = $row[0];
     $data["name"] = $row[1];
     $data["summary"] = $row[2];
     $data["visibility"] = $row[3];
+    $data["color"] = $cS->getColor($row[4]);
     $data["ownerId"] = $row[4];
-    $data["parentId"] = $row[5];
+    $data["parentId"] = $row[6];
     
     return new Folder($data);
   }
@@ -89,14 +95,16 @@ class FolderService{
     $args[0] = $name;
     $args[1] = $parentId;
     
+    $cS = new ColorService();
     //See 1.0017.-- for up-to-date information on query
     $row = mysqli_fetch_row($this->dao->select("selectFolderByNameQuery", $args));
     $data["folderId"] = $row[0];
     $data["name"] = $row[1];
     $data["summary"] = $row[2];
     $data["visibility"] = $row[3];
-    $data["ownerId"] = $row[4];
-    $data["parentId"] = $row[5];
+    $data["color"] = $cS->getColor($row[4]);
+    $data["ownerId"] = $row[5];
+    $data["parentId"] = $row[6];
     
     return new Folder($data);
   }
@@ -107,14 +115,16 @@ class FolderService{
     //See 1.0015.-- for up-to-date information on query
     $res = $this->dao->select("selectChildFoldersQuery", $args);
     
+    $cS = new ColorService();
     $folders = [];
     while($row = mysqli_fetch_row($res)){
       $data["folderId"] = $row[0];
       $data["name"] = $row[1];
       $data["summary"] = $row[2];
       $data["visibility"] = $row[3];
-      $data["ownerId"] = $row[4];
-      $data["parentId"] = $row[5];
+      $data["color"] = $cS->getColor($row[4]);
+      $data["ownerId"] = $row[5];
+      $data["parentId"] = $row[6];
       $folders[count($folders)] = new Folder($data);
     }
     $result = null;

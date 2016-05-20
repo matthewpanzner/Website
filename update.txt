@@ -45,3 +45,21 @@ NEW BUGS:
 003 When I added the first folder it did not have CSS.  Cannot replicate.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5/6/2016~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Added Color to DB and foreign key to Folder for Color.
+
+[x] TODO: Add color to folder service and controller and entity
+[x] TODO: Add color to views
+[] TODO: Add a method to create entities in services.
+[] TODO: Format Article and Folder edit better
+[] TODO: Disable add Article and add Folder when not possible due to Folder type
+[] TODO: Add article on PowerShell
+[] TODO: Contact Page design
+[] TODO: About page redesign
+[] TODO: Add syntax highlighting
+[x] TODO: Implement specific colors to Folders
+[] TODO: Implement Color script to generator CSS files
+[] TODO: Move functions from config.php
+[] TODO: Script to generate config.php

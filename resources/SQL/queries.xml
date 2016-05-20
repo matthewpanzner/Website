@@ -66,9 +66,9 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
   
   
   <query>
-    <id>1.0011.02</id>
+    <id>1.0011.03</id>
     <name>addFolderQuery</name>
-    <value>INSERT INTO Folder (name, summary, visibility, ownerId, parentId) VALUES ('?', '?', '?', '?', '?')</value>
+    <value>INSERT INTO Folder (name, summary, visibility, color, ownerId, parentId) VALUES ('?', '?', '?', '?', '?', '?')</value>
   </query>
   <query>
     <id>1.0012.02</id>
@@ -99,5 +99,11 @@ SQL queries used by the QueryFactory and then used in the DAO for database trans
     <id>1.0017.02</id>
     <name>selectFolderByNameQuery</name>
     <value>SELECT * FROM Folder WHERE name='?' AND parentId='?'</value>
+  </query>
+  
+  <query>
+    <id>1.00.19.01</id>
+    <name>selectColorByNameQuery</name>
+    <value>SELECT * FROM Color Where name='?'</value>
   </query>
 </queries>

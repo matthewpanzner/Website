@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $1 = $null ]; then
+  echo "There is no input file given!"
+  exit
+fi
+
+echo "finish"

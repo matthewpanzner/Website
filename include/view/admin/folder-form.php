@@ -3,6 +3,14 @@
       <form class="base-form" action="index.php?controller=Folder&action=onAdd" method="post">
         <input type="text" name="name" placeholder="title" required autofocus/>
         <input type="text" name="summary" placeholder="summary" required/>
+        <select name='color'>
+<?php
+  $numOfColors = count($this->model['colors']);
+  for($i = 0; $i < $numOfColors; $i++){
+    $colorName = $this->model['colors'][$i]->name;?>          
+          <option value='<?php echo $colorName;?>'><?php echo $colorName;?></option>
+<?php }?>    
+        </select>
         <select name="visibility">
           <option value="visible">Visible</option>
           <option value="invisible">Invisible</option>
